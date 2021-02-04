@@ -1,0 +1,34 @@
+trigger:
+  branches:
+    include:
+      - master
+      - refs/tags/{tagname}
+
+variables:
+  - group: Secrets
+  - name:  YARN_CACHE_FOLDER
+    value: $(Pipeline.Workspace)/.yarn
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '12.x'
+    displayName: 'Install Node.js'
+
+  - task: Cache@2
+    inputs:
+      key: 'yarn | "$(Agent.OS)" | yarn.lock'
+      restoreKeys: yarn | "$(Agent.OS)"
+      path: $(YARN_CACHE_FOLDER)
+    displayName: Cache Yarn packages
+
+  - script: yarn install
+    displayName: 'Install dependencies'
+
+  - script: |
+      npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+      yarn run publish
+    displayName: 'Publish'

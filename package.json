@@ -1,0 +1,31 @@
+{
+  "name": "glacier",
+  "private": true,
+  "scripts": {
+    "workspace:test": "lerna run test --no-bail",
+    "workspace:lint": "lerna run lint --no-bail",
+    "workspace:build:esm": "lerna run build:esm --no-bail",
+    "workspace:build:cjs": "lerna run build:cjs --no-bail",
+    "publish": "lerna publish from-git",
+    "test": "jest --coverage"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.2",
+    "mock-fs": "^4.13.0",
+    "@types/mock-fs": "4.13.0",
+    "typescript": "^4.1.3",
+    "@types/jest": "^26.0.20",
+    "ts-jest": "^26.5.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

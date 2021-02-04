@@ -1,0 +1,22 @@
+# ---------------------------
+# Ignore NPM files
+# ---------------------------
+node_modules
+
+# ---------------------------
+# Ignore build files
+# ---------------------------
+packages/**/dist/
+packages/*/esm/
+packages/*/types/
+packages/*/coverage/
+
+# ---------------------------
+# Ignore IDE files
+# ---------------------------
+.idea/modules.xml
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
+.idea/shelf/
+*.iml

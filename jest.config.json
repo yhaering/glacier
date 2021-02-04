@@ -1,0 +1,7 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "coverageDirectory": "coverage",
+  "coverageReporters": ["json", "html", "lcov", "text", "clover", "cobertura"],
+  "collectCoverageFrom": ["packages/*/src/**/*.ts"]
+}

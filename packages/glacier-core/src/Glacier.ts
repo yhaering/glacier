@@ -1,0 +1,53 @@
+import { GlacierConfig } from './GlacierConfig';
+import { existsSync } from 'fs';
+import { resolve } from 'path';
+import assert from 'assert';
+import { Resolver } from '@glacier/resolver';
+import { Module, RootModule } from '@glacier/module';
+import { Pipeline } from '@glacier/pipeline';
+
+export class Glacier {
+  /**
+   * Contains the complete config object.
+   * @private
+   */
+  private readonly config: GlacierConfig;
+
+  /**
+   * The path to the glacier config
+   * @private
+   */
+  private readonly configPath: string;
+
+  /**
+   * @constructor
+   * @param configPath The path to a glacier config
+   */
+  constructor(configPath: string) {
+    this.configPath = resolve(configPath);
+    this.config = this.loadConfig(this.configPath);
+  }
+
+  /**
+   * Imports the config at the given location
+   * @param configPath
+   * @private
+   */
+  private loadConfig(configPath: string): GlacierConfig {
+    assert(existsSync(configPath), `Could not find config file at '${configPath}'`);
+    const config = require(configPath);
+    return config.default;
+  }
+
+  /**
+   * Starts the bundling process
+   */
+  public async bundle(): Promise<void> {
+    const resolver = new Resolver(this.config.resolver || {});
+    const rootModule = new RootModule(this.configPath);
+    const modules = this.config.entries.map((entry) => new Module(rootModule, entry));
+    const pipeline = new Pipeline(this.config.pipelines || [], resolver);
+    const processedModule = await pipeline.process(modules);
+    console.log(processedModule);
+  }
+}
