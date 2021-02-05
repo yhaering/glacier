@@ -1,6 +1,5 @@
 import { readFileSync } from 'fs';
-import { extname, basename } from 'path';
-import { RootModule } from './RootModule';
+import { basename, extname } from 'path';
 
 /**
  * A Module is an importable file of any kind.
@@ -19,6 +18,12 @@ export class ResolvedModule {
   protected content?: Buffer;
 
   /**
+   * Contains the module extension
+   * @protected
+   */
+  protected extension: string;
+
+  /**
    * Contains a list of issuer
    * @private
    */
@@ -34,6 +39,7 @@ export class ResolvedModule {
       this.issuer.add(issuer);
     }
     this.sourcePath = sourcePath;
+    this.extension = extname(this.sourcePath);
   }
 
   /**
@@ -78,7 +84,15 @@ export class ResolvedModule {
    * Returns the file extension of the Module
    */
   public getExtension(): string {
-    return extname(this.sourcePath).substring(1);
+    return this.extension;
+  }
+
+  /**
+   * Sets the extension of the module.
+   * @param extension
+   */
+  public setExtension(extension: string): void {
+    this.extension = extension;
   }
 
   /**
@@ -89,6 +103,12 @@ export class ResolvedModule {
       this.content = readFileSync(this.sourcePath);
     }
     return this.content as Buffer;
+  }
+
+  public getPath(): string {
+    const extension = this.getExtension();
+    const sourceExtension = extname(this.sourcePath);
+    return this.sourcePath.replace(sourceExtension, extension);
   }
 
   /**

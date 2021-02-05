@@ -24,7 +24,7 @@ export class Resolver {
    */
   constructor(config: ResolverConfig) {
     this.config = {
-      extensions: ['js', 'jsx'],
+      extensions: ['js', 'jsx', 'ts', 'tsx'],
       alias: {},
       mainFields: ['module', 'main', 'browser'],
       ...config,

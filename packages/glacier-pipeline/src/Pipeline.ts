@@ -5,7 +5,6 @@ import { Resolver } from '@glacier/resolver';
 export class Pipeline {
   private readonly config: PipelineConfig[];
   private readonly modules = new Map<string, ResolvedModule>();
-  private readonly queue: ResolvedModule[] = [];
   private readonly resolver: Resolver;
 
   constructor(config: PipelineConfig[], resolver: Resolver) {
@@ -13,39 +12,62 @@ export class Pipeline {
     this.resolver = resolver;
   }
 
-  private addModule(module: Module | VirtualModule): void {
+  private resolveModule(module: Module | VirtualModule): { cached: boolean; module: ResolvedModule } {
     if (module instanceof VirtualModule) {
-      this.queue.push(module);
-    } else {
-      const issuer = module.getIssuer();
-      const issuerPath = issuer.getSourcePath();
-      const resolvedPath = this.resolver.resolve(issuerPath, module.getImportPath());
-      if (this.modules.has(resolvedPath)) {
-        const cachedModule = this.modules.get(resolvedPath) as ResolvedModule;
-        cachedModule.addIssuer(issuer);
-      } else {
-        const resolvedModule = new ResolvedModule(issuer, resolvedPath);
-        this.queue.push(resolvedModule);
+      return {
+        cached: false,
+        module,
+      };
+    }
+    const issuer = module.getIssuer();
+    const issuerPath = issuer.getSourcePath();
+    const resolvedPath = this.resolver.resolve(issuerPath, module.getImportPath());
+    if (this.modules.has(resolvedPath)) {
+      const cachedModule = this.modules.get(resolvedPath) as ResolvedModule;
+      cachedModule.addIssuer(issuer);
+      return {
+        cached: true,
+        module: cachedModule,
+      };
+    }
+    return {
+      cached: false,
+      module: new ResolvedModule(issuer, resolvedPath),
+    };
+  }
+
+  private findPipeline(module: ResolvedModule) {
+    return this.config.find((config) => {
+      return moduleMatch(module, config);
+    });
+  }
+
+  private async importModule(module: Module | VirtualModule): Promise<ResolvedModule> {
+    const resolvedModule = this.resolveModule(module);
+    if (resolvedModule.cached) {
+      return resolvedModule.module;
+    }
+    const processedModule = await this.processModule(resolvedModule.module);
+    this.modules.set(processedModule.getSourcePath(), processedModule);
+    return processedModule;
+  }
+
+  private async processModule(module: ResolvedModule): Promise<ResolvedModule> {
+    const pipeline = this.findPipeline(module);
+    if (pipeline) {
+      for (const task of pipeline.tasks) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        task.importModule = this.importModule.bind(this);
+        await task.execute(module);
       }
     }
+    return module;
   }
 
   public async process(modules: Module[]): Promise<ResolvedModule[]> {
-    modules.forEach(this.addModule.bind(this));
-    while (this.queue.length > 0) {
-      const nextModule = this.queue.shift() as ResolvedModule;
-      const pipeline = this.config.find((config) => {
-        return moduleMatch(nextModule, config);
-      });
-      if (pipeline) {
-        for (const task of pipeline.tasks) {
-          const additionalModule = await task.execute(nextModule);
-          if (Array.isArray(additionalModule)) {
-            additionalModule.forEach(this.addModule.bind(this));
-          }
-        }
-      }
-      this.modules.set(nextModule.getSourcePath(), nextModule);
+    for (const module of modules) {
+      await this.importModule(module);
     }
     return Array.from(this.modules.values());
   }

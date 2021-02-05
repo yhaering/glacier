@@ -1,21 +1,25 @@
-import { ResolvedModule, VirtualModule } from '@glacier/module';
+import { Module, ResolvedModule, VirtualModule } from '@glacier/module';
 
 /**
  * A Task is a single unit of work. It can also return
  * additional modules to be processed by the pipeline.
  */
 export class Task<Config> {
-  private readonly config: Config;
+  protected readonly config: Config;
 
   constructor(config: Config) {
     this.config = config;
+  }
+
+  protected async importModule(module: Module | VirtualModule): Promise<ResolvedModule> {
+    throw new Error('Not implemented');
   }
 
   /**
    * Executes the task and optionally returns additional modules.
    * @param module
    */
-  public async execute(module: ResolvedModule): Promise<(ResolvedModule | VirtualModule)[] | void> {
+  public async execute(module: ResolvedModule): Promise<void> {
     return;
   }
 }

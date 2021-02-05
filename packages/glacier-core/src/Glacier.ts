@@ -63,7 +63,7 @@ export class Glacier {
   private persist(modules: ResolvedModule[]) {
     const rootPath = getRootPath(modules);
     for (const module of modules) {
-      const modulePath = module.getSourcePath();
+      const modulePath = module.getPath();
       const relativePath = relative(rootPath, modulePath);
       const targetPath = resolve(this.config.output, relativePath);
       const targetDirectoryPath = dirname(targetPath);
