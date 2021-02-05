@@ -1,10 +1,11 @@
 import { GlacierConfig } from './GlacierConfig';
-import { existsSync } from 'fs';
-import { resolve } from 'path';
+import { existsSync, mkdirSync, rmSync, writeFileSync } from 'fs';
+import { dirname, relative, resolve } from 'path';
 import assert from 'assert';
 import { Resolver } from '@glacier/resolver';
-import { Module, RootModule } from '@glacier/module';
+import { Module, ResolvedModule, RootModule } from '@glacier/module';
 import { Pipeline } from '@glacier/pipeline';
+import { getRootPath } from './functions/getRootPath';
 
 export class Glacier {
   /**
@@ -48,6 +49,29 @@ export class Glacier {
     const modules = this.config.entries.map((entry) => new Module(rootModule, entry));
     const pipeline = new Pipeline(this.config.pipelines || [], resolver);
     const processedModule = await pipeline.process(modules);
-    console.log(processedModule);
+    this.cleanupOutput();
+    this.persist(processedModule);
+  }
+
+  private cleanupOutput() {
+    const absoluteOutput = resolve(process.cwd(), this.config.output);
+    if (existsSync(absoluteOutput)) {
+      rmSync(absoluteOutput, { recursive: true, force: true });
+    }
+  }
+
+  private persist(modules: ResolvedModule[]) {
+    const rootPath = getRootPath(modules);
+    for (const module of modules) {
+      const modulePath = module.getSourcePath();
+      const relativePath = relative(rootPath, modulePath);
+      const targetPath = resolve(this.config.output, relativePath);
+      const targetDirectoryPath = dirname(targetPath);
+
+      if (!existsSync(targetDirectoryPath)) {
+        mkdirSync(targetDirectoryPath, { recursive: true });
+      }
+      writeFileSync(targetPath, module.getContent());
+    }
   }
 }
