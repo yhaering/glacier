@@ -1,5 +1,6 @@
 import './sub/test2';
 import './test.scss';
+import './test.png';
 
 console.log({ ...{} });
 
