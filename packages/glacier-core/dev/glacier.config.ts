@@ -4,10 +4,17 @@ import { TaskTypescript } from '@glacier/task-typescript';
 import { ModuleKind, ScriptTarget } from 'typescript';
 import { TaskSass } from '@glacier/task-sass';
 import { TaskJavascript } from '@glacier/task-javascript';
+import { BundlerJavascript } from '../../../bundler/glacier-bundler-javascript/src/BundlerJavascript';
 
 export default <GlacierConfig>{
   entries: ['./index.js'],
   output: 'dist',
+  bundlers: [
+    {
+      process: [/js$/],
+      bundler: new BundlerJavascript(),
+    },
+  ],
   pipelines: [
     {
       process: [/js$/],

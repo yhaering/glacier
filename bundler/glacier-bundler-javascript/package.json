@@ -1,5 +1,5 @@
 {
-  "name": "@glacier/core",
+  "name": "@glacier/bundler-javascript",
   "version": "0.0.1",
   "license": "MIT",
   "author": {
@@ -10,18 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yhaering/glacier/tree/main/packages/glacier-core"
+    "url": "https://github.com/yhaering/glacier/tree/main/bundler/glacier-bundler-javascript"
   },
   "sideEffects": false,
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest --passWithNoTests --coverage",
+    "test": "jest --coverage",
     "lint": "eslint src",
     "build": "tsc"
   },
   "dependencies": {
-    "@glacier/resolver": "^0.0.1",
-    "@glacier/pipeline": "^0.0.1",
     "@glacier/module": "^0.0.1",
     "@glacier/bundler": "^0.0.1"
   },

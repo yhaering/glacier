@@ -6,6 +6,8 @@ import { Resolver } from '@glacier/resolver';
 import { Module, ResolvedModule, RootModule } from '@glacier/module';
 import { Pipeline } from '@glacier/pipeline';
 import { getRootPath } from './functions/getRootPath';
+import { BundlerTask } from '@glacier/bundler';
+import { Bundler } from '@glacier/bundler/src/Bundler';
 
 export class Glacier {
   /**
@@ -49,8 +51,10 @@ export class Glacier {
     const modules = this.config.entries.map((entry) => new Module(rootModule, entry));
     const pipeline = new Pipeline(this.config.pipelines || [], resolver);
     const processedModule = await pipeline.process(modules);
+    const bundler = new Bundler(processedModule, this.config.bundlers || []);
+    const bundledModules = await bundler.bundle();
     this.cleanupOutput();
-    this.persist(processedModule);
+    this.persist(bundledModules);
   }
 
   private cleanupOutput() {
@@ -61,17 +65,19 @@ export class Glacier {
   }
 
   private persist(modules: ResolvedModule[]) {
-    const rootPath = getRootPath(modules);
-    for (const module of modules) {
-      const modulePath = module.getPath();
-      const relativePath = relative(rootPath, modulePath);
-      const targetPath = resolve(this.config.output, relativePath);
-      const targetDirectoryPath = dirname(targetPath);
+    if (modules.length > 0) {
+      const rootPath = getRootPath(modules);
+      for (const module of modules) {
+        const modulePath = module.getPath();
+        const relativePath = relative(rootPath, modulePath);
+        const targetPath = resolve(this.config.output, relativePath);
+        const targetDirectoryPath = dirname(targetPath);
 
-      if (!existsSync(targetDirectoryPath)) {
-        mkdirSync(targetDirectoryPath, { recursive: true });
+        if (!existsSync(targetDirectoryPath)) {
+          mkdirSync(targetDirectoryPath, { recursive: true });
+        }
+        writeFileSync(targetPath, module.getContent());
       }
-      writeFileSync(targetPath, module.getContent());
     }
   }
 }
