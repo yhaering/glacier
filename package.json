@@ -27,7 +27,8 @@
   "workspaces": {
     "packages": [
       "packages/*",
-      "tasks/*"
+      "tasks/*",
+      "bundler/*"
     ]
   }
 }

@@ -4,7 +4,7 @@ import { TaskTypescript } from '@glacier/task-typescript';
 import { ModuleKind, ScriptTarget } from 'typescript';
 import { TaskSass } from '@glacier/task-sass';
 import { TaskJavascript } from '@glacier/task-javascript';
-import { BundlerJavascript } from '../../../bundler/glacier-bundler-javascript/src/BundlerJavascript';
+import { BundlerJavascript } from '@glacier/bundler-javascript';
 
 export default <GlacierConfig>{
   entries: ['./index.js'],
@@ -21,6 +21,7 @@ export default <GlacierConfig>{
       tasks: [
         new TaskBabel({
           sourceMaps: true,
+          plugins: [['@babel/plugin-transform-modules-commonjs', { loose: true, strict: true }]],
         }),
         new TaskJavascript({ ecmaVersion: 'latest' }),
       ],
@@ -30,7 +31,7 @@ export default <GlacierConfig>{
       tasks: [
         new TaskTypescript({
           sourceMap: true,
-          module: ModuleKind.ESNext,
+          module: ModuleKind.CommonJS,
           target: ScriptTarget.ESNext,
         }),
         new TaskJavascript({ ecmaVersion: 'latest' }),

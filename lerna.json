@@ -4,6 +4,7 @@
   "npmClient": "yarn",
   "packages": [
     "packages/*",
-    "tasks/*"
+    "tasks/*",
+    "bundler/*"
   ]
 }
