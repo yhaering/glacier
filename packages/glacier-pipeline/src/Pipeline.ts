@@ -1,6 +1,8 @@
 import { PipelineConfig } from './PipelineConfig';
 import { Module, moduleMatch, ResolvedModule, VirtualModule } from '@glacier/module';
 import { Resolver } from '@glacier/resolver';
+import { dirname, relative } from 'path';
+import { normalizePath } from './functions/normalizePath';
 
 export class Pipeline {
   private readonly config: PipelineConfig[];
@@ -58,7 +60,10 @@ export class Pipeline {
       for (const task of pipeline.tasks) {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        task.importModule = this.importModule.bind(this);
+        task.importModule = async (issuer: ResolvedModule, module: Module | VirtualModule) => {
+          const resolvedModule = await this.importModule(module);
+          return './' + normalizePath(relative(dirname(issuer.getPath()), resolvedModule.getPath()));
+        };
         await task.execute(module);
       }
     }

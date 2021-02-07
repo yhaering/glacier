@@ -11,7 +11,7 @@ export class Task<Config> {
     this.config = config;
   }
 
-  protected async importModule(module: Module | VirtualModule): Promise<ResolvedModule> {
+  protected async importModule(issuer: ResolvedModule, module: Module | VirtualModule): Promise<string> {
     throw new Error('Not implemented');
   }
 

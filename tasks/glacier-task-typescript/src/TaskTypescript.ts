@@ -11,7 +11,7 @@ export class TaskTypescript extends Task<CompilerOptions> {
     module.setExtension('.js');
     if (result.sourceMapText) {
       const sourcemapPath = `${module.getPath()}.map`;
-      this.importModule(new VirtualModule(module, Buffer.from(result.sourceMapText), sourcemapPath));
+      this.importModule(module, new VirtualModule(module, Buffer.from(result.sourceMapText), sourcemapPath));
     }
   }
 }

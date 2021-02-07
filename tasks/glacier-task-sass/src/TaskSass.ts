@@ -11,7 +11,7 @@ export class TaskSass extends Task<Options> {
 
     if (result.map) {
       const sourcemapPath = `${module.getPath()}.map`;
-      this.importModule(new VirtualModule(module, result.map, sourcemapPath));
+      this.importModule(module, new VirtualModule(module, result.map, sourcemapPath));
     }
   }
 }

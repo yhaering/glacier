@@ -10,11 +10,26 @@ export default <GlacierConfig>{
   pipelines: [
     {
       process: [/js$/],
-      tasks: [new TaskBabel({ sourceMaps: true })],
-    },{
+      tasks: [
+        new TaskBabel({
+          sourceMaps: true,
+          plugins: [
+            [
+              '@babel/plugin-transform-modules-commonjs',
+              {
+                strict: true,
+                loose: true,
+              },
+            ],
+          ],
+        }),
+      ],
+    },
+    {
       process: [/ts$/],
       tasks: [new TaskTypescript({ sourceMap: true, module: ModuleKind.ESNext, target: ScriptTarget.ESNext })],
-    },{
+    },
+    {
       process: [/scss$/],
       tasks: [new TaskSass({ sourceMap: true })],
     },
