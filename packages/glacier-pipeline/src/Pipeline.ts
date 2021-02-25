@@ -62,7 +62,11 @@ export class Pipeline {
         // @ts-ignore
         task.importModule = async (issuer: ResolvedModule, module: Module | VirtualModule) => {
           const resolvedModule = await this.importModule(module);
-          return './' + normalizePath(relative(dirname(issuer.getPath()), resolvedModule.getPath()));
+          const importPath = './' + normalizePath(relative(dirname(issuer.getPath()), resolvedModule.getPath()));
+          if (module instanceof Module) {
+            issuer.addImport(importPath, resolvedModule);
+          }
+          return importPath;
         };
         await task.execute(module);
       }

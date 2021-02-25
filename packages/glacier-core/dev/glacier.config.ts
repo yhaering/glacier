@@ -11,7 +11,7 @@ export default <GlacierConfig>{
   output: 'dist',
   bundlers: [
     {
-      process: [/js$/],
+      process: [/js$/, /ts$/],
       bundler: new BundlerJavascript(),
     },
   ],
@@ -21,7 +21,7 @@ export default <GlacierConfig>{
       tasks: [
         new TaskBabel({
           sourceMaps: true,
-          plugins: [['@babel/plugin-transform-modules-commonjs', { loose: true, strict: true }]],
+          plugins: [['@babel/plugin-transform-modules-commonjs']],
         }),
         new TaskJavascript({ ecmaVersion: 'latest' }),
       ],
@@ -33,6 +33,9 @@ export default <GlacierConfig>{
           sourceMap: true,
           module: ModuleKind.CommonJS,
           target: ScriptTarget.ESNext,
+          esModuleInterop: true,
+          allowSyntheticDefaultImports: true,
+          strict: true
         }),
         new TaskJavascript({ ecmaVersion: 'latest' }),
       ],

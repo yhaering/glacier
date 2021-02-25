@@ -23,11 +23,17 @@ export class ResolvedModule {
    */
   protected extension: string;
 
+  protected imports: Record<string, ResolvedModule> = {};
+
   /**
    * Contains a list of issuer
    * @private
    */
   protected readonly issuer = new Set<ResolvedModule>();
+
+  private static uuid = -1;
+
+  public uuid = (ResolvedModule.uuid++).toString();
 
   /**
    * @constructor
@@ -40,6 +46,14 @@ export class ResolvedModule {
     }
     this.sourcePath = sourcePath;
     this.extension = extname(this.sourcePath);
+  }
+
+  public addImport(importPath: string, module: ResolvedModule) {
+    this.imports[importPath] = module;
+  }
+
+  public getImports(): Record<string, ResolvedModule> {
+    return this.imports;
   }
 
   /**
