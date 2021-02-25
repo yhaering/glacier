@@ -7,7 +7,7 @@ import { getImports } from './functions/getImports';
 export class TaskJavascript extends Task<Options> {
   public async execute(module: ResolvedModule): Promise<void> {
     const code = module.getContent().toString();
-    const ast = parse(code, { sourceType: 'module', ...this.config });
+    const ast = parse(code, { sourceType: 'module', ...this.config, ecmaVersion: 'latest' });
     const imports = getImports(ast);
     for (const i of imports) {
       await this.processImport(module, i);

@@ -52,7 +52,7 @@ export class BundlerJavascript extends BundlerTask {
 
   private processModule(module: ResolvedModule) {
     const moduleCode = module.getContent().toString();
-    const ast = parse(moduleCode, { sourceType: 'module' });
+    const ast = parse(moduleCode, { sourceType: 'module', ecmaVersion: 'latest' });
     const imports = getImports(ast);
     const moduleImports = module.getImports();
 
