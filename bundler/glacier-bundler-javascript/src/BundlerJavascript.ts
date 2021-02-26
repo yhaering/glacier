@@ -54,12 +54,29 @@ export class BundlerJavascript extends BundlerTask {
     const moduleCode = module.getContent().toString();
     const ast = parse(moduleCode, { sourceType: 'module', ecmaVersion: 'latest' });
     const imports = getImports(ast);
-    const moduleImports = module.getImports();
 
     for (const i of imports) {
-      const importPath = (i as any).arguments[0].value;
-      const importedModule = moduleImports[importPath];
-      (i as any).arguments[0].value = importedModule.uuid;
+      let importPath;
+      if (i.type === 'CallExpression') {
+        importPath = (i as any).arguments[0].value;
+      }
+
+      if (i.type === 'ImportExpression') {
+        importPath = (i as any).source.value;
+      }
+
+      const importedModule = module.getImportByPath(importPath);
+      if (importedModule) {
+        if (i.type === 'CallExpression') {
+          (i as any).arguments[0].value = importedModule.getModule().uuid;
+        }
+
+        if (i.type === 'ImportExpression') {
+          (i as any).source.value = importedModule.getModule().uuid;
+        }
+      } else {
+        throw new Error(`Could not find module ${importPath} in ${module.getSourcePath()}`);
+      }
     }
     return generate(ast);
   }

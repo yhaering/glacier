@@ -13,6 +13,9 @@ export function getImports(ast: Node): Node[] {
         imports.push(node);
       }
     },
+    ImportExpression: (node: Node) => {
+      imports.push(node);
+    },
   });
 
   return imports;

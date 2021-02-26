@@ -60,11 +60,11 @@ export class Pipeline {
       for (const task of pipeline.tasks) {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        task.importModule = async (issuer: ResolvedModule, module: Module | VirtualModule) => {
+        task.importModule = async (issuer: ResolvedModule, module: Module | VirtualModule, async = false) => {
           const resolvedModule = await this.importModule(module);
           const importPath = './' + normalizePath(relative(dirname(issuer.getPath()), resolvedModule.getPath()));
           if (module instanceof Module) {
-            issuer.addImport(importPath, resolvedModule);
+            issuer.addImport(importPath, resolvedModule, async);
           }
           return importPath;
         };

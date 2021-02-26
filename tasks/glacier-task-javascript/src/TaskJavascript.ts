@@ -26,5 +26,10 @@ export class TaskJavascript extends Task<Options> {
       const importPath = (node as any).source.value;
       (node as any).source.value = await this.importModule(issuer, new Module(issuer, importPath));
     }
+
+    if (node.type === 'ImportExpression') {
+      const importPath = (node as any).source.value;
+      (node as any).source.value = await this.importModule(issuer, new Module(issuer, importPath), true);
+    }
   }
 }

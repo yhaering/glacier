@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
 import { basename, extname } from 'path';
+import { ImportedModule } from './ImportedModule';
 
 /**
  * A Module is an importable file of any kind.
@@ -23,7 +24,11 @@ export class ResolvedModule {
    */
   protected extension: string;
 
-  protected imports: Record<string, ResolvedModule> = {};
+  /**
+   * A list of all imports
+   * @protected
+   */
+  protected imports: ImportedModule[] = [];
 
   /**
    * Contains a list of issuer
@@ -48,12 +53,16 @@ export class ResolvedModule {
     this.extension = extname(this.sourcePath);
   }
 
-  public addImport(importPath: string, module: ResolvedModule) {
-    this.imports[importPath] = module;
+  public addImport(importPath: string, module: ResolvedModule, async = false): void {
+    this.imports.push(new ImportedModule(module, importPath, async));
   }
 
-  public getImports(): Record<string, ResolvedModule> {
+  public getImports(): ImportedModule[] {
     return this.imports;
+  }
+
+  public getImportByPath(importPath: string): ImportedModule | undefined {
+    return this.imports.find((i) => i.getImportPath() === importPath);
   }
 
   /**
