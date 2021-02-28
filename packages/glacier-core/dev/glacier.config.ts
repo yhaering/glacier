@@ -24,11 +24,15 @@ export default <GlacierConfig>{
       tasks: [
         new TaskTypescript({
           sourceMap: true,
-          module: ModuleKind.CommonJS,
+          module: ModuleKind.ESNext,
           target: ScriptTarget.ESNext,
           esModuleInterop: true,
           allowSyntheticDefaultImports: true,
           strict: true,
+        }),
+        new TaskBabel({
+          sourceMaps: true,
+          plugins: [['@babel/plugin-transform-modules-commonjs']],
         }),
         new TaskJavascript({ ecmaVersion: 'latest' }),
       ],
