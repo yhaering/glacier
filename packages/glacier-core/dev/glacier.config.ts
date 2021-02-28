@@ -4,17 +4,10 @@ import { TaskTypescript } from '@glacier/task-typescript';
 import { ModuleKind, ScriptTarget } from 'typescript';
 import { TaskSass } from '@glacier/task-sass';
 import { TaskJavascript } from '@glacier/task-javascript';
-import { BundlerJavascript } from '@glacier/bundler-javascript';
 
 export default <GlacierConfig>{
   entries: ['./index.js'],
   output: 'dist',
-  bundlers: [
-    {
-      process: [/js$/, /ts$/],
-      bundler: new BundlerJavascript(),
-    },
-  ],
   pipelines: [
     {
       process: [/js$/],
@@ -35,7 +28,7 @@ export default <GlacierConfig>{
           target: ScriptTarget.ESNext,
           esModuleInterop: true,
           allowSyntheticDefaultImports: true,
-          strict: true
+          strict: true,
         }),
         new TaskJavascript({ ecmaVersion: 'latest' }),
       ],

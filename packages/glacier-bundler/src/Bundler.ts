@@ -12,11 +12,25 @@ export class Bundler {
 
   public async bundle(): Promise<VirtualModule[]> {
     const bundledModules: VirtualModule[] = [];
-    for (const bundleTask of this.config) {
-      const matchingModules = this.modules.filter((m) => moduleMatch(m, bundleTask));
-      const resultingModules = await bundleTask.bundler.execute(matchingModules);
-      bundledModules.push(...resultingModules);
+    const remainingModules = [...this.modules];
+
+    for (const bundleConfig of this.config) {
+      const matchingModules = this.getMatchingModules(remainingModules, bundleConfig);
+      if (matchingModules.length > 0) {
+        bundledModules.push(...(await bundleConfig.bundler.execute(matchingModules)));
+      }
     }
-    return bundledModules;
+    return [...remainingModules, ...bundledModules];
+  }
+
+  private getMatchingModules(modules: ResolvedModule[], bundlerConfig: BundlerConfig) {
+    const matchingModules = [];
+    for (let i = modules.length - 1; i >= 0; i--) {
+      if (moduleMatch(modules[i], bundlerConfig)) {
+        modules.splice(i, 1);
+        matchingModules.push(modules[i]);
+      }
+    }
+    return matchingModules;
   }
 }
