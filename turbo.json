@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist", "types"]
+    },
+    "build:watch": {
+      "outputs": ["dist", "types"]
+    },
+    "test": {
+      "dependsOn": ["build"],
+      "outputs": ["coverage"]
+    },
+    "test:integration": {
+      "dependsOn": ["build"],
+      "outputs": ["coverage"]
+    },
+    "lint": {
+      "dependsOn": ["build"]
+    },
+    "all": {
+      "dependsOn": ["build", "test", "test:integration", "lint"]
+    }
+  }
+}

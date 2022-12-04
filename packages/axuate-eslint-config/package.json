@@ -1,0 +1,17 @@
+{
+  "name": "@axuate/eslint-config",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@axuate/typescript": "^1.0.0",
+    "@types/eslint": "8.4.10",
+    "eslint": "^8.29.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint-config-prettier": "^8.5.0"
+  }
+}

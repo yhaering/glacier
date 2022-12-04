@@ -1,0 +1,2 @@
+exclude_patterns:
+  - "packages/*/src/__mocks__"

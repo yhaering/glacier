@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "@axuate/typescript",
+  "version": "1.0.0",
+  "main": "./tsconfig.json",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
