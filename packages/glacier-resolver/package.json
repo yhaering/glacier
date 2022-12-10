@@ -1,0 +1,14 @@
+{
+  "name": "@glacier/resolver",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/ index.ts"
+  },
+  "devDependencies": {
+    "@glacier/typescript": "*",
+    "@glacier/eslint-config": "*",
+    "@glacier/jest": "*"
+  }
+}

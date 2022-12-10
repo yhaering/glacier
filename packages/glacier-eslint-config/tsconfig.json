@@ -1,5 +1,5 @@
 {
-  "extends": "@axuate/typescript",
+  "extends": "@glacier/typescript",
   "compilerOptions": {
     "declarationDir": "types",
     "outDir": "dist"
