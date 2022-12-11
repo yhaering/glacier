@@ -7,7 +7,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importsNotUsedAsValues": "error",
-    "declaration": true
+    "declaration": true,
+    "strict": true
   },
   "ts-node": {
     "transpileOnly": true

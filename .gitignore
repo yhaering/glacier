@@ -18,8 +18,8 @@ node_modules/
 yarn-error.log
 
 # Build
-dist/
-types/
+packages/*/*/dist/
+packages/*/*/types/
 
 # Testing
 coverage/
