@@ -1,15 +1,17 @@
 import { isDirectory } from './isDirectory';
-import fs from 'fs';
+import type { VirtualFileSystem } from '@glacier/vfs/types';
 
-jest.mock('fs');
+let fs: VirtualFileSystem;;
 
 describe('isDirectory', () => {
   beforeEach(() => {
-    (fs.existsSync as jest.Mock).mockReturnValue(true);
-    (fs.lstatSync as jest.Mock).mockReturnValue({
-      isDirectory: jest.fn().mockReturnValue('{{IS_DIRECTORY}}')
-    });
-    isDirectory('{{DIRECTORY_PATH}}');
+    fs = {
+      existsSync: jest.fn().mockReturnValue(true),
+      lstatSync: jest.fn().mockReturnValue({
+        isDirectory: jest.fn().mockReturnValue('{{IS_DIRECTORY}}')
+      })
+    } as unknown as VirtualFileSystem
+    isDirectory('{{DIRECTORY_PATH}}', fs);
   });
 
   test('exports a function called isDirectory', () => {
@@ -22,7 +24,7 @@ describe('isDirectory', () => {
 
   test('return false if directory does not exist', () => {
     (fs.existsSync as jest.Mock).mockReturnValue(false);
-    expect(isDirectory('{{DIRECTORY_PATH}}')).toBe(false);
+    expect(isDirectory('{{DIRECTORY_PATH}}', fs)).toBe(false);
   });
 
   test('calls fs.lstatSync with directory path', () => {
@@ -32,6 +34,6 @@ describe('isDirectory', () => {
   test('returns outcome of isDirectory', () => {
     const stats = fs.lstatSync('{{PATH}}');
     expect(stats.isDirectory).toHaveBeenCalledWith();
-    expect(isDirectory('{{DIRECTORY_PATH}}')).toBe('{{IS_DIRECTORY}}');
+    expect(isDirectory('{{DIRECTORY_PATH}}', fs)).toBe('{{IS_DIRECTORY}}');
   });
 });

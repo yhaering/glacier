@@ -1,11 +1,6 @@
 import path from 'path';
 
-/**
- * Returns the file systems root directory path.
- * For Windows this could be "c:" and for Linux "/"
- */
-export function getRootPath(): string {
-  const cwd = process.cwd();
-  const { root } = path.parse(cwd);
+export function getRootPath(parentURL: string): string {
+  const { root } = path.parse(parentURL);
   return root;
 }

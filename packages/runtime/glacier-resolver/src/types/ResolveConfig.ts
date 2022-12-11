@@ -1,7 +1,7 @@
-import type { ExtensionList } from './ExtensionList';
-import type { FieldList } from './FieldList';
+import type { VirtualFileSystem } from '@glacier/vfs';
 
-export type ResolveConfig = {
-  fields: FieldList;
-  extensions: ExtensionList;
-};
+export interface ResolveConfig {
+  fs: VirtualFileSystem
+
+  conditions: string[];
+}

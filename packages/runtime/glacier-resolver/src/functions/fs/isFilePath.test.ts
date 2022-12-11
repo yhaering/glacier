@@ -20,7 +20,7 @@ describe('isFilePath', () => {
 
   test('calls getRootPath if a path does not start with a dot', () => {
     isFilePath('/a');
-    expect(getRootPath).toHaveBeenCalledWith();
+    expect(getRootPath).toHaveBeenCalledWith('/a');
   });
 
   test('returns true if path starts with root path', () => {

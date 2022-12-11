@@ -1,3 +1,6 @@
 {
-  "extends": ["@glacier"]
+  "extends": ["@glacier"],
+  "rules": {
+    "no-prototype-builtins": "off"
+  }
 }

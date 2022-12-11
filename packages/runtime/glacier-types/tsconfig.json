@@ -1,0 +1,8 @@
+{
+  "extends": "@glacier/typescript",
+  "compilerOptions": {
+    "declarationDir": "types",
+    "outDir": "dist"
+  },
+  "include": ["**/*.ts"]
+}

@@ -15,7 +15,7 @@ describe('isRootPath', () => {
   });
 
   test('calls getRootPath', () => {
-    expect(getRootPath).toHaveBeenCalledWith();
+    expect(getRootPath).toHaveBeenCalledWith('{{PATH}}');
   });
 
   test('returns true if given path equals root path', () => {

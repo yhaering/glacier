@@ -6,24 +6,19 @@ describe('getRootPath', () => {
     jest
       .spyOn(path, 'parse')
       .mockReturnValue({ root: '{{ROOT}}' } as path.ParsedPath);
-    jest.spyOn(process, 'cwd').mockReturnValue('{{CWD}}');
-    getRootPath();
+    getRootPath('{{PARENT_URL}}');
   });
 
   test('exports a function called getRootPath', () => {
     expect(getRootPath).toBeInstanceOf(Function);
   });
 
-  test('gets current working directory', () => {
-    expect(process.cwd).toHaveBeenCalled();
-  });
-
   test('parses the current working directory', () => {
-    expect(path.parse).toHaveBeenCalledWith('{{CWD}}');
+    expect(path.parse).toHaveBeenCalledWith('{{PARENT_URL}}');
   });
 
   test('returns root property', () => {
-    const root = getRootPath();
+    const root = getRootPath('{{PARENT_URL}}');
     expect(root).toBe('{{ROOT}}');
   });
 });

@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --roots src",
+    "test:scenarios": "jest --roots test/scenarios",
     "lint": "eslint src/ index.ts"
   },
+  "dependencies": {
+    "@glacier/types": "*"
+  },
   "devDependencies": {
-    "@glacier/typescript": "*",
     "@glacier/eslint-config": "*",
-    "@glacier/jest": "*"
+    "@glacier/jest": "*",
+    "@glacier/typescript": "*",
+    "@glacier/vfs": "*"
   }
 }

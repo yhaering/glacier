@@ -1,11 +1,6 @@
-import fs from 'fs';
+import type { VirtualFileSystem } from '@glacier/vfs';
 
-/**
- * Returns true if the given path is a directory or
- * false if it does not exist or is not a directory.
- * @param dirPath The directory path to check.
- */
-export function isDirectory(dirPath: string): boolean {
+export function isDirectory(dirPath: string, fs: VirtualFileSystem): boolean {
   if (!fs.existsSync(dirPath)) {
     return false;
   }
