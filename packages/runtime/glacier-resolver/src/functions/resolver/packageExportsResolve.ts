@@ -1,4 +1,4 @@
-import type { Exports, PackageJson } from '@glacier/types';
+import type { Exports } from '@glacier/types';
 import { packageImportsExportsResolve } from './packageImportsExportsResolve';
 import { packageTargetResolve } from './packageTargetResolve';
 import type { ResolveConfig } from '../../types/ResolveConfig';

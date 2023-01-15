@@ -34,9 +34,17 @@ export const defaultVolume = createVFS({
   },
   '/node_modules/a': {
     'index.js': '',
+    'index.mjs': '',
     'test.js': '',
     'package.json': JSON.stringify({
-      main: './index.js'
+      main: './index.js',
+      module: './index.mjs'
+    })
+  },
+  '/node_modules/x': {
+    'index.mjs': '',
+    'package.json': JSON.stringify({
+      module: './index.mjs'
     })
   },
   '/node_modules/c': {

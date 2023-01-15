@@ -1,6 +1,7 @@
 {
   "extends": ["@glacier"],
   "rules": {
-    "no-prototype-builtins": "off"
+    "no-prototype-builtins": "off",
+    "no-constant-condition": "off"
   }
 }

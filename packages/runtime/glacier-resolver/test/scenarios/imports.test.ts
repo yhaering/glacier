@@ -4,8 +4,9 @@ import type { ResolveConfig } from '../../src/types/ResolveConfig';
 
 const config: ResolveConfig = {
   fs: defaultVolume,
-  conditions: ['node', 'import']
-}
+  conditions: ['node', 'import'],
+  mainFields: ['main']
+};
 describe('imports', () => {
   it('should resolve imports beginning with a #', () => {
     const resolvedPath = resolve('/src/a.ts', '#utils', config);
@@ -13,11 +14,7 @@ describe('imports', () => {
   });
 
   it('should resolve import wildcards', () => {
-    const resolvedPath = resolve(
-      '/src/a.ts',
-      '#internal/test.ts',
-      config
-    );
+    const resolvedPath = resolve('/src/a.ts', '#internal/test.ts', config);
     expect(resolvedPath).toBe('/internal/test.ts');
   });
 });

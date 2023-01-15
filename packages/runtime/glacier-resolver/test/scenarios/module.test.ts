@@ -4,13 +4,19 @@ import type { ResolveConfig } from '../../src/types/ResolveConfig';
 
 const config: ResolveConfig = {
   fs: defaultVolume,
-  conditions: ['node', 'import']
-}
+  conditions: ['node', 'import'],
+  mainFields: ['main', 'module']
+};
 
 describe('modules', () => {
   it('should resolve modules main field', () => {
     const resolvedPath = resolve('/index.js', 'a', config);
     expect(resolvedPath).toBe('/node_modules/a/index.js');
+  });
+
+  it('should resolve modules module field', () => {
+    const resolvedPath = resolve('/index.js', 'x', config);
+    expect(resolvedPath).toBe('/node_modules/x/index.mjs');
   });
 
   it('should resolve modules main field in parent directory', () => {
@@ -19,11 +25,7 @@ describe('modules', () => {
   });
 
   it('should resolve module with path and extension', () => {
-    const resolvedPath = resolve(
-      '/src/a/b/index.js',
-      'a/test.js',
-      config
-    );
+    const resolvedPath = resolve('/src/a/b/index.js', 'a/test.js', config);
     expect(resolvedPath).toBe('/node_modules/a/test.js');
   });
 

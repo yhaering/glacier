@@ -47,8 +47,12 @@ export function packageResolve(
     }
 
     if (packageSubPath === '.') {
-      if (pjson && typeof pjson.main === 'string') {
-        return path.resolve(packageURL, pjson.main);
+      if (pjson) {
+        for (const mainField of config.mainFields) {
+          if (typeof pjson[mainField] === 'string') {
+            return path.resolve(packageURL, pjson[mainField] as string);
+          }
+        }
       }
     } else {
       return path.resolve(parentURL, 'node_modules', packageSpecifier);

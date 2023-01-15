@@ -1,7 +1,9 @@
 import type { VirtualFileSystem } from '@glacier/vfs';
 
 export interface ResolveConfig {
-  fs: VirtualFileSystem
+  fs: VirtualFileSystem;
 
   conditions: string[];
+
+  mainFields: string[];
 }
