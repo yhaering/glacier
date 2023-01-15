@@ -28,6 +28,19 @@ export const defaultVolume = createVFS({
   }),
   '/index.js': '',
   '/src/a/b/index.js': '',
+  '/node_modules/dir': {
+    'package.json': JSON.stringify({
+      main: './'
+    })
+  },
+  '/node_modules/doterror': {
+    'package.json': JSON.stringify({
+      exports: {
+        '.': './index.js',
+        import: './index.js'
+      }
+    })
+  },
   '/src/node_modules/b': {
     'index.js': '',
     'package.json': JSON.stringify({ main: './index.js' })

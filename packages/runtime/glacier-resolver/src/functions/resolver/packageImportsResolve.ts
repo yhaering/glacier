@@ -8,11 +8,6 @@ export function packageImportsResolve(
   parentURL: string,
   config: ResolveConfig
 ): string {
-  // Assert: specifier begins with "#".
-  if (!specifier.startsWith('#')) {
-    throw new Error("AssertionError: specifier does not begin with '#'");
-  }
-
   // If specifier is exactly equal to "#" or starts with "#/", then
   if (specifier === '#' || specifier.startsWith('#/')) {
     // Throw an Invalid Module Specifier error.
