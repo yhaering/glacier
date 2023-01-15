@@ -6,4 +6,6 @@ export interface ResolveConfig {
   conditions: string[];
 
   mainFields: string[];
+
+  extensions: string[];
 }

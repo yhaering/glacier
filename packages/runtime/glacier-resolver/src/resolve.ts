@@ -4,6 +4,7 @@ import { isFilePath } from './functions/fs/isFilePath';
 import type { ResolveConfig } from './types/ResolveConfig';
 import { packageImportsResolve } from './functions/resolver/packageImportsResolve';
 import { packageResolve } from './functions/resolver/packageResolve';
+import { findFile } from './functions/fs/findFile';
 
 export function resolve(
   parentURL: string,
@@ -11,6 +12,9 @@ export function resolve(
   config: ResolveConfig
 ): string {
   let resolved: string;
+  if (isDirectory(parentURL, config.fs)) {
+    throw new Error('Context URL must be a file.');
+  }
   parentURL = path.dirname(parentURL);
 
   if (isFilePath(specifier)) {
@@ -36,10 +40,11 @@ export function resolve(
   }
 
   // If the file at resolved does not exist, then
-  if (!config.fs.existsSync(resolved)) {
+  const filePath = findFile(resolved, config.extensions, config.fs);
+  if (!filePath) {
     // Throw a Module Not Found error.
     throw new Error('Module Not Found');
   }
 
-  return resolved;
+  return filePath;
 }

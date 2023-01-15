@@ -5,7 +5,8 @@ import type { ResolveConfig } from '../../src/types/ResolveConfig';
 const config: ResolveConfig = {
   fs: defaultVolume,
   conditions: ['node', 'import'],
-  mainFields: ['main', 'module']
+  mainFields: ['main', 'module'],
+  extensions: ['.js', '.ts']
 };
 
 describe('modules', () => {
@@ -29,9 +30,25 @@ describe('modules', () => {
     expect(resolvedPath).toBe('/node_modules/a/test.js');
   });
 
+  it('should resolve module with path but no extension', () => {
+    const resolvedPath = resolve('/src/a/b/index.js', 'a/test', config);
+    expect(resolvedPath).toBe('/node_modules/a/test.js');
+  });
+
   it('should throw an error if module does no exist', () => {
     expect(() => {
       resolve('/src/a/b/index.js', 'XXX', config);
     }).toThrowError('Module Not Found');
+  });
+
+  it('should prefer local node_modules folder over parent', () => {
+    const resolvedPath = resolve(
+      '/node_modules/preact/index.js',
+      'react',
+      config
+    );
+    expect(resolvedPath).toBe(
+      '/node_modules/preact/node_modules/react/index.js'
+    );
   });
 });

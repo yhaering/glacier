@@ -5,7 +5,8 @@ import type { ResolveConfig } from '../../src/types/ResolveConfig';
 const config: ResolveConfig = {
   fs: defaultVolume,
   conditions: ['node', 'import'],
-  mainFields: ['main']
+  mainFields: ['main'],
+  extensions: ['.js', '.ts']
 };
 
 describe('self', () => {
