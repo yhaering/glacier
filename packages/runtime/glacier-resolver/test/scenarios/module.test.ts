@@ -35,10 +35,9 @@ describe('modules', () => {
     expect(resolvedPath).toBe('/node_modules/a/test.js');
   });
 
-  it('should throw an error if module does no exist', () => {
-    expect(() => {
-      resolve('/src/a/b/index.js', 'XXX', config);
-    }).toThrowError('Module Not Found');
+  it('should resolve module with scope', () => {
+    const resolvedPath = resolve('/index.js', '@scope/a', config);
+    expect(resolvedPath).toBe('/node_modules/@scope/a/index.js');
   });
 
   it('should prefer local node_modules folder over parent', () => {

@@ -51,4 +51,28 @@ describe('errors', () => {
       resolve('/src/a.ts', '#doesnotexist', config);
     }).toThrowError('Package Import Not Defined');
   });
+
+  it('should throw an error if package name is an empty string', () => {
+    expect(() => {
+      resolve('/src/a.ts', '', config);
+    }).toThrowError('Invalid Module Specifier');
+  });
+
+  it('should throw an error if package name contains no package name but a scope', () => {
+    expect(() => {
+      resolve('/src/a.ts', '@test', config);
+    }).toThrowError('Invalid Module Specifier');
+  });
+
+  it('should throw an error if package name starts with a %', () => {
+    expect(() => {
+      resolve('/src/a.ts', '%', config);
+    }).toThrowError('Invalid Module Specifier');
+  });
+
+  it('should throw an error if package name ends with a /', () => {
+    expect(() => {
+      resolve('/src/a.ts', 'test/', config);
+    }).toThrowError('Invalid Module Specifier');
+  });
 });

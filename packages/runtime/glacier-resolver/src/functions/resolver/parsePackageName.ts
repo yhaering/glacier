@@ -14,7 +14,9 @@ export function parsePackageName(packageSpecifier: string): ParsedPackageName {
       throw new Error('Invalid Module Specifier');
     }
 
-    packageName = packageSpecifier.split('/')[1];
+    packageName = `${packageSpecifier.split('/')[0]}/${
+      packageSpecifier.split('/')[1]
+    }`;
   }
 
   if (

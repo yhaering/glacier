@@ -19,4 +19,15 @@ describe('self', () => {
     const resolvedPath = resolve('/src/a.ts', 'self/b.ts', config);
     expect(resolvedPath).toBe('/b.ts');
   });
+
+  it('should resolve self in nested dependency', () => {
+    const resolvedPath = resolve(
+      '/node_modules/preact/node_modules/react/index.js',
+      'react',
+      config
+    );
+    expect(resolvedPath).toBe(
+      '/node_modules/preact/node_modules/react/index.js'
+    );
+  });
 });
