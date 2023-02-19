@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "workspace:all": "turbo run all",
     "prepare": "husky install",
     "lint": "lint-staged"
   },
