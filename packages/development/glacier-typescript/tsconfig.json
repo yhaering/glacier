@@ -6,7 +6,6 @@
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importsNotUsedAsValues": "error",
     "declaration": true,
     "strict": true
   },

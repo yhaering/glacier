@@ -1,16 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "workspace:all": "turbo run all",
-    "prepare": "husky install",
-    "lint": "lint-staged"
+    "workspace:ci": "turbo run ci",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.3.0",
-    "@commitlint/config-conventional": "^17.3.0",
-    "husky": "^8.0.2",
-    "prettier": "^2.8.0",
-    "turbo": "^1.6.3"
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
+    "husky": "^8.0.3",
+    "turbo": "^1.10.7"
   },
   "workspaces": [
     "packages/development/*",

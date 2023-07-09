@@ -3,24 +3,26 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist", "types"]
-    },
-    "build:watch": {
-      "outputs": ["dist", "types"]
+      "outputs": ["dist", "types", ".next"],
+      "outputMode": "errors-only"
     },
     "test": {
       "dependsOn": ["build"],
-      "outputs": ["coverage"]
+      "outputs": ["coverage"],
+      "outputMode": "errors-only"
     },
     "test:integration": {
       "dependsOn": ["build"],
-      "outputs": ["coverage"]
+      "outputs": ["coverage"],
+      "outputMode": "errors-only"
     },
     "lint": {
-      "dependsOn": ["build"]
+      "dependsOn": ["build"],
+      "outputMode": "errors-only"
     },
-    "all": {
-      "dependsOn": ["build", "test", "test:integration", "lint"]
+    "ci": {
+      "dependsOn": ["build", "test", "test:integration", "lint"],
+      "outputMode": "errors-only"
     }
   }
 }
