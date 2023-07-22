@@ -1,5 +1,5 @@
 {
-  "name": "@glacier/vfs",
+  "name": "@glacier/fs",
   "version": "1.0.0",
   "private": true,
   "scripts": {

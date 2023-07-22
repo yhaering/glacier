@@ -4,5 +4,5 @@
     "outDir": "dist",
     "declarationDir": "types"
   },
-  "include": ["index.ts", "src/**/*.ts"]
+  "include": ["index.ts", "test/**/*.ts", "src/**/*.ts"]
 }
