@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/packages/development/glacier-vfs/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/packages/runtime/glacier-resolver/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/runtime/glacier-fs/test" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

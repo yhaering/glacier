@@ -13,6 +13,7 @@ export function buildTypescript(): Linter.ConfigOverride<Linter.RulesRecord> {
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint'],
     rules: {
+      '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/consistent-type-imports': [
         'error',
         {
@@ -20,5 +21,5 @@ export function buildTypescript(): Linter.ConfigOverride<Linter.RulesRecord> {
         }
       ]
     }
-  }
+  };
 }

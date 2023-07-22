@@ -1,0 +1,11 @@
+export type { FileSystem } from './src/interfaces/FileSystem';
+export type { CreateDirFn } from './src/interfaces/functions/CreateDirFn';
+export type { ExistsFn } from './src/interfaces/functions/ExistsFn';
+export type { IsDirectoryFn } from './src/interfaces/functions/IsDirectoryFn';
+export type { IsFileFn } from './src/interfaces/functions/IsFileFn';
+export type { ReadDirFn } from './src/interfaces/functions/ReadDirFn';
+export type { ReadFileFn } from './src/interfaces/functions/ReadFileFn';
+export type { RemoveFn } from './src/interfaces/functions/RemoveFn';
+export type { WriteFileFn } from './src/interfaces/functions/WriteFileFn';
+export { makeNativeFs } from './src/adapters/native/makeNativeFs';
+export { MemoryFileSystem } from './src/adapters/memory/MemoryFileSystem';
