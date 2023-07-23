@@ -1,10 +1,11 @@
 import type { FileSystem } from '../../interfaces/FileSystem';
-import type { Directory } from './interfaces/Directory';
-import type { File } from './interfaces/File';
+import type { MemoryDirectory } from './interfaces/MemoryDirectory';
+import type { MemoryFile } from './interfaces/MemoryFile';
 import type { JsonVolume } from './interfaces/JsonVolume';
+import type { MemoryVolume } from './interfaces/MemoryVolume';
 
 export class MemoryFileSystem implements FileSystem {
-  private readonly volume: Directory;
+  private readonly volume: MemoryVolume;
 
   public constructor(volume?: JsonVolume) {
     if (volume) {
@@ -19,10 +20,10 @@ export class MemoryFileSystem implements FileSystem {
 
   private toVolume(
     volume: JsonVolume,
-    parent?: Directory,
+    parent?: MemoryDirectory,
     name?: string
-  ): Directory {
-    const rootDirectory: Directory = {
+  ): MemoryVolume {
+    const rootDirectory: MemoryDirectory = {
       type: 'DIRECTORY',
       parent,
       name,
@@ -53,14 +54,14 @@ export class MemoryFileSystem implements FileSystem {
       return;
     }
     const segments = path.split('/').slice(1);
-    let pointer: Directory = this.volume;
+    let pointer: MemoryDirectory = this.volume;
 
     for (let i = 0; i < segments.length; i++) {
       const segment = segments[i];
       const entry = pointer.entries.get(segment);
 
       if (typeof entry === 'undefined') {
-        const directory: Directory = {
+        const directory: MemoryDirectory = {
           type: 'DIRECTORY',
           name: segment,
           parent: pointer,
@@ -78,12 +79,12 @@ export class MemoryFileSystem implements FileSystem {
     }
   }
 
-  private getEntry(path: string): File | Directory | undefined {
+  private getEntry(path: string): MemoryFile | MemoryDirectory | undefined {
     if (path === '/') {
       return this.volume;
     }
     const segments = path.split('/').slice(1);
-    let pointer: Directory = this.volume;
+    let pointer: MemoryDirectory = this.volume;
 
     for (let i = 0; i < segments.length; i++) {
       const isLast = i === segments.length - 1;
@@ -171,7 +172,7 @@ export class MemoryFileSystem implements FileSystem {
     }
     const segments = path.split('/');
     this.createDir(segments.slice(0, -1).join('/'));
-    const directory = this.getEntry(path) as Directory;
+    const directory = this.getEntry(path) as MemoryDirectory;
     const fileName = segments.pop() as string;
     directory.entries.set(fileName, {
       type: 'FILE',

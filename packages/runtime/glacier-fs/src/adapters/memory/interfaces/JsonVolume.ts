@@ -1,1 +1,3 @@
-export type JsonVolume = { [k: string]: string | JsonVolume };
+import type { JsonDirectory } from './JsonDirectory';
+
+export type JsonVolume = JsonDirectory;
