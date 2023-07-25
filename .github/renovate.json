@@ -6,7 +6,8 @@
     {
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "None breaking dependencies",
-      "groupSlug": "none-breaking"
+      "groupSlug": "none-breaking",
+      "automerge": true
     },
     {
       "matchUpdateTypes": ["major"],

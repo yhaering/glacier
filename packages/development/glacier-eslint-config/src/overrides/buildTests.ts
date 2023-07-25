@@ -9,6 +9,7 @@ export function buildTests(): Linter.ConfigOverride<Linter.RulesRecord> {
       'jest/globals': true
     },
     rules: {
+      'max-lines': 'off',
       '@typescript-eslint/unbound-method': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unsafe-argument': 'off',

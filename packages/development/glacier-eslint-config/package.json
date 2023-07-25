@@ -8,10 +8,10 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@types/eslint": "8.44.0",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
-    "eslint": "^8.44.0",
+    "@types/eslint": "8.44.1",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-jest-formatting": "^3.1.0",
