@@ -1,7 +1,7 @@
 import { makeRemoveFn } from './makeRemoveFn';
-import fs from 'fs';
+import fs from 'node:fs';
 
-jest.mock('fs');
+jest.mock('node:fs');
 
 function run() {
   const fn = makeRemoveFn();

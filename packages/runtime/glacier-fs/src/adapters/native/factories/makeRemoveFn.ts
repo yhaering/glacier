@@ -1,5 +1,5 @@
 import type { RemoveFn } from '../../../interfaces/functions/RemoveFn';
-import fs from 'fs';
+import fs from 'node:fs';
 
 export function makeRemoveFn(): RemoveFn {
   return (path) => {

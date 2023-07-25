@@ -1,7 +1,7 @@
 import { makeExistsFn } from './makeExistsFn';
-import fs from 'fs';
+import fs from 'node:fs';
 
-jest.mock('fs');
+jest.mock('node:fs');
 
 function run() {
   jest.spyOn(fs, 'existsSync').mockReturnValue('{{EXISTS}}' as any);

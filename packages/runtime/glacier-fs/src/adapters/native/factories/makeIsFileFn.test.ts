@@ -1,7 +1,7 @@
 import { makeIsFileFn } from './makeIsFileFn';
-import fs from 'fs';
+import fs from 'node:fs';
 
-jest.mock('fs');
+jest.mock('node:fs');
 
 function run() {
   jest.spyOn(fs, 'statSync').mockReturnValue({

@@ -1,7 +1,5 @@
-import type { MemoryFile } from './MemoryFile';
-import type { MemoryDirectory } from './MemoryDirectory';
+import type { MemoryDirectoryLike } from './MemoryDirectoryLike';
 
-export interface MemoryVolume {
+export interface MemoryVolume extends MemoryDirectoryLike {
   type: 'VOLUME';
-  entries: Map<string, MemoryFile | MemoryDirectory>;
 }

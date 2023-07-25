@@ -2,7 +2,12 @@ import type { Linter } from 'eslint';
 
 export function buildTests(): Linter.ConfigOverride<Linter.RulesRecord> {
   return {
-    files: ['**/*.test.ts'],
+    files: ['**/*.test.*'],
+    plugins: ['jest'],
+    extends: ['plugin:jest/recommended', 'plugin:jest-formatting/recommended'],
+    env: {
+      'jest/globals': true
+    },
     rules: {
       '@typescript-eslint/unbound-method': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
@@ -12,5 +17,5 @@ export function buildTests(): Linter.ConfigOverride<Linter.RulesRecord> {
       '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/no-empty-function': 'off'
     }
-  }
+  };
 }

@@ -1,7 +1,7 @@
 import { makeReadFileFn } from './makeReadFileFn';
-import fs from 'fs';
+import fs from 'node:fs';
 
-jest.mock('fs');
+jest.mock('node:fs');
 
 function run() {
   jest.spyOn(fs, 'readFileSync').mockReturnValue('{{BUFFER}}' as any);

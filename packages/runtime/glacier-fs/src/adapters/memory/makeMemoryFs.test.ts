@@ -8,6 +8,12 @@ import { makeReadDirFn } from './factories/makeReadDirFn';
 import { makeReadFileFn } from './factories/makeReadFileFn';
 import { makeRemoveFn } from './factories/makeRemoveFn';
 import { makeToJsonFn } from './factories/makeToJsonFn';
+import { createMemoryVolume } from './functions/createMemoryVolume';
+import { fakeJsonVolume } from '../../../test/fakes/fakeJsonVolume';
+
+jest.mock('./functions/createMemoryVolume', () => ({
+  createMemoryVolume: jest.fn().mockReturnValue('{{MEMORY_VOLUME}}')
+}));
 jest.mock('./factories/makeToJsonFn', () => ({
   makeToJsonFn: jest.fn().mockReturnValue('{{makeToJsonFn}}')
 }));
@@ -41,6 +47,12 @@ function run() {
   return { returnValue };
 }
 
+function runWithVolume() {
+  const volume = fakeJsonVolume();
+  const returnValue = makeMemoryFs(volume);
+  return { returnValue };
+}
+
 describe('makeMemoryFs', () => {
   beforeEach(run);
 
@@ -48,16 +60,21 @@ describe('makeMemoryFs', () => {
     expect(makeMemoryFs).toBeInstanceOf(Function);
   });
 
+  test('calls createMemoryVolume', () => {
+    expect(createMemoryVolume).toHaveBeenCalledWith(undefined);
+  });
+
   test('calls factory functions', () => {
-    expect(makeToJsonFn).toHaveBeenCalledWith();
-    expect(makeWriteFileFn).toHaveBeenCalledWith();
-    expect(makeCreateDirFn).toHaveBeenCalledWith();
-    expect(makeExistsFn).toHaveBeenCalledWith();
-    expect(makeIsDirectoryFn).toHaveBeenCalledWith();
-    expect(makeIsFileFn).toHaveBeenCalledWith();
-    expect(makeReadDirFn).toHaveBeenCalledWith();
-    expect(makeReadFileFn).toHaveBeenCalledWith();
-    expect(makeRemoveFn).toHaveBeenCalledWith();
+    const memoryVolume = createMemoryVolume();
+    expect(makeToJsonFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeWriteFileFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeCreateDirFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeExistsFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeIsDirectoryFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeIsFileFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeReadDirFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeReadFileFn).toHaveBeenCalledWith(memoryVolume);
+    expect(makeRemoveFn).toHaveBeenCalledWith(memoryVolume);
   });
 
   test('returns a FileSystem', () => {
@@ -72,6 +89,15 @@ describe('makeMemoryFs', () => {
       readFile: '{{makeReadFileFn}}',
       remove: '{{makeRemoveFn}}',
       writeFile: '{{makeWriteFileFn}}'
+    });
+  });
+
+  describe('if volume is defined', () => {
+    beforeEach(runWithVolume);
+
+    test('calls createMemoryVolume', () => {
+      const jsonVolume = fakeJsonVolume();
+      expect(createMemoryVolume).toHaveBeenCalledWith(jsonVolume);
     });
   });
 });

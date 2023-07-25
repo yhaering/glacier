@@ -1,5 +1,4 @@
 import { makeIsFileFn } from './makeIsFileFn';
-import fs from 'fs';
 
 function run() {
   const fn = makeIsFileFn();

@@ -1,5 +1,5 @@
 import type { IsDirectoryFn } from '../../../interfaces/functions/IsDirectoryFn';
-import fs from 'fs';
+import fs from 'node:fs';
 
 export function makeIsFileFn(): IsDirectoryFn {
   return (path) => {

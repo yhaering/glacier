@@ -1,5 +1,5 @@
 import type { ReadDirFn } from '../../../interfaces/functions/ReadDirFn';
-import fs from 'fs';
+import fs from 'node:fs';
 
 export function makeReadDirFn(): ReadDirFn {
   return (path) => {

@@ -1,5 +1,4 @@
 import { makeReadDirFn } from './makeReadDirFn';
-import fs from 'fs';
 
 function run() {
   const fn = makeReadDirFn();
