@@ -3,3 +3,9 @@ exclude_patterns:
   - "**/node_modules/"
   - "**/*.test.ts"
   - "packages/*/*/test/"
+checks:
+  file-lines:
+    config:
+      threshold: 30
+  similar-code:
+    enabled: false
