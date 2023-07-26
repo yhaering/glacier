@@ -21,7 +21,8 @@ export function buildJavascript(): Linter.ConfigOverride<Linter.RulesRecord> {
       'max-lines': ['error', 40],
       'unicorn/no-array-reduce': 'off',
       'unicorn/prevent-abbreviations': 'off',
-      'unicorn/filename-case': 'off'
+      'unicorn/filename-case': 'off',
+      'sonarjs/cognitive-complexity': ['error', 5]
     }
   };
 }
