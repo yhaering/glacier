@@ -1,20 +1,21 @@
 import type { WriteFileFn } from '../../../interfaces/functions/WriteFileFn';
 import type { MemoryVolume } from '../interfaces/MemoryVolume';
-import type { MemoryDirectory } from '../interfaces/MemoryDirectory';
 import { getEntry } from '../functions/getEntry';
 import { makeCreateDirFn } from './makeCreateDirFn';
-import { assertNotRootPath } from '../assertions/assertNotRootPath';
+import { assertEntryPath } from '../assertions/assertEntryPath';
 import { createMemoryFile } from '../functions/createMemoryFile';
+import { parse } from 'node:path';
+import { assertMemoryDirectoryLike } from '../assertions/assertMemoryDirectoryLike';
 
 export function makeWriteFileFn(volume: MemoryVolume): WriteFileFn {
   const createDir = makeCreateDirFn(volume);
   return (path, content) => {
-    assertNotRootPath(path);
-    const segments = path.split('/');
-    createDir(segments.slice(0, -1).join('/'));
-    const directory = getEntry(volume, path) as MemoryDirectory;
-    const fileName = segments.pop() as string;
-    const memoryFile = createMemoryFile(fileName, content);
-    directory.entries.set(fileName, memoryFile);
+    assertEntryPath(path);
+    const { dir, base } = parse(path);
+    createDir(dir);
+    const directory = getEntry(volume, dir);
+    assertMemoryDirectoryLike(dir, directory);
+    const memoryFile = createMemoryFile(base, content);
+    directory.entries.set(base, memoryFile);
   };
 }

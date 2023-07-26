@@ -3,7 +3,7 @@ import { assertEntryExists } from './assertEntryExists';
 import type { MemoryFile } from '../interfaces/MemoryFile';
 import type { MemoryDirectory } from '../interfaces/MemoryDirectory';
 
-export function assertNotMemoryVolume(
+export function assertDeletableEntry(
   path: string,
   entry?: MemoryEntry
 ): asserts entry is MemoryFile | MemoryDirectory {

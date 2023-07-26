@@ -1,7 +1,9 @@
 import { makeToJsonFn } from './makeToJsonFn';
+import { fakeMemoryVolume } from '../../../../test/fakes/fakeMemoryVolume';
 
 function run() {
-  const fn = makeToJsonFn();
+  const volume = fakeMemoryVolume();
+  const fn = makeToJsonFn(volume);
   const returnValue = fn();
   return { fn, returnValue };
 }
@@ -16,5 +18,16 @@ describe('makeToJsonFn', () => {
   test('creates a new function', () => {
     const { fn } = run();
     expect(fn).toBeInstanceOf(Function);
+  });
+
+  test('returns json representation', () => {
+    const { returnValue } = run();
+    expect(returnValue).toEqual({
+      users: {
+        home: {
+          'index.txt': 'Hello World'
+        }
+      }
+    });
   });
 });

@@ -1,10 +1,12 @@
 import { makeCreateDirFn } from './makeCreateDirFn';
 import { fakeEmptyMemoryVolume } from '../../../../test/fakes/fakeEmptyMemoryVolume';
-import { assertNotRootPath } from '../assertions/assertNotRootPath';
 import { createMemoryDirectory } from '../functions/createMemoryDirectory';
+import { fakeMemoryVolume } from '../../../../test/fakes/fakeMemoryVolume';
+import { assertMemoryDirectoryLike } from '../assertions/assertMemoryDirectoryLike';
+import type { MemoryDirectory } from '../interfaces/MemoryDirectory';
 
-jest.mock('../assertions/assertNotRootPath', () => ({
-  assertNotRootPath: jest.fn()
+jest.mock('../assertions/assertMemoryDirectoryLike', () => ({
+  assertMemoryDirectoryLike: jest.fn()
 }));
 
 jest.mock('../functions/createMemoryDirectory', () => ({
@@ -24,6 +26,13 @@ function run(path: string = '/users/jest') {
   return { fn, volume };
 }
 
+function runWithExistingDirectory() {
+  const volume = fakeMemoryVolume();
+  const fn = makeCreateDirFn(volume);
+  fn('/users/home');
+  return { fn, volume };
+}
+
 describe('makeCreateDirFn', () => {
   beforeEach(run);
 
@@ -34,10 +43,6 @@ describe('makeCreateDirFn', () => {
   test('creates a new function', () => {
     const { fn } = run();
     expect(fn).toBeInstanceOf(Function);
-  });
-
-  test('calls assertNotRootPath', () => {
-    expect(assertNotRootPath).toHaveBeenCalledWith('/users/jest');
   });
 
   test('calls createMemoryDirectory', () => {
@@ -68,6 +73,21 @@ describe('makeCreateDirFn', () => {
           }
         ]
       ])
+    });
+  });
+
+  describe('if folder already exists', () => {
+    beforeEach(runWithExistingDirectory);
+
+    test('calls assertMemoryDirectoryLike', () => {
+      const volume = fakeMemoryVolume();
+      const users = volume.entries.get('users') as MemoryDirectory;
+      const home = users.entries.get('home');
+      expect(assertMemoryDirectoryLike).toHaveBeenCalledWith('/users', users);
+      expect(assertMemoryDirectoryLike).toHaveBeenCalledWith(
+        '/users/home',
+        home
+      );
     });
   });
 });

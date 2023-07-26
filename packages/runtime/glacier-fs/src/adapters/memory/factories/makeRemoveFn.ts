@@ -2,19 +2,16 @@ import type { RemoveFn } from '../../../interfaces/functions/RemoveFn';
 import type { MemoryVolume } from '../interfaces/MemoryVolume';
 import { getEntry } from '../functions/getEntry';
 import { join } from 'node:path';
-import type { MemoryDirectoryLike } from '../interfaces/MemoryDirectoryLike';
-import { assertNotRootPath } from '../assertions/assertNotRootPath';
-import { assertNotMemoryVolume } from '../assertions/assertNotMemoryVolume';
+import { assertDeletableEntry } from '../assertions/assertDeletableEntry';
+import { assertMemoryDirectoryLike } from '../assertions/assertMemoryDirectoryLike';
 
 export function makeRemoveFn(volume: MemoryVolume): RemoveFn {
   return (path) => {
-    assertNotRootPath(path);
     const entry = getEntry(volume, path);
-    assertNotMemoryVolume(path, entry);
-    const parentEntry = getEntry(
-      volume,
-      join(path, '../')
-    ) as MemoryDirectoryLike;
+    assertDeletableEntry(path, entry);
+    const parentPath = join(path, '../');
+    const parentEntry = getEntry(volume, parentPath);
+    assertMemoryDirectoryLike(parentPath, parentEntry);
     parentEntry.entries.delete(entry.name);
   };
 }
