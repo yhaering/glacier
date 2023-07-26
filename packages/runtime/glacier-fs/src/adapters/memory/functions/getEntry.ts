@@ -10,6 +10,9 @@ export function getEntry(
   if (path === '/') {
     return volume;
   }
+  if (path.endsWith('/')) {
+    path = path.slice(0, -1);
+  }
   const segments = path.split('/').slice(1);
   let pointer: MemoryDirectoryLike = volume;
 

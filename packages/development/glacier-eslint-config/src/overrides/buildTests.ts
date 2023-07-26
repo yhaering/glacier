@@ -10,6 +10,7 @@ export function buildTests(): Linter.ConfigOverride<Linter.RulesRecord> {
     },
     rules: {
       'max-lines': 'off',
+      'sonarjs/no-duplicate-string': 'off',
       '@typescript-eslint/unbound-method': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-unsafe-argument': 'off',

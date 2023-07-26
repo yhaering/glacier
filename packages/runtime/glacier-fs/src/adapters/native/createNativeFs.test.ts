@@ -1,4 +1,4 @@
-import { makeNativeFs } from './makeNativeFs';
+import { createNativeFs } from './createNativeFs';
 import { makeWriteFileFn } from './factories/makeWriteFileFn';
 import { makeCreateDirFn } from './factories/makeCreateDirFn';
 import { makeExistsFn } from './factories/makeExistsFn';
@@ -34,15 +34,15 @@ jest.mock('./factories/makeRemoveFn', () => ({
 }));
 
 function run() {
-  const returnValue = makeNativeFs();
+  const returnValue = createNativeFs();
   return { returnValue };
 }
 
-describe('makeNativeFs', () => {
+describe('createNativeFs', () => {
   beforeEach(run);
 
-  test('exports a function called makeNativeFs', () => {
-    expect(makeNativeFs).toBeInstanceOf(Function);
+  test('exports a function called createNativeFs', () => {
+    expect(createNativeFs).toBeInstanceOf(Function);
   });
 
   test('calls factory functions', () => {

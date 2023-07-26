@@ -11,7 +11,7 @@ import { makeWriteFileFn } from './factories/makeWriteFileFn';
 import type { JsonVolume } from './interfaces/JsonVolume';
 import { createMemoryVolume } from './functions/createMemoryVolume';
 
-export function makeMemoryFs(volume?: JsonVolume): MemoryFileSystem {
+export function createMemoryFs(volume?: JsonVolume): MemoryFileSystem {
   const memoryVolume = createMemoryVolume(volume);
   return {
     toJson: makeToJsonFn(memoryVolume),

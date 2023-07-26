@@ -1,4 +1,4 @@
-import { makeMemoryFs } from './makeMemoryFs';
+import { createMemoryFs } from './createMemoryFs';
 import { makeWriteFileFn } from './factories/makeWriteFileFn';
 import { makeCreateDirFn } from './factories/makeCreateDirFn';
 import { makeExistsFn } from './factories/makeExistsFn';
@@ -43,21 +43,21 @@ jest.mock('./factories/makeRemoveFn', () => ({
 }));
 
 function run() {
-  const returnValue = makeMemoryFs();
+  const returnValue = createMemoryFs();
   return { returnValue };
 }
 
 function runWithVolume() {
   const volume = fakeJsonVolume();
-  const returnValue = makeMemoryFs(volume);
+  const returnValue = createMemoryFs(volume);
   return { returnValue };
 }
 
-describe('makeMemoryFs', () => {
+describe('createMemoryFs', () => {
   beforeEach(run);
 
-  test('exports a function called makeMemoryFs', () => {
-    expect(makeMemoryFs).toBeInstanceOf(Function);
+  test('exports a function called createMemoryFs', () => {
+    expect(createMemoryFs).toBeInstanceOf(Function);
   });
 
   test('calls createMemoryVolume', () => {

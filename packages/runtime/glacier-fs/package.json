@@ -2,9 +2,12 @@
   "name": "@glacier/fs",
   "version": "1.0.0",
   "private": true,
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "jest",
+    "build": "tsc -p ./tsconfig.build.json",
+    "test": "jest --roots src/",
+    "test:scenarios": "jest --roots test/scenarios",
     "lint": "eslint index.ts src/",
     "lint:fix": "eslint index.ts src/ --fix"
   },
@@ -12,5 +15,9 @@
     "@glacier/eslint-config": "*",
     "@glacier/typescript": "*",
     "@glacier/jest": "*"
-  }
+  },
+  "files": [
+    "dist",
+    "types"
+  ]
 }

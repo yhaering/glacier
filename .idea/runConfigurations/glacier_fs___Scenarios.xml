@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="glacier-fs | Scenarios" type="JavaScriptTestRunnerJest">
+    <config-file value="$PROJECT_DIR$/packages/runtime/glacier-fs/jest.config.json" />
+    <node-interpreter value="project" />
+    <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+    <working-dir value="$PROJECT_DIR$" />
+    <jest-options value="--watchAll --coverage --roots test/scenarios" />
+    <envs />
+    <scope-kind value="ALL" />
+    <method v="2" />
+  </configuration>
+</component>

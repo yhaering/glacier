@@ -66,6 +66,35 @@ describe('getEntry', () => {
     });
   });
 
+  describe('if path equals /users/', () => {
+    test('returns MemoryDirectory', () => {
+      const { returnValue } = run('/users/');
+      expect(returnValue).toEqual({
+        type: 'DIRECTORY',
+        name: 'users',
+        entries: new Map([
+          [
+            'home',
+            {
+              type: 'DIRECTORY',
+              name: 'home',
+              entries: new Map([
+                [
+                  'index.txt',
+                  {
+                    type: 'FILE',
+                    name: 'index.txt',
+                    content: Buffer.from('Hello World')
+                  }
+                ]
+              ])
+            }
+          ]
+        ])
+      });
+    });
+  });
+
   describe('if path equals /', () => {
     test('returns memory volume', () => {
       const { returnValue } = run('/');

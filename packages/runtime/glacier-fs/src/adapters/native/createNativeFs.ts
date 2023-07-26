@@ -8,7 +8,7 @@ import { makeReadDirFn } from './factories/makeReadDirFn';
 import { makeReadFileFn } from './factories/makeReadFileFn';
 import { makeRemoveFn } from './factories/makeRemoveFn';
 
-export function makeNativeFs(): FileSystem {
+export function createNativeFs(): FileSystem {
   return {
     writeFile: makeWriteFileFn(),
     createDir: makeCreateDirFn(),
