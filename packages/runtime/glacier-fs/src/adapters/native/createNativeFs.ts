@@ -7,6 +7,10 @@ import { makeIsFileFn } from './factories/makeIsFileFn';
 import { makeReadDirFn } from './factories/makeReadDirFn';
 import { makeReadFileFn } from './factories/makeReadFileFn';
 import { makeRemoveFn } from './factories/makeRemoveFn';
+import { makeResolveFn } from './factories/makeResolveFn';
+import { makeRelativeFn } from './factories/makeRelativeFn';
+import { makeParseFn } from './factories/makeParseFn';
+import { makeFormatFn } from './factories/makeFormatFn';
 
 export function createNativeFs(): FileSystem {
   return {
@@ -17,6 +21,10 @@ export function createNativeFs(): FileSystem {
     isFile: makeIsFileFn(),
     readDir: makeReadDirFn(),
     readFile: makeReadFileFn(),
-    remove: makeRemoveFn()
+    remove: makeRemoveFn(),
+    resolve: makeResolveFn(),
+    relative: makeRelativeFn(),
+    parse: makeParseFn(),
+    format: makeFormatFn()
   };
 }

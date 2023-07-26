@@ -7,6 +7,10 @@ import { makeIsFileFn } from './factories/makeIsFileFn';
 import { makeReadDirFn } from './factories/makeReadDirFn';
 import { makeReadFileFn } from './factories/makeReadFileFn';
 import { makeRemoveFn } from './factories/makeRemoveFn';
+import { makeResolveFn } from './factories/makeResolveFn';
+import { makeRelativeFn } from './factories/makeRelativeFn';
+import { makeParseFn } from './factories/makeParseFn';
+import { makeFormatFn } from './factories/makeFormatFn';
 
 jest.mock('./factories/makeWriteFileFn', () => ({
   makeWriteFileFn: jest.fn().mockReturnValue('{{makeWriteFileFn}}')
@@ -32,6 +36,18 @@ jest.mock('./factories/makeReadFileFn', () => ({
 jest.mock('./factories/makeRemoveFn', () => ({
   makeRemoveFn: jest.fn().mockReturnValue('{{makeRemoveFn}}')
 }));
+jest.mock('./factories/makeResolveFn', () => ({
+  makeResolveFn: jest.fn().mockReturnValue('{{makeResolveFn}}')
+}));
+jest.mock('./factories/makeRelativeFn', () => ({
+  makeRelativeFn: jest.fn().mockReturnValue('{{makeRelativeFn}}')
+}));
+jest.mock('./factories/makeParseFn', () => ({
+  makeParseFn: jest.fn().mockReturnValue('{{makeParseFn}}')
+}));
+jest.mock('./factories/makeFormatFn', () => ({
+  makeFormatFn: jest.fn().mockReturnValue('{{makeFormatFn}}')
+}));
 
 function run() {
   const returnValue = createNativeFs();
@@ -54,6 +70,10 @@ describe('createNativeFs', () => {
     expect(makeReadDirFn).toHaveBeenCalledWith();
     expect(makeReadFileFn).toHaveBeenCalledWith();
     expect(makeRemoveFn).toHaveBeenCalledWith();
+    expect(makeResolveFn).toHaveBeenCalledWith();
+    expect(makeRelativeFn).toHaveBeenCalledWith();
+    expect(makeParseFn).toHaveBeenCalledWith();
+    expect(makeFormatFn).toHaveBeenCalledWith();
   });
 
   test('returns a FileSystem', () => {
@@ -66,7 +86,11 @@ describe('createNativeFs', () => {
       readDir: '{{makeReadDirFn}}',
       readFile: '{{makeReadFileFn}}',
       remove: '{{makeRemoveFn}}',
-      writeFile: '{{makeWriteFileFn}}'
+      writeFile: '{{makeWriteFileFn}}',
+      resolve: '{{makeResolveFn}}',
+      relative: '{{makeRelativeFn}}',
+      parse: '{{makeParseFn}}',
+      format: '{{makeFormatFn}}'
     });
   });
 });
