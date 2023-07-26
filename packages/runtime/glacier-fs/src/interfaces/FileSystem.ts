@@ -6,6 +6,10 @@ import type { RemoveFn } from './functions/RemoveFn';
 import type { ExistsFn } from './functions/ExistsFn';
 import type { IsFileFn } from './functions/IsFileFn';
 import type { IsDirectoryFn } from './functions/IsDirectoryFn';
+import type { ResolveFn } from './functions/ResolveFn';
+import type { RelativeFn } from './functions/RelativeFn';
+import type { ParseFn } from './functions/ParseFn';
+import type { FormatFn } from './functions/FormatFn';
 
 export interface FileSystem {
   isDirectory: IsDirectoryFn;
@@ -16,4 +20,8 @@ export interface FileSystem {
   readFile: ReadFileFn;
   readDir: ReadDirFn;
   createDir: CreateDirFn;
+  resolve: ResolveFn;
+  relative: RelativeFn;
+  parse: ParseFn;
+  format: FormatFn;
 }
