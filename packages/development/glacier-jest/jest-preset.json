@@ -3,7 +3,6 @@
     "^.+\\.(t|j)sx?$": ["@swc/jest"]
   },
   "coverageDirectory": "coverage",
-  "collectCoverage": true,
-  "coverageReporters": ["clover", "json", "lcov", "text", "html"],
+  "coverageReporters": [["lcov", { "projectRoot": "../../../" }], "html"],
   "collectCoverageFrom": ["src/**/*.ts"]
 }
