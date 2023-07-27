@@ -2,8 +2,14 @@ import { makeRemoveFn } from './makeRemoveFn';
 import { fakeMemoryVolume } from '../../../../test/fakes/fakeMemoryVolume';
 import { getEntry } from '../functions/getEntry';
 import { assertDeletableEntry } from '../assertions/assertDeletableEntry';
-import { join } from 'node:path';
 import { assertMemoryDirectoryLike } from '../assertions/assertMemoryDirectoryLike';
+import { makeResolveFn } from './makeResolveFn';
+
+jest.mock('./makeResolveFn', () => ({
+  makeResolveFn: jest
+    .fn()
+    .mockReturnValue(jest.fn().mockReturnValue('{{PARENT_PATH}}'))
+}));
 
 jest.mock('../functions/getEntry', () => ({
   getEntry: jest.fn()
@@ -11,10 +17,6 @@ jest.mock('../functions/getEntry', () => ({
 
 jest.mock('../assertions/assertDeletableEntry', () => ({
   assertDeletableEntry: jest.fn()
-}));
-
-jest.mock('node:path', () => ({
-  join: jest.fn().mockReturnValue('{{PARENT_PATH}}')
 }));
 
 jest.mock('../assertions/assertMemoryDirectoryLike', () => ({
@@ -47,6 +49,10 @@ describe('makeRemoveFn', () => {
     expect(makeRemoveFn).toBeInstanceOf(Function);
   });
 
+  test('calls makeResolveFn', () => {
+    expect(makeResolveFn).toHaveBeenCalledWith();
+  });
+
   test('creates a new function', () => {
     const { fn } = run();
     expect(fn).toBeInstanceOf(Function);
@@ -64,8 +70,9 @@ describe('makeRemoveFn', () => {
     );
   });
 
-  test('calls join', () => {
-    expect(join).toHaveBeenCalledWith('{{PATH}}', '../');
+  test('calls resolve', () => {
+    const resolve = makeResolveFn();
+    expect(resolve).toHaveBeenCalledWith('{{PATH}}', '../');
   });
 
   test('calls getEntry for parent', () => {

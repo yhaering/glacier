@@ -2,11 +2,20 @@ import { makeWriteFileFn } from './makeWriteFileFn';
 import { fakeMemoryVolume } from '../../../../test/fakes/fakeMemoryVolume';
 import { makeCreateDirFn } from './makeCreateDirFn';
 import { assertEntryPath } from '../assertions/assertEntryPath';
-import path from 'node:path';
 import { getEntry } from '../functions/getEntry';
 import { assertMemoryDirectoryLike } from '../assertions/assertMemoryDirectoryLike';
 import { createMemoryFile } from '../functions/createMemoryFile';
 import type { MemoryDirectory } from '../interfaces/MemoryDirectory';
+import { makeParseFn } from './makeParseFn';
+
+jest.mock('./makeParseFn', () => ({
+  makeParseFn: jest.fn().mockReturnValue(
+    jest.fn().mockReturnValue({
+      dir: '{{DIR}}',
+      base: '{{BASE}}'
+    })
+  )
+}));
 
 jest.mock('../functions/createMemoryFile', () => ({
   createMemoryFile: jest.fn().mockReturnValue('{{MEMORY_FILE}}')
@@ -31,13 +40,6 @@ jest.mock('../assertions/assertEntryPath', () => ({
   assertEntryPath: jest.fn()
 }));
 
-jest.mock('node:path', () => ({
-  parse: jest.fn().mockReturnValue({
-    dir: '{{DIR}}',
-    base: '{{BASE}}'
-  })
-}));
-
 function run() {
   const volume = fakeMemoryVolume();
   const fn = makeWriteFileFn(volume);
@@ -59,6 +61,10 @@ describe('makeWriteFileFn', () => {
     expect(makeCreateDirFn).toHaveBeenCalledWith(volume);
   });
 
+  test('calls makeParseFn', () => {
+    expect(makeParseFn).toHaveBeenCalledWith();
+  });
+
   test('creates a new function', () => {
     const { fn } = run();
     expect(fn).toBeInstanceOf(Function);
@@ -69,7 +75,8 @@ describe('makeWriteFileFn', () => {
   });
 
   test('calls path.parse', () => {
-    expect(path.parse).toHaveBeenCalledWith('{{PATH}}');
+    const parse = makeParseFn();
+    expect(parse).toHaveBeenCalledWith('{{PATH}}');
   });
 
   test('calls createDir with dir', () => {
