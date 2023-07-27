@@ -10,6 +10,10 @@ import { makeCreateDirFn } from './factories/makeCreateDirFn';
 import { makeWriteFileFn } from './factories/makeWriteFileFn';
 import type { JsonVolume } from './interfaces/JsonVolume';
 import { createMemoryVolume } from './functions/createMemoryVolume';
+import { makeFormatFn } from './factories/makeFormatFn';
+import { makeRelativeFn } from './factories/makeRelativeFn';
+import { makeResolveFn } from './factories/makeResolveFn';
+import { makeParseFn } from './factories/makeParseFn';
 
 export function createMemoryFs(volume?: JsonVolume): MemoryFileSystem {
   const memoryVolume = createMemoryVolume(volume);
@@ -22,6 +26,10 @@ export function createMemoryFs(volume?: JsonVolume): MemoryFileSystem {
     isDirectory: makeIsDirectoryFn(memoryVolume),
     exists: makeExistsFn(memoryVolume),
     createDir: makeCreateDirFn(memoryVolume),
-    writeFile: makeWriteFileFn(memoryVolume)
+    writeFile: makeWriteFileFn(memoryVolume),
+    format: makeFormatFn(),
+    relative: makeRelativeFn(),
+    resolve: makeResolveFn(),
+    parse: makeParseFn()
   };
 }
