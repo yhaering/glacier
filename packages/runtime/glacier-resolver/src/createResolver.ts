@@ -1,4 +1,4 @@
-import { ResolverConfig } from './interfaces/ResolverConfig';
+import type { ResolverConfig } from './interfaces/ResolverConfig';
 import { esmResolve } from './functions/esmResolve';
 
 export function createResolver(config: ResolverConfig) {

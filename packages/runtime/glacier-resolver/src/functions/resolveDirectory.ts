@@ -1,5 +1,5 @@
 import { findFile } from './findFile';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function resolveDirectory(
   url: string,

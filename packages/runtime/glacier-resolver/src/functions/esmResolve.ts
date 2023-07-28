@@ -4,7 +4,7 @@ import { ModuleNotFound } from '../exceptions/ModuleNotFound';
 import { packageImportsResolve } from './packageImportsResolve';
 import { packageResolve } from './packageResolve';
 import { resolveModulePath } from './resolveModulePath';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function esmResolve(
   specifier: string,

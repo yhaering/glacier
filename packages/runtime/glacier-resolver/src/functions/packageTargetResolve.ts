@@ -1,11 +1,11 @@
-import { Exports } from '../interfaces/Exports';
+import type { Exports } from '../interfaces/Exports';
 import { isValidURL } from './isValidURL';
 import { InvalidPackageTarget } from '../exceptions/InvalidPackageTarget';
-import { ExportConditions } from '../interfaces/ExportConditions';
+import type { ExportConditions } from '../interfaces/ExportConditions';
 import { resolveModulePath } from './resolveModulePath';
 import { packageResolve } from './packageResolve';
 import { FileSystem } from '@glacier/fs';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function packageTargetResolve(
   packageURL: string,

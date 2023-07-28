@@ -1,6 +1,6 @@
 import { packageTargetResolve } from './packageTargetResolve';
 import { patternKeyCompare } from './patternKeyCompare';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function packageImportsExportsResolve(
   matchKey: string,

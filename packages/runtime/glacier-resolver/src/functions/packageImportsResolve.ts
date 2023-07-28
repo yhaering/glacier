@@ -3,7 +3,7 @@ import { PackageImportNotDefined } from '../exceptions/PackageImportNotDefined';
 import { lookupPackageScope } from './lookupPackageScope';
 import { readPackageJson } from './readPackageJson';
 import { packageImportsExportsResolve } from './packageImportsExportsResolve';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function packageImportsResolve(
   specifier: string,

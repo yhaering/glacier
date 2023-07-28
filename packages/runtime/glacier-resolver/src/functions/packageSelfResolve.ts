@@ -1,7 +1,7 @@
 import { lookupPackageScope } from './lookupPackageScope';
 import { readPackageJson } from './readPackageJson';
 import { packageExportsResolve } from './packageExportsResolve';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function packageSelfResolve(
   packageName: string,

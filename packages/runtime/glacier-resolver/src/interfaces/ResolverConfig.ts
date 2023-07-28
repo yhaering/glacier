@@ -1,4 +1,4 @@
-import { FileSystem } from '@glacier/fs';
+import type { FileSystem } from '@glacier/fs';
 
 export interface ResolverConfig {
   extensions: string[];

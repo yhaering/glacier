@@ -4,7 +4,7 @@ import { packageSelfResolve } from './packageSelfResolve';
 import { readPackageJson } from './readPackageJson';
 import { resolveFields } from './resolveFields';
 import { packageExportsResolve } from './packageExportsResolve';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function packageResolve(
   packageSpecifier: string,
@@ -51,7 +51,7 @@ export function packageResolve(
 
   const { root } = fs.parse(parentURL);
   while (true) {
-    let packageURL = fs.resolve(parentURL, 'node_modules', packageName);
+    const packageURL = fs.resolve(parentURL, 'node_modules', packageName);
 
     if (!fs.exists(packageURL)) {
       if (parentURL === root) {

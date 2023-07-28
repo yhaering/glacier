@@ -1,3 +1,3 @@
-import { ExportConditions } from './ExportConditions';
+import type { ExportConditions } from './ExportConditions';
 
 export type Exports = string | (string | ExportConditions)[] | ExportConditions;

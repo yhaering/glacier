@@ -1,5 +1,5 @@
-import { Exports } from './Exports';
-import { Imports } from './Imports';
+import type { Exports } from './Exports';
+import type { Imports } from './Imports';
 
 export type PackageJson = {
   name: string;

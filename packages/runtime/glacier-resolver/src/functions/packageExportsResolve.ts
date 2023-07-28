@@ -1,10 +1,10 @@
-import { Exports } from '../interfaces/Exports';
+import type { Exports } from '../interfaces/Exports';
 import { InvalidPackageConfiguration } from '../exceptions/InvalidPackageConfiguration';
-import { ExportConditions } from '../interfaces/ExportConditions';
+import type { ExportConditions } from '../interfaces/ExportConditions';
 import { PackagePathNotExported } from '../exceptions/PackagePathNotExported';
 import { packageTargetResolve } from './packageTargetResolve';
 import { packageImportsExportsResolve } from './packageImportsExportsResolve';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function packageExportsResolve(
   packageURL: string,

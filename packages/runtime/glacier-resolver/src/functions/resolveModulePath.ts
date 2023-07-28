@@ -1,6 +1,6 @@
 import { findFile } from './findFile';
 import { resolveDirectory } from './resolveDirectory';
-import { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function resolveModulePath(
   modulePath: string,
