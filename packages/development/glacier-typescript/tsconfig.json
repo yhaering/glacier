@@ -7,7 +7,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "declaration": true,
-    "strict": true
+    "strict": true,
+    "lib": ["ESNext"]
   },
   "ts-node": {
     "transpileOnly": true

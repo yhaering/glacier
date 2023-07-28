@@ -1,0 +1,5 @@
+import { Exports } from './Exports';
+
+export type Imports = {
+  [key: `#${string}`]: Exports;
+};

@@ -1,0 +1,26 @@
+{
+  "name": "@glacier/resolver",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "test": "jest --roots src/ --coverage",
+    "test:scenarios": "jest --roots test/scenarios",
+    "lint": "eslint index.ts src/",
+    "lint:fix": "eslint index.ts src/ --fix"
+  },
+  "dependencies": {
+    "@glacier/fs": "*"
+  },
+  "devDependencies": {
+    "@glacier/eslint-config": "*",
+    "@glacier/typescript": "*",
+    "@glacier/jest": "*"
+  },
+  "files": [
+    "dist",
+    "types"
+  ]
+}
