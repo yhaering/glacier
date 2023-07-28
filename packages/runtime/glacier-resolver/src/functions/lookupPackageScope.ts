@@ -1,21 +1,21 @@
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import { isRoot } from './isRoot';
 
 export function lookupPackageScope(
   url: string,
-  { fs }: ResolverConfig
+  config: ResolverConfig
 ): string | undefined {
-  let scopeURL = url;
-  const { root } = fs.parse(url);
-  do {
-    scopeURL = fs.resolve(scopeURL, '../');
-    if (scopeURL.endsWith('node_modules')) {
-      return undefined;
-    }
+  const { fs } = config;
+  if (url.endsWith('node_modules')) {
+    return undefined;
+  }
+  const pjsonUrl = fs.resolve(url, 'package.json');
+  if (fs.exists(pjsonUrl)) {
+    return url;
+  }
 
-    const pjsonURL = fs.resolve(scopeURL, 'package.json');
-    if (fs.exists(pjsonURL)) {
-      return scopeURL;
-    }
-  } while (scopeURL !== root);
-  return undefined;
+  if (isRoot(url, config)) {
+    const parentURL = fs.resolve(url, '../');
+    return lookupPackageScope(parentURL, config);
+  }
 }

@@ -13,5 +13,4 @@ export function findFile(
       return joinedPath;
     }
   }
-  return;
 }
