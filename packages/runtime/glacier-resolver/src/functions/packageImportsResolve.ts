@@ -4,6 +4,8 @@ import { readPackageJson } from './readPackageJson';
 import { packageImportsExportsResolve } from './packageImportsExportsResolve';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 import { assertValidImportSpecifier } from '../assertions/assertValidImportSpecifier';
+import { NoPackageScope } from '../exceptions/NoPackageScope';
+import { NoImportDefinitions } from '../exceptions/NoImportDefinitions';
 
 export function packageImportsResolve(
   specifier: string,
@@ -12,24 +14,29 @@ export function packageImportsResolve(
 ): string {
   assertValidImportSpecifier(specifier);
   const packageURL = lookupPackageScope(parentURL, config);
-
   if (packageURL === undefined) {
-    throw new PackageImportNotDefined();
+    throw new NoPackageScope();
   }
 
   const pjson = readPackageJson(packageURL, config);
-  if (pjson?.imports) {
-    const resolved = packageImportsExportsResolve(
-      specifier,
-      pjson.imports,
-      packageURL,
-      true,
-      config
-    );
-    if (resolved !== undefined) {
-      return resolved;
-    }
+  if (!pjson) {
+    throw new NoPackageScope();
   }
 
-  throw new PackageImportNotDefined();
+  if (!pjson.imports) {
+    throw new NoImportDefinitions();
+  }
+
+  const resolved = packageImportsExportsResolve(
+    specifier,
+    pjson.imports,
+    packageURL,
+    true,
+    config
+  );
+  if (!resolved) {
+    throw new PackageImportNotDefined();
+  }
+
+  return resolved;
 }

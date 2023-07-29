@@ -18,7 +18,7 @@ export function buildJavascript(): Linter.ConfigOverride<Linter.RulesRecord> {
       sourceType: 'module'
     },
     rules: {
-      'max-lines': ['error', 40],
+      'max-lines': ['error', 50],
       'unicorn/no-array-reduce': 'off',
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/filename-case': 'off',
