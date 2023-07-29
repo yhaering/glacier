@@ -14,7 +14,7 @@ export function lookupPackageScope(
     return url;
   }
 
-  if (isRoot(url, config)) {
+  if (!isRoot(url, config)) {
     const parentURL = fs.resolve(url, '../');
     return lookupPackageScope(parentURL, config);
   }

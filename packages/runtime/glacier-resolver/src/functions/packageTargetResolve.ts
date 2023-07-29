@@ -4,7 +4,6 @@ import { InvalidPackageTarget } from '../exceptions/InvalidPackageTarget';
 import type { ExportConditions } from '../interfaces/ExportConditions';
 import { resolveModulePath } from './resolveModulePath';
 import { packageResolve } from './packageResolve';
-import { FileSystem } from '@glacier/fs';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function packageTargetResolve(
