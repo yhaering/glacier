@@ -8,7 +8,6 @@ export function packageTargetResolveArray(
   packageURL: string,
   target: (string | ExportConditions)[],
   patternMatch: string | undefined,
-  isImports: boolean,
   config: ResolverConfig
 ) {
   if (target.length === 0) {
@@ -20,7 +19,6 @@ export function packageTargetResolveArray(
         packageURL,
         targetValue,
         patternMatch,
-        isImports,
         config
       );
 

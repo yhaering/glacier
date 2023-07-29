@@ -8,7 +8,6 @@ export function resolveSubPathPatterns(
   matchKey: string,
   matchObj: Imports | ExportConditions,
   packageURL: string,
-  isImports: boolean,
   config: ResolverConfig
 ): string | undefined {
   const expansionKeys = getExpansionKeys(matchObj);
@@ -33,13 +32,7 @@ export function resolveSubPathPatterns(
         patternBase.length,
         matchKey.length - patternTrailer.length
       );
-      return packageTargetResolve(
-        packageURL,
-        target,
-        patternMatch,
-        isImports,
-        config
-      );
+      return packageTargetResolve(packageURL, target, patternMatch, config);
     }
   }
 }

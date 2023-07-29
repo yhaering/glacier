@@ -6,7 +6,6 @@ export function packageTargetResolveObject(
   packageURL: string,
   target: ExportConditions,
   patternMatch: string | undefined,
-  isImports: boolean,
   config: ResolverConfig
 ) {
   const { conditions } = config;
@@ -17,7 +16,6 @@ export function packageTargetResolveObject(
         packageURL,
         targetValue,
         patternMatch,
-        isImports,
         config
       );
       if (resolved) {

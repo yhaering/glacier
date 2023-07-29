@@ -25,7 +25,6 @@ export function packageExportsResolve(
       subpath,
       exports as ExportConditions,
       packageURL,
-      false,
       config
     );
     if (resolved !== undefined) {

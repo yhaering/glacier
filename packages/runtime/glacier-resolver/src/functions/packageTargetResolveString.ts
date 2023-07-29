@@ -7,13 +7,11 @@ export function packageTargetResolveString(
   packageURL: string,
   target: string,
   patternMatch: string | undefined,
-  isImports: boolean,
   config: ResolverConfig
 ) {
   const { fs } = config;
   if (!target.startsWith('./')) {
     if (
-      !isImports ||
       target.startsWith('../') ||
       target.startsWith('/') ||
       isValidURL(target)

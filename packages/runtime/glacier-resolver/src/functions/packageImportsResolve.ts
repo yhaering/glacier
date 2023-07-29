@@ -31,7 +31,6 @@ export function packageImportsResolve(
     specifier,
     pjson.imports,
     packageURL,
-    true,
     config
   );
   if (!resolved) {

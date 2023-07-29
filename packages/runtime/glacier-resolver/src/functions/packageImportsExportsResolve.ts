@@ -8,11 +8,10 @@ export function packageImportsExportsResolve(
   matchKey: string,
   matchObj: Imports | ExportConditions,
   packageURL: string,
-  isImports: boolean,
   config: ResolverConfig
 ): string | undefined {
   return (
-    resolveSubPaths(matchKey, matchObj, packageURL, isImports, config) ??
-    resolveSubPathPatterns(matchKey, matchObj, packageURL, isImports, config)
+    resolveSubPaths(matchKey, matchObj, packageURL, config) ??
+    resolveSubPathPatterns(matchKey, matchObj, packageURL, config)
   );
 }

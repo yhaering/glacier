@@ -7,7 +7,6 @@ export function resolveSubPaths(
   matchKey: string,
   matchObj: Imports | ExportConditions,
   packageURL: string,
-  isImports: boolean,
   config: ResolverConfig
 ): string | undefined {
   if (matchKey.includes('*')) {
@@ -17,5 +16,5 @@ export function resolveSubPaths(
   if (!target) {
     return undefined;
   }
-  return packageTargetResolve(packageURL, target, undefined, isImports, config);
+  return packageTargetResolve(packageURL, target, undefined, config);
 }

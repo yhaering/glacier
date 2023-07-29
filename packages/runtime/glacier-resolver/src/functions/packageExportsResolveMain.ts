@@ -14,7 +14,6 @@ export function packageExportsResolveMain(
     packageURL,
     mainExport,
     undefined,
-    false,
     config
   );
 
