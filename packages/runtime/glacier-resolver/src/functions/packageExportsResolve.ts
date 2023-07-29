@@ -1,10 +1,10 @@
 import type { Exports } from '../interfaces/Exports';
-import { InvalidPackageConfiguration } from '../exceptions/InvalidPackageConfiguration';
 import type { ExportConditions } from '../interfaces/ExportConditions';
 import { PackagePathNotExported } from '../exceptions/PackagePathNotExported';
-import { packageTargetResolve } from './packageTargetResolve';
 import { packageImportsExportsResolve } from './packageImportsExportsResolve';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import { assertValidExportDefinition } from '../assertions/assertValidExportDefinition';
+import { packageExportsResolveMain } from './packageExportsResolveMain';
 
 export function packageExportsResolve(
   packageURL: string,
@@ -12,42 +12,12 @@ export function packageExportsResolve(
   exports: Exports,
   config: ResolverConfig
 ): string {
-  if (typeof exports === 'object') {
-    const hasKeyStartingWithDot = Object.keys(exports).find((key) =>
-      key.startsWith('.')
-    );
-    const hasKeyNotStartingWithDot = Object.keys(exports).find(
-      (key) => !key.startsWith('.')
-    );
-    if (hasKeyStartingWithDot && hasKeyNotStartingWithDot) {
-      throw new InvalidPackageConfiguration();
-    }
-  }
+  assertValidExportDefinition(exports);
   if (subpath === '.') {
-    let mainExport = undefined;
-    if (
-      typeof exports === 'string' ||
-      Array.isArray(exports) ||
-      Object.keys(exports).every((key) => !key.startsWith('.'))
-    ) {
-      mainExport = exports;
-    } else if (typeof exports === 'object' && exports['.']) {
-      mainExport = exports['.'];
-    }
+    return packageExportsResolveMain(packageURL, exports, config);
+  }
 
-    if (mainExport !== undefined) {
-      const resolved = packageTargetResolve(
-        packageURL,
-        mainExport,
-        undefined,
-        false,
-        config
-      );
-      if (resolved !== undefined) {
-        return resolved;
-      }
-    }
-  } else if (
+  if (
     typeof exports === 'object' &&
     Object.keys(exports).every((key) => key.startsWith('.'))
   ) {
