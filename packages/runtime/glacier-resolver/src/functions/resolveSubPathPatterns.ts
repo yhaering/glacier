@@ -1,12 +1,11 @@
 import { packageTargetResolve } from './packageTargetResolve';
-import type { Imports } from '../interfaces/Imports';
 import type { ExportConditions } from '../interfaces/ExportConditions';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 import { getExpansionKeys } from './getExpansionKeys';
 
 export function resolveSubPathPatterns(
   matchKey: string,
-  matchObj: Imports | ExportConditions,
+  matchObj: ExportConditions,
   packageURL: string,
   config: ResolverConfig
 ): string | undefined {

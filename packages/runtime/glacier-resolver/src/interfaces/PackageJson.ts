@@ -1,10 +1,10 @@
 import type { Exports } from './Exports';
-import type { Imports } from './Imports';
+import type { ExportConditions } from './ExportConditions';
 
 export type PackageJson = {
   name: string;
   exports?: Exports;
-  imports?: Imports;
+  imports?: ExportConditions;
   type?: string;
   main?: string;
 } & {
