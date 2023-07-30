@@ -1,6 +1,6 @@
 import { resolvePackage } from '../resolvePackage';
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
-import { isInvalidExportTarget } from '../checks/isInvalidExportTarget';
+import { isInvalidExportTarget } from '../../conditions/isInvalidExportTarget';
 import { resolveRealPath } from '../resolveRealPath';
 
 export function resolvePackageTargetString(

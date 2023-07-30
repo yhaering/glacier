@@ -1,7 +1,7 @@
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 import { resolvePackageTarget } from './resolvePackageTarget';
 import type { ExportConditions } from '../../interfaces/ExportConditions';
-import { filterConditions } from '../utils/filterConditions';
+import { filterConditions } from '../../functions/filterConditions';
 
 export function resolvePackageTargetObject(
   packageURL: string,

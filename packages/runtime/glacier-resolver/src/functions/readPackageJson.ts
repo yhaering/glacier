@@ -1,5 +1,5 @@
-import type { PackageJson } from '../../interfaces/PackageJson';
-import type { ResolverConfig } from '../../interfaces/ResolverConfig';
+import type { PackageJson } from '../interfaces/PackageJson';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function readPackageJson(
   packageURL: string,

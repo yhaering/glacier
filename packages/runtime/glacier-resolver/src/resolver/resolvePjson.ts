@@ -1,4 +1,4 @@
-import { readPackageJson } from './utils/readPackageJson';
+import { readPackageJson } from '../functions/readPackageJson';
 import { resolveFields } from './resolveFields';
 import { resolvePackageExports } from './resolvePackageExports';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';

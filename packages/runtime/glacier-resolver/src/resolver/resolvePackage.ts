@@ -1,6 +1,6 @@
 import { resolveSelf } from './resolveSelf';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { getPackageName } from './utils/getPackageName';
+import { getPackageName } from '../functions/getPackageName';
 import { assertNoEmptyString } from '../assertions/assertNoEmptyString';
 import { assertNoTrailingSlash } from '../assertions/assertNoTrailingSlash';
 import { resolveModule } from './resolveModule';

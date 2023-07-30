@@ -1,5 +1,5 @@
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { isRoot } from './checks/isRoot';
+import { isRoot } from '../conditions/isRoot';
 import { resolvePjson } from './resolvePjson';
 
 export function resolveModule(

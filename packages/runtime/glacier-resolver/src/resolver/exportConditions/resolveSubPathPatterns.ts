@@ -1,8 +1,8 @@
 import { resolvePackageTarget } from './resolvePackageTarget';
 import type { ExportConditions } from '../../interfaces/ExportConditions';
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
-import { getExpansionKeys } from '../utils/getExpansionKeys';
-import { getPatternMatch } from '../utils/getPatternMatch';
+import { getExpansionKeys } from '../../functions/getExpansionKeys';
+import { getPatternMatch } from '../../functions/getPatternMatch';
 
 export function resolveSubPathPatterns(
   matchKey: string,

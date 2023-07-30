@@ -1,7 +1,7 @@
 import { resolvePackageTarget } from './exportConditions/resolvePackageTarget';
 import type { Exports } from '../interfaces/Exports';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { getMainExports } from './utils/getMainExports';
+import { getMainExports } from '../functions/getMainExports';
 
 export function resolveMainExport(
   packageURL: string,

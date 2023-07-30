@@ -1,6 +1,6 @@
 import type { PackageJson } from '../interfaces/PackageJson';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { isPropertyOf } from './checks/isPropertyOf';
+import { isPropertyOf } from '../conditions/isPropertyOf';
 
 export function resolveFields(
   pjson: PackageJson,

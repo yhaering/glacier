@@ -1,5 +1,5 @@
-import { getPackageScope } from './utils/getPackageScope';
-import { readPackageJson } from './utils/readPackageJson';
+import { getPackageScope } from '../functions/getPackageScope';
+import { readPackageJson } from '../functions/readPackageJson';
 import { resolvePackageExports } from './resolvePackageExports';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 

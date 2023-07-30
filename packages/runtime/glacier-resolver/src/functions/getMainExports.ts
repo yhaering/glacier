@@ -1,5 +1,5 @@
-import type { Exports } from '../../interfaces/Exports';
-import { isPropertyOf } from '../checks/isPropertyOf';
+import type { Exports } from '../interfaces/Exports';
+import { isPropertyOf } from '../conditions/isPropertyOf';
 
 export function getMainExports(exports: Exports): Exports | undefined {
   if (

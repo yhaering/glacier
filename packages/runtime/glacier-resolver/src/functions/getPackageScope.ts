@@ -1,5 +1,5 @@
-import type { ResolverConfig } from '../../interfaces/ResolverConfig';
-import { isRoot } from '../checks/isRoot';
+import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import { isRoot } from '../conditions/isRoot';
 
 export function getPackageScope(
   url: string,

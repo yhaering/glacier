@@ -1,4 +1,4 @@
-import { findFile } from './utils/findFile';
+import { findFile } from '../functions/findFile';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function resolveDirectory(

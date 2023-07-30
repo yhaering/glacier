@@ -1,4 +1,4 @@
-import { findFile } from './utils/findFile';
+import { findFile } from '../functions/findFile';
 import { resolveDirectory } from './resolveDirectory';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 

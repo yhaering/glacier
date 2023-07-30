@@ -1,4 +1,4 @@
-import { assertPatternKeyValid } from '../../assertions/assertPatternKeyValid';
+import { assertPatternKeyValid } from '../assertions/assertPatternKeyValid';
 import { getKeyBaseLength } from './getKeyBaseLength';
 
 // eslint-disable-next-line sonarjs/cognitive-complexity

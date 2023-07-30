@@ -1,10 +1,10 @@
-import { isValidURL } from './checks/isValidURL';
-import { isRealPath } from './checks/isRealPath';
+import { isValidURL } from '../conditions/isValidURL';
+import { isRealPath } from '../conditions/isRealPath';
 import { resolvePackageImports } from './resolvePackageImports';
 import { resolvePackage } from './resolvePackage';
 import { resolveModulePath } from './resolveModulePath';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { isPrivateMapping } from './checks/isPrivateMapping';
+import { isPrivateMapping } from '../conditions/isPrivateMapping';
 import { resolveRealPath } from './resolveRealPath';
 
 export function resolve(
