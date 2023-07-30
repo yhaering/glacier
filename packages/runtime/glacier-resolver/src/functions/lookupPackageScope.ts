@@ -1,5 +1,5 @@
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { isRoot } from './isRoot';
+import { isRoot } from './checks/isRoot';
 
 export function lookupPackageScope(
   url: string,

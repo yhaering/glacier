@@ -1,4 +1,4 @@
-import { isValidURL } from './isValidURL';
+import { isValidURL } from './checks/isValidURL';
 import { InvalidPackageTarget } from '../exceptions/InvalidPackageTarget';
 import { packageResolve } from './packageResolve';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';

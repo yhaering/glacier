@@ -1,10 +1,11 @@
-import { isValidURL } from './isValidURL';
-import { isRealPath } from './isRealPath';
+import { isValidURL } from './checks/isValidURL';
+import { isRealPath } from './checks/isRealPath';
 import { ModuleNotFound } from '../exceptions/ModuleNotFound';
 import { packageImportsResolve } from './packageImportsResolve';
 import { packageResolve } from './packageResolve';
 import { resolveModulePath } from './resolveModulePath';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import { isPrivateMapping } from './checks/isPrivateMapping';
 
 export function esmResolve(
   specifier: string,
@@ -18,7 +19,7 @@ export function esmResolve(
     return specifier;
   } else if (isRealPath(specifier)) {
     resolved = fs.resolve(parentURL, specifier);
-  } else if (specifier.startsWith('#')) {
+  } else if (isPrivateMapping(specifier)) {
     resolved = packageImportsResolve(specifier, parentURL, config);
   } else {
     resolved = packageResolve(specifier, parentURL, config);

@@ -1,6 +1,6 @@
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 import { ModuleNotFound } from '../exceptions/ModuleNotFound';
-import { isRoot } from './isRoot';
+import { isRoot } from './checks/isRoot';
 import { resolvePjson } from './resolvePjson';
 
 export function moduleResolve(

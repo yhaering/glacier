@@ -1,4 +1,4 @@
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 
 export function findFile(
   url: string,

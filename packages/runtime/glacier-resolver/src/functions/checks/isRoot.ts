@@ -1,4 +1,4 @@
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 
 export function isRoot(path: string, config: ResolverConfig): boolean {
   const { root } = config.fs.parse(path);

@@ -3,7 +3,7 @@ import type { ExportConditions } from '../interfaces/ExportConditions';
 import { resolveSubPaths } from './resolveSubPaths';
 import { resolveSubPathPatterns } from './resolveSubPathPatterns';
 
-export function packageImportsExportsResolve(
+export function resolveExportConditions(
   matchKey: string,
   matchObj: ExportConditions,
   packageURL: string,

@@ -1,7 +1,7 @@
 import { PackageImportNotDefined } from '../exceptions/PackageImportNotDefined';
 import { lookupPackageScope } from './lookupPackageScope';
 import { readPackageJson } from './readPackageJson';
-import { packageImportsExportsResolve } from './packageImportsExportsResolve';
+import { resolveExportConditions } from './resolveExportConditions';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 import { assertValidImportSpecifier } from '../assertions/assertValidImportSpecifier';
 import { NoPackageScope } from '../exceptions/NoPackageScope';
@@ -27,7 +27,7 @@ export function packageImportsResolve(
     throw new NoImportDefinitions();
   }
 
-  const resolved = packageImportsExportsResolve(
+  const resolved = resolveExportConditions(
     specifier,
     pjson.imports,
     packageURL,
