@@ -7,7 +7,7 @@ export function readPackageJson(
 ): PackageJson | undefined {
   const pjsonPath = fs.resolve(packageURL, 'package.json');
   if (!fs.exists(pjsonPath)) {
-    return undefined;
+    return;
   }
   const pjsonContent = fs.readFile(pjsonPath);
   return JSON.parse(pjsonContent.toString('utf8')) as PackageJson;

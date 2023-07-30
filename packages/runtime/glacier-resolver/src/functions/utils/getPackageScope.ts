@@ -7,7 +7,7 @@ export function getPackageScope(
 ): string | undefined {
   const { fs } = config;
   if (url.endsWith('node_modules')) {
-    return undefined;
+    return;
   }
   const pjsonUrl = fs.resolve(url, 'package.json');
   if (fs.exists(pjsonUrl)) {

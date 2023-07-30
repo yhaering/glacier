@@ -1,6 +1,7 @@
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 import { resolvePackageTarget } from './resolvePackageTarget';
 import type { ExportConditions } from '../../interfaces/ExportConditions';
+import { filterConditions } from '../utils/filterConditions';
 
 export function resolvePackageTargetObject(
   packageURL: string,
@@ -8,19 +9,18 @@ export function resolvePackageTargetObject(
   patternMatch: string | undefined,
   config: ResolverConfig
 ) {
-  const { conditions } = config;
-  for (const p in target) {
-    if (p === 'default' || conditions.includes(p)) {
-      const targetValue = target[p];
-      const resolved = resolvePackageTarget(
-        packageURL,
-        targetValue,
-        patternMatch,
-        config
-      );
-      if (resolved) {
-        return resolved;
-      }
+  const conditions = filterConditions(Object.keys(target), config);
+  for (const condition of conditions) {
+    const targetValue = target[condition];
+    const resolved = resolvePackageTarget(
+      packageURL,
+      targetValue,
+      patternMatch,
+      config
+    );
+
+    if (resolved) {
+      return resolved;
     }
   }
 }

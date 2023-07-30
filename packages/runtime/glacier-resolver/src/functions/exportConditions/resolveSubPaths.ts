@@ -9,11 +9,11 @@ export function resolveSubPaths(
   config: ResolverConfig
 ): string | undefined {
   if (matchKey.includes('*')) {
-    return undefined;
+    return;
   }
   const target = matchObj[matchKey];
   if (!target) {
-    return undefined;
+    return;
   }
   return resolvePackageTarget(packageURL, target, undefined, config);
 }

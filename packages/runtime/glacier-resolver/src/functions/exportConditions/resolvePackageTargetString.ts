@@ -1,6 +1,7 @@
-import { isValidURL } from '../checks/isValidURL';
 import { resolvePackage } from '../resolvePackage';
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
+import { isInvalidExportTarget } from '../checks/isInvalidExportTarget';
+import { resolveRealPath } from '../resolveRealPath';
 
 export function resolvePackageTargetString(
   packageURL: string,
@@ -8,30 +9,21 @@ export function resolvePackageTargetString(
   patternMatch: string | undefined,
   config: ResolverConfig
 ) {
-  const { fs } = config;
-  if (!target.startsWith('./')) {
-    if (
-      target.startsWith('../') ||
-      target.startsWith('/') ||
-      isValidURL(target)
-    ) {
-      return;
-    }
-    if (typeof patternMatch === 'string') {
-      return resolvePackage(
-        target.replaceAll('*', patternMatch),
-        packageURL + '/',
-        config
-      );
-    }
-    return resolvePackage(target, packageURL + '/', config);
+  if (target.startsWith('./')) {
+    return resolveRealPath(packageURL, target, config, patternMatch);
   }
 
-  const resolvedTarget = fs.resolve(packageURL, target);
-
-  if (!patternMatch) {
-    return resolvedTarget;
+  if (isInvalidExportTarget(target)) {
+    return;
   }
 
-  return fs.resolve(resolvedTarget.replaceAll('*', patternMatch));
+  if (patternMatch) {
+    return resolvePackage(
+      target.replaceAll('*', patternMatch),
+      packageURL + '/',
+      config
+    );
+  }
+
+  return resolvePackage(target, packageURL + '/', config);
 }

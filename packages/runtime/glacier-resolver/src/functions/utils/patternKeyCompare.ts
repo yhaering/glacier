@@ -1,10 +1,12 @@
 import { assertPatternKeyValid } from '../../assertions/assertPatternKeyValid';
+import { getKeyBaseLength } from './getKeyBaseLength';
 
+// eslint-disable-next-line sonarjs/cognitive-complexity
 export function patternKeyCompare(keyA: string, keyB: string): 1 | 0 | -1 {
   assertPatternKeyValid(keyA);
   assertPatternKeyValid(keyB);
-  const baseLengthA = keyA.includes('*') ? keyA.indexOf('*') + 1 : keyA.length;
-  const baseLengthB = keyB.includes('*') ? keyB.indexOf('*') + 1 : keyB.length;
+  const baseLengthA = getKeyBaseLength(keyA);
+  const baseLengthB = getKeyBaseLength(keyB);
 
   if (baseLengthA > baseLengthB) {
     return -1;

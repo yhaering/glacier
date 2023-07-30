@@ -17,11 +17,13 @@ export function resolvePackageTargetArray(
       config
     );
 
-    if (resolved) {
-      const resolvedModulePath = resolveModulePath(resolved, config);
-      if (resolvedModulePath) {
-        return resolvedModulePath;
-      }
+    if (!resolved) {
+      continue;
+    }
+
+    const resolvedModulePath = resolveModulePath(resolved, config);
+    if (resolvedModulePath) {
+      return resolvedModulePath;
     }
   }
 }
