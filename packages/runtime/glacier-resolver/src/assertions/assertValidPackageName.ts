@@ -1,9 +1,15 @@
 export function assertValidPackageName(packageName: string) {
-  if (
-    packageName.startsWith('.') ||
-    packageName.includes('\\') ||
-    packageName.includes('%')
-  ) {
-    throw new Error(`Invalid package name ${packageName}`);
+  if (packageName.startsWith('.')) {
+    throw new Error(`Package ${packageName} should not start with a dot`);
+  }
+
+  if (packageName.includes('\\')) {
+    throw new Error(`Package ${packageName} should not contain back slashes`);
+  }
+
+  if (packageName.includes('%')) {
+    throw new Error(
+      `Package ${packageName} should not contain percentage signs`
+    );
   }
 }

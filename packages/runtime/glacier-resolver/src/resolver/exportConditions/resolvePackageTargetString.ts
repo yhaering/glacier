@@ -1,6 +1,6 @@
 import { resolvePackage } from '../resolvePackage';
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
-import { isInvalidExportTarget } from '../../conditions/isInvalidExportTarget';
+import { isValidExportTarget } from '../../conditions/isValidExportTarget';
 import { resolveRealPath } from '../resolveRealPath';
 
 export function resolvePackageTargetString(
@@ -13,7 +13,7 @@ export function resolvePackageTargetString(
     return resolveRealPath(packageURL, target, config, patternMatch);
   }
 
-  if (isInvalidExportTarget(target)) {
+  if (isValidExportTarget(target)) {
     return;
   }
 

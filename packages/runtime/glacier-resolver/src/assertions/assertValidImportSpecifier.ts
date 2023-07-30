@@ -1,6 +1,6 @@
 export function assertValidImportSpecifier(specifier: string) {
   if (!specifier.startsWith('#')) {
-    throw new Error('Specifier should start with #');
+    throw new Error(`Specifier ${specifier} should start with #`);
   }
   if (specifier === '#') {
     throw new Error('Specifier should not equal to #');
