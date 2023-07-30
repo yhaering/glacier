@@ -12,26 +12,17 @@ export function resolveSubPathPatterns(
   const expansionKeys = getExpansionKeys(matchObj);
 
   for (const expansionKey of expansionKeys) {
-    const indexOfWildcard = expansionKey.indexOf('*');
-    const patternBase = expansionKey.slice(0, Math.max(0, indexOfWildcard));
+    const [base, trailer] = expansionKey.split('*');
+    const isMatching = matchKey.startsWith(base) && matchKey.endsWith(trailer);
 
-    if (matchKey === patternBase || !matchKey.startsWith(patternBase)) {
+    if (!isMatching) {
       continue;
     }
 
-    const patternTrailer = expansionKey.slice(indexOfWildcard + 1);
-
-    if (
-      patternTrailer.length === 0 ||
-      (matchKey.endsWith(patternTrailer) &&
-        matchKey.length >= expansionKey.length)
-    ) {
-      const target = matchObj[expansionKey];
-      const patternMatch = matchKey.slice(
-        patternBase.length,
-        matchKey.length - patternTrailer.length
-      );
-      return resolvePackageTarget(packageURL, target, patternMatch, config);
-    }
+    const target = matchObj[expansionKey];
+    const from = base.length;
+    const to = matchKey.length - trailer.length;
+    const patternMatch = matchKey.slice(from, to);
+    return resolvePackageTarget(packageURL, target, patternMatch, config);
   }
 }
