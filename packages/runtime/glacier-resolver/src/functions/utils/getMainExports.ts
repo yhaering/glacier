@@ -1,6 +1,6 @@
-import type { Exports } from '../interfaces/Exports';
-import { PackagePathNotExported } from '../exceptions/PackagePathNotExported';
-import { isPropertyOf } from './checks/isPropertyOf';
+import type { Exports } from '../../interfaces/Exports';
+import { PackagePathNotExported } from '../../exceptions/PackagePathNotExported';
+import { isPropertyOf } from '../checks/isPropertyOf';
 
 export function getMainExports(exports: Exports): Exports {
   if (

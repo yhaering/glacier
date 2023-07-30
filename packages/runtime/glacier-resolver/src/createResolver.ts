@@ -1,8 +1,8 @@
 import type { ResolverConfig } from './interfaces/ResolverConfig';
-import { esmResolve } from './functions/esmResolve';
+import { resolve } from './functions/resolve';
 
 export function createResolver(config: ResolverConfig) {
   return (specifier: string, parentURL: string) => {
-    return esmResolve(specifier, parentURL, config);
+    return resolve(specifier, parentURL, config);
   };
 }

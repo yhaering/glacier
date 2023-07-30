@@ -1,11 +1,11 @@
-import { packageSelfResolve } from './packageSelfResolve';
+import { resolveSelf } from './resolveSelf';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { getPackageName } from './getPackageName';
+import { getPackageName } from './utils/getPackageName';
 import { assertNoEmptyString } from '../assertions/assertNoEmptyString';
 import { assertNoTrailingSlash } from '../assertions/assertNoTrailingSlash';
-import { moduleResolve } from './moduleResolve';
+import { resolveModule } from './resolveModule';
 
-export function packageResolve(
+export function resolvePackage(
   packageSpecifier: string,
   parentURL: string,
   config: ResolverConfig
@@ -17,15 +17,10 @@ export function packageResolve(
   const packageName = getPackageName(packageSpecifier);
   const packageSubPath = `.${packageSpecifier.slice(packageName.length)}`;
   assertNoTrailingSlash(packageSubPath);
-  const selfUrl = packageSelfResolve(
-    packageName,
-    packageSubPath,
-    parentURL,
-    config
-  );
+  const selfUrl = resolveSelf(packageName, packageSubPath, parentURL, config);
   if (selfUrl) {
     return selfUrl;
   }
 
-  return moduleResolve(parentURL, packageName, packageSubPath, config);
+  return resolveModule(parentURL, packageName, packageSubPath, config);
 }

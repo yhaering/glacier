@@ -1,4 +1,4 @@
-import { assertPatternKeyValid } from '../assertions/assertPatternKeyValid';
+import { assertPatternKeyValid } from '../../assertions/assertPatternKeyValid';
 
 export function patternKeyCompare(keyA: string, keyB: string): 1 | 0 | -1 {
   assertPatternKeyValid(keyA);

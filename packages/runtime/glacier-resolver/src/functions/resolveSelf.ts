@@ -1,15 +1,15 @@
-import { lookupPackageScope } from './lookupPackageScope';
-import { readPackageJson } from './readPackageJson';
-import { packageExportsResolve } from './packageExportsResolve';
+import { getPackageScope } from './utils/getPackageScope';
+import { readPackageJson } from './utils/readPackageJson';
+import { resolvePackageExports } from './resolvePackageExports';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
-export function packageSelfResolve(
+export function resolveSelf(
   packageName: string,
-  packageSubpath: string,
+  packageSubPath: string,
   parentURL: string,
   config: ResolverConfig
 ): string | undefined {
-  const packageURL = lookupPackageScope(parentURL, config);
+  const packageURL = getPackageScope(parentURL, config);
   if (!packageURL) {
     return undefined;
   }
@@ -18,9 +18,9 @@ export function packageSelfResolve(
     return undefined;
   }
   if (pjson.name === packageName) {
-    return packageExportsResolve(
+    return resolvePackageExports(
       packageURL,
-      packageSubpath,
+      packageSubPath,
       pjson.exports,
       config
     );

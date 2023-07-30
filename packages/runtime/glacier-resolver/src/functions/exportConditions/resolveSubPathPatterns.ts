@@ -1,7 +1,7 @@
-import { packageTargetResolve } from './packageTargetResolve';
-import type { ExportConditions } from '../interfaces/ExportConditions';
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { getExpansionKeys } from './getExpansionKeys';
+import { resolvePackageTarget } from './resolvePackageTarget';
+import type { ExportConditions } from '../../interfaces/ExportConditions';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
+import { getExpansionKeys } from '../utils/getExpansionKeys';
 
 export function resolveSubPathPatterns(
   matchKey: string,
@@ -31,7 +31,7 @@ export function resolveSubPathPatterns(
         patternBase.length,
         matchKey.length - patternTrailer.length
       );
-      return packageTargetResolve(packageURL, target, patternMatch, config);
+      return resolvePackageTarget(packageURL, target, patternMatch, config);
     }
   }
 }

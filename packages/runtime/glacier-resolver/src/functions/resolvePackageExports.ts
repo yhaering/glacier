@@ -1,12 +1,12 @@
 import type { Exports } from '../interfaces/Exports';
 import type { ExportConditions } from '../interfaces/ExportConditions';
 import { PackagePathNotExported } from '../exceptions/PackagePathNotExported';
-import { resolveExportConditions } from './resolveExportConditions';
+import { resolveExportConditions } from './exportConditions/resolveExportConditions';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 import { assertValidExportDefinition } from '../assertions/assertValidExportDefinition';
-import { packageExportsResolveMain } from './packageExportsResolveMain';
+import { resolveMainExport } from './resolveMainExport';
 
-export function packageExportsResolve(
+export function resolvePackageExports(
   packageURL: string,
   subpath: string,
   exports: Exports,
@@ -14,7 +14,7 @@ export function packageExportsResolve(
 ): string {
   assertValidExportDefinition(exports);
   if (subpath === '.') {
-    return packageExportsResolveMain(packageURL, exports, config);
+    return resolveMainExport(packageURL, exports, config);
   }
 
   if (

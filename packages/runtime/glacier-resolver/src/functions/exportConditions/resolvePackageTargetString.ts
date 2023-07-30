@@ -1,9 +1,9 @@
-import { isValidURL } from './checks/isValidURL';
-import { InvalidPackageTarget } from '../exceptions/InvalidPackageTarget';
-import { packageResolve } from './packageResolve';
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import { isValidURL } from '../checks/isValidURL';
+import { InvalidPackageTarget } from '../../exceptions/InvalidPackageTarget';
+import { resolvePackage } from '../resolvePackage';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 
-export function packageTargetResolveString(
+export function resolvePackageTargetString(
   packageURL: string,
   target: string,
   patternMatch: string | undefined,
@@ -19,13 +19,13 @@ export function packageTargetResolveString(
       throw new InvalidPackageTarget();
     }
     if (typeof patternMatch === 'string') {
-      return packageResolve(
+      return resolvePackage(
         target.replaceAll('*', patternMatch),
         packageURL + '/',
         config
       );
     }
-    return packageResolve(target, packageURL + '/', config);
+    return resolvePackage(target, packageURL + '/', config);
   }
 
   const resolvedTarget = fs.resolve(packageURL, target);

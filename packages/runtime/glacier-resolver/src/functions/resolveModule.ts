@@ -3,7 +3,7 @@ import { ModuleNotFound } from '../exceptions/ModuleNotFound';
 import { isRoot } from './checks/isRoot';
 import { resolvePjson } from './resolvePjson';
 
-export function moduleResolve(
+export function resolveModule(
   parentURL: string,
   packageName: string,
   packageSubPath: string,
@@ -17,7 +17,7 @@ export function moduleResolve(
       throw new ModuleNotFound();
     }
     const parentPath = fs.resolve(parentURL, '../');
-    return moduleResolve(parentPath, packageName, packageSubPath, config);
+    return resolveModule(parentPath, packageName, packageSubPath, config);
   }
 
   return resolvePjson(packageURL, packageSubPath, config);

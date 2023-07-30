@@ -1,6 +1,6 @@
-import { packageTargetResolve } from './packageTargetResolve';
-import type { ExportConditions } from '../interfaces/ExportConditions';
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
+import { resolvePackageTarget } from './resolvePackageTarget';
+import type { ExportConditions } from '../../interfaces/ExportConditions';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 
 export function resolveSubPaths(
   matchKey: string,
@@ -15,5 +15,5 @@ export function resolveSubPaths(
   if (!target) {
     return undefined;
   }
-  return packageTargetResolve(packageURL, target, undefined, config);
+  return resolvePackageTarget(packageURL, target, undefined, config);
 }

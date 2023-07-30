@@ -1,10 +1,10 @@
-import type { ExportConditions } from '../interfaces/ExportConditions';
-import { resolveModulePath } from './resolveModulePath';
-import { InvalidPackageTarget } from '../exceptions/InvalidPackageTarget';
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { packageTargetResolve } from './packageTargetResolve';
+import type { ExportConditions } from '../../interfaces/ExportConditions';
+import { resolveModulePath } from '../resolveModulePath';
+import { InvalidPackageTarget } from '../../exceptions/InvalidPackageTarget';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
+import { resolvePackageTarget } from './resolvePackageTarget';
 
-export function packageTargetResolveArray(
+export function resolvePackageTargetArray(
   packageURL: string,
   target: (string | ExportConditions)[],
   patternMatch: string | undefined,
@@ -15,7 +15,7 @@ export function packageTargetResolveArray(
   }
   for (const targetValue of target) {
     try {
-      const resolved = packageTargetResolve(
+      const resolved = resolvePackageTarget(
         packageURL,
         targetValue,
         patternMatch,

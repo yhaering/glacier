@@ -1,5 +1,5 @@
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import type { ExportConditions } from '../interfaces/ExportConditions';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
+import type { ExportConditions } from '../../interfaces/ExportConditions';
 import { resolveSubPaths } from './resolveSubPaths';
 import { resolveSubPathPatterns } from './resolveSubPathPatterns';
 

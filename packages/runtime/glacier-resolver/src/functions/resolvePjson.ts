@@ -1,6 +1,6 @@
-import { readPackageJson } from './readPackageJson';
+import { readPackageJson } from './utils/readPackageJson';
 import { resolveFields } from './resolveFields';
-import { packageExportsResolve } from './packageExportsResolve';
+import { resolvePackageExports } from './resolvePackageExports';
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
 
 export function resolvePjson(
@@ -13,7 +13,7 @@ export function resolvePjson(
   if (pjson) {
     const mainField = resolveFields(pjson, config);
     if (pjson.exports) {
-      return packageExportsResolve(
+      return resolvePackageExports(
         packageURL,
         packageSubPath,
         pjson.exports,

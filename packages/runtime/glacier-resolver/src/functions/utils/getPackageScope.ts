@@ -1,7 +1,7 @@
-import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { isRoot } from './checks/isRoot';
+import type { ResolverConfig } from '../../interfaces/ResolverConfig';
+import { isRoot } from '../checks/isRoot';
 
-export function lookupPackageScope(
+export function getPackageScope(
   url: string,
   config: ResolverConfig
 ): string | undefined {
@@ -16,6 +16,6 @@ export function lookupPackageScope(
 
   if (!isRoot(url, config)) {
     const parentURL = fs.resolve(url, '../');
-    return lookupPackageScope(parentURL, config);
+    return getPackageScope(parentURL, config);
   }
 }
