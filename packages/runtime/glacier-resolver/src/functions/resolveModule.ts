@@ -1,5 +1,4 @@
 import type { ResolverConfig } from '../interfaces/ResolverConfig';
-import { ModuleNotFound } from '../exceptions/ModuleNotFound';
 import { isRoot } from './checks/isRoot';
 import { resolvePjson } from './resolvePjson';
 
@@ -8,13 +7,13 @@ export function resolveModule(
   packageName: string,
   packageSubPath: string,
   config: ResolverConfig
-): string {
+): string | undefined {
   const { fs } = config;
 
   const packageURL = fs.resolve(parentURL, 'node_modules', packageName);
   if (!fs.exists(packageURL)) {
     if (isRoot(parentURL, config)) {
-      throw new ModuleNotFound();
+      return;
     }
     const parentPath = fs.resolve(parentURL, '../');
     return resolveModule(parentPath, packageName, packageSubPath, config);

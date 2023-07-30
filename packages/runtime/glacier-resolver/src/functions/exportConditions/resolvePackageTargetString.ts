@@ -1,5 +1,4 @@
 import { isValidURL } from '../checks/isValidURL';
-import { InvalidPackageTarget } from '../../exceptions/InvalidPackageTarget';
 import { resolvePackage } from '../resolvePackage';
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 
@@ -16,7 +15,7 @@ export function resolvePackageTargetString(
       target.startsWith('/') ||
       isValidURL(target)
     ) {
-      throw new InvalidPackageTarget();
+      return;
     }
     if (typeof patternMatch === 'string') {
       return resolvePackage(

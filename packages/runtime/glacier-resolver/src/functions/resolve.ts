@@ -1,6 +1,5 @@
 import { isValidURL } from './checks/isValidURL';
 import { isRealPath } from './checks/isRealPath';
-import { ModuleNotFound } from '../exceptions/ModuleNotFound';
 import { resolvePackageImports } from './resolvePackageImports';
 import { resolvePackage } from './resolvePackage';
 import { resolveModulePath } from './resolveModulePath';
@@ -11,7 +10,7 @@ export function resolve(
   specifier: string,
   parentURL: string,
   config: ResolverConfig
-): string {
+): string | undefined {
   const { fs } = config;
   let resolved: string | undefined;
 
@@ -25,9 +24,9 @@ export function resolve(
     resolved = resolvePackage(specifier, parentURL, config);
   }
 
-  const resolvedModulePath = resolveModulePath(resolved, config);
-  if (!resolvedModulePath) {
-    throw new ModuleNotFound();
+  if (resolved === undefined) {
+    return;
   }
-  return resolvedModulePath;
+
+  return resolveModulePath(resolved, config);
 }

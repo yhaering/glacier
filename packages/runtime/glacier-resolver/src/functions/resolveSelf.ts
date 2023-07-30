@@ -11,12 +11,14 @@ export function resolveSelf(
 ): string | undefined {
   const packageURL = getPackageScope(parentURL, config);
   if (!packageURL) {
-    return undefined;
+    return;
   }
+
   const pjson = readPackageJson(packageURL, config);
   if (!pjson || !pjson.exports) {
-    return undefined;
+    return;
   }
+
   if (pjson.name === packageName) {
     return resolvePackageExports(
       packageURL,
@@ -25,5 +27,4 @@ export function resolveSelf(
       config
     );
   }
-  return undefined;
 }

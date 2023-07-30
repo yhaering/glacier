@@ -7,7 +7,7 @@ export function resolvePjson(
   packageURL: string,
   packageSubPath: string,
   config: ResolverConfig
-): string {
+): string | undefined {
   const { fs } = config;
   const pjson = readPackageJson(packageURL, config);
   if (pjson) {

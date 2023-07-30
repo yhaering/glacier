@@ -9,7 +9,8 @@
     "test": "jest --roots src/ --coverage",
     "test:scenarios": "jest --roots test/scenarios",
     "lint": "eslint index.ts src/",
-    "lint:fix": "eslint index.ts src/ --fix"
+    "lint:fix": "eslint index.ts src/ --fix",
+    "lint:types": "tsc -p ./tsconfig.build.json --noEmit"
   },
   "dependencies": {
     "@glacier/fs": "*"

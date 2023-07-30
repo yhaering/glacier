@@ -1,5 +1,4 @@
 import type { Exports } from '../../interfaces/Exports';
-import { InvalidPackageTarget } from '../../exceptions/InvalidPackageTarget';
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 import { resolvePackageTargetString } from './resolvePackageTargetString';
 import { resolvePackageTargetArray } from './resolvePackageTargetArray';
@@ -17,9 +16,5 @@ export function resolvePackageTarget(
     return resolvePackageTargetArray(packageURL, target, patternMatch, config);
   } else if (typeof target === 'object') {
     return resolvePackageTargetObject(packageURL, target, patternMatch, config);
-  } else if (target === undefined) {
-    return undefined;
   }
-
-  throw new InvalidPackageTarget();
 }

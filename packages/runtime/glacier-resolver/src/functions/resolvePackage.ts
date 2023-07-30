@@ -9,7 +9,7 @@ export function resolvePackage(
   packageSpecifier: string,
   parentURL: string,
   config: ResolverConfig
-): string {
+): string | undefined {
   assertNoEmptyString(packageSpecifier);
   if (packageSpecifier.startsWith('node:')) {
     return packageSpecifier;

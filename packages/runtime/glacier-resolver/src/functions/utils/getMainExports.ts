@@ -1,8 +1,7 @@
 import type { Exports } from '../../interfaces/Exports';
-import { PackagePathNotExported } from '../../exceptions/PackagePathNotExported';
 import { isPropertyOf } from '../checks/isPropertyOf';
 
-export function getMainExports(exports: Exports): Exports {
+export function getMainExports(exports: Exports): Exports | undefined {
   if (
     typeof exports === 'string' ||
     Array.isArray(exports) ||
@@ -12,6 +11,4 @@ export function getMainExports(exports: Exports): Exports {
   } else if (typeof exports === 'object' && isPropertyOf(exports, '.')) {
     return exports['.'];
   }
-
-  throw new PackagePathNotExported();
 }
