@@ -2,6 +2,7 @@ import { resolvePackageTarget } from './resolvePackageTarget';
 import type { ExportConditions } from '../../interfaces/ExportConditions';
 import type { ResolverConfig } from '../../interfaces/ResolverConfig';
 import { getExpansionKeys } from '../utils/getExpansionKeys';
+import { getPatternMatch } from '../utils/getPatternMatch';
 
 export function resolveSubPathPatterns(
   matchKey: string,
@@ -12,17 +13,12 @@ export function resolveSubPathPatterns(
   const expansionKeys = getExpansionKeys(matchObj);
 
   for (const expansionKey of expansionKeys) {
-    const [base, trailer] = expansionKey.split('*');
-    const isMatching = matchKey.startsWith(base) && matchKey.endsWith(trailer);
-
-    if (!isMatching) {
+    const patternMatch = getPatternMatch(matchKey, expansionKey);
+    if (!patternMatch) {
       continue;
     }
 
     const target = matchObj[expansionKey];
-    const from = base.length;
-    const to = matchKey.length - trailer.length;
-    const patternMatch = matchKey.slice(from, to);
     return resolvePackageTarget(packageURL, target, patternMatch, config);
   }
 }
