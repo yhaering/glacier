@@ -7,7 +7,7 @@ export function getPackageName(packageSpecifier: string): string {
     assertValidScopedPackageName(packageSpecifier);
     const packageName = packageSpecifier.split('/').slice(0, 2).join('/');
     assertValidPackageName(packageName);
-    return packageSpecifier;
+    return packageName;
   }
   const packageName = packageSpecifier.split('/')[0];
   assertValidPackageName(packageName);
