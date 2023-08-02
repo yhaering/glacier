@@ -8,5 +8,5 @@ export type PackageJson = {
   type?: string;
   main?: string;
 } & {
-  [key: string]: string;
+  [key: string]: unknown;
 };

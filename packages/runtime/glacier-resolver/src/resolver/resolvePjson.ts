@@ -20,7 +20,7 @@ export function resolvePjson(
         config
       );
     } else if (packageSubPath === '.' && mainField) {
-      return fs.resolve(packageURL, pjson[mainField]);
+      return fs.resolve(packageURL, pjson[mainField] as string);
     }
   }
 
