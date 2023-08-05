@@ -13,5 +13,5 @@ export function resolveRealPath(
     return resolvedTarget;
   }
 
-  return fs.resolve(resolvedTarget.replaceAll('*', patternMatch));
+  return resolvedTarget.replaceAll('*', patternMatch);
 }

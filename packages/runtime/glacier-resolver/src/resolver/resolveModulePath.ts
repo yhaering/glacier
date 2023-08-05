@@ -7,12 +7,14 @@ export function resolveModulePath(
   config: ResolverConfig
 ): string | undefined {
   const { fs } = config;
-  if (fs.exists(modulePath)) {
-    if (fs.isDirectory(modulePath)) {
-      return resolveDirectory(modulePath, config);
-    }
-    return modulePath;
+
+  if (!fs.exists(modulePath)) {
+    return findFile(modulePath, config);
   }
 
-  return findFile(modulePath, config);
+  if (fs.isDirectory(modulePath)) {
+    return resolveDirectory(modulePath, config);
+  }
+
+  return modulePath;
 }

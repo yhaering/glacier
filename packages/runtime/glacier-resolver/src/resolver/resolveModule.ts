@@ -11,13 +11,14 @@ export function resolveModule(
   const { fs } = config;
 
   const packageURL = fs.resolve(parentURL, 'node_modules', packageName);
-  if (!fs.exists(packageURL)) {
-    if (isRoot(parentURL, config)) {
-      return;
-    }
-    const parentPath = fs.resolve(parentURL, '../');
-    return resolveModule(parentPath, packageName, packageSubPath, config);
+  if (fs.exists(packageURL)) {
+    return resolvePjson(packageURL, packageSubPath, config);
   }
 
-  return resolvePjson(packageURL, packageSubPath, config);
+  if (isRoot(parentURL, config)) {
+    return;
+  }
+
+  const parentPath = fs.resolve(parentURL, '../');
+  return resolveModule(parentPath, packageName, packageSubPath, config);
 }
