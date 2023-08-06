@@ -27,7 +27,7 @@ jobs:
       - name: Unit Tests
         run: turbo run test
       - name: Integration Tests
-        run: turbo run test:integration
+        run: turbo run test:scenarios
       - name: Coverage Report
         uses: paambaati/codeclimate-action@v5.0.0
         env:
