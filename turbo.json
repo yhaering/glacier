@@ -11,7 +11,7 @@
       "outputs": ["coverage"],
       "outputMode": "errors-only"
     },
-    "test:integration": {
+    "test:scenarios": {
       "dependsOn": ["build"],
       "outputs": ["coverage"],
       "outputMode": "errors-only"
@@ -21,7 +21,7 @@
       "outputMode": "errors-only"
     },
     "ci": {
-      "dependsOn": ["build", "test", "test:integration", "lint"],
+      "dependsOn": ["build", "test", "test:scenarios", "lint"],
       "outputMode": "errors-only"
     }
   }
