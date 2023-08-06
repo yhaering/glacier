@@ -19,12 +19,14 @@ export function resolveSelf(
     return;
   }
 
-  if (pjson.name === packageName) {
-    return resolvePackageExports(
-      packageURL,
-      packageSubPath,
-      pjson.exports,
-      config
-    );
+  if (pjson.name !== packageName) {
+    return;
   }
+
+  return resolvePackageExports(
+    packageURL,
+    packageSubPath,
+    pjson.exports,
+    config
+  );
 }
