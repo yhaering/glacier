@@ -13,7 +13,7 @@ export function resolvePackageTargetString(
     return resolveRealPath(packageURL, target, config, patternMatch);
   }
 
-  if (isValidExportTarget(target)) {
+  if (!isValidExportTarget(target)) {
     return;
   }
 

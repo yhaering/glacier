@@ -22,8 +22,10 @@ export function resolvePackageTargetArray(
     }
 
     const resolvedModulePath = resolveModulePath(resolved, config);
-    if (resolvedModulePath) {
-      return resolvedModulePath;
+    if (!resolvedModulePath) {
+      continue;
     }
+
+    return resolvedModulePath;
   }
 }
