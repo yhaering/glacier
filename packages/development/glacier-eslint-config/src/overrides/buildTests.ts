@@ -2,7 +2,7 @@ import type { Linter } from 'eslint';
 
 export function buildTests(): Linter.ConfigOverride<Linter.RulesRecord> {
   return {
-    files: ['**/*.test.*'],
+    files: ['**/*.test.*', '**/__mocks__/**/*'],
     plugins: ['jest'],
     extends: ['plugin:jest/recommended', 'plugin:jest-formatting/recommended'],
     env: {
@@ -17,7 +17,9 @@ export function buildTests(): Linter.ConfigOverride<Linter.RulesRecord> {
       '@typescript-eslint/no-unsafe-call': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/no-empty-function': 'off'
+      '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/no-unsafe-assignment': 'off',
+      'unicorn/no-null': 'off'
     }
   };
 }

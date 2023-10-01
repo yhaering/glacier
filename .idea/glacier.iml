@@ -7,6 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/packages/runtime/glacier-resolver/test" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/packages/runtime/glacier-fs/test" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/packages/runtime/glacier-stream/test" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/runtime/glacier-worker/src/__mocks__" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/packages/runtime/glacier-worker/test" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

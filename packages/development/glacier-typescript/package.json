@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "./tsconfig.json",
   "dependencies": {
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1"
   }
 }
