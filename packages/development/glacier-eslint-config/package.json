@@ -17,7 +17,7 @@
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-only-error": "^1.0.2",
     "eslint-plugin-sonarjs": "^0.21.0",
-    "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-plugin-unicorn": "^49.0.0",
     "prettier": "^3.0.3"
   },
   "devDependencies": {
