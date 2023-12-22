@@ -3,11 +3,11 @@ import { createTokenStreamNextFn } from './factories/createTokenStreamNextFn';
 import { createTokenStreamPeekFn } from './factories/createTokenStreamPeekFn';
 import type { TokenStreamCache } from './interfaces/TokenStreamCache';
 import type { SegmentStream } from '../segmentStream/interfaces/SegmentStream';
-import type { TokenStreamContext } from './interfaces/TokenStreamContext';
+import { createTokenStreamContext } from './factories/createTokenStreamContext';
 
 export function createTokenStream(segmentStream: SegmentStream): TokenStream {
   const cache: TokenStreamCache = {};
-  const context: TokenStreamContext = { location: { line: 1, column: 0 } };
+  const context = createTokenStreamContext();
   return {
     next: createTokenStreamNextFn(segmentStream, cache, context),
     peek: createTokenStreamPeekFn(segmentStream, cache, context)

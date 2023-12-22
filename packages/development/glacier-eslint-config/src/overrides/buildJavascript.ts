@@ -22,6 +22,7 @@ export function buildJavascript(): Linter.ConfigOverride<Linter.RulesRecord> {
       'unicorn/no-array-reduce': 'off',
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/filename-case': 'off',
+      'unicorn/prefer-switch': 'off',
       'sonarjs/cognitive-complexity': ['error', 5]
     }
   };

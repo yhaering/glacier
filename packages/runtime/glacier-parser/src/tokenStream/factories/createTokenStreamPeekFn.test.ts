@@ -1,11 +1,11 @@
 import { createTokenStreamPeekFn } from './createTokenStreamPeekFn';
 import { fakeEmptyTokenStreamCache } from '../../../test/fakes/fakeEmptyTokenStreamCache';
 import { fakeSegmentStream } from '../../../test/fakes/fakeSegmentStream';
-import { transformSegment } from '../functions/transformSegment';
+import { transformSegment } from '../transformer/transformSegment';
 import { fakeTokenStreamCache } from '../../../test/fakes/fakeTokenStreamCache';
 import { fakeTokenStreamContext } from '../../../test/fakes/fakeTokenStreamContext';
 
-jest.mock('../functions/transformSegment', () => ({
+jest.mock('../transformer/transformSegment', () => ({
   transformSegment: jest.fn().mockReturnValue('{{TOKEN}}')
 }));
 

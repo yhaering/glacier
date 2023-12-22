@@ -2,7 +2,6 @@ import { createTokenStream } from './createTokenStream';
 import { createTokenStreamNextFn } from './factories/createTokenStreamNextFn';
 import { createTokenStreamPeekFn } from './factories/createTokenStreamPeekFn';
 import { fakeSegmentStream } from '../../test/fakes/fakeSegmentStream';
-import { fakeTokenStreamContext } from '../../test/fakes/fakeTokenStreamContext';
 
 jest.mock('./factories/createTokenStreamNextFn', () => ({
   createTokenStreamNextFn: jest.fn().mockReturnValue('{{NEXT_FN}}')
@@ -10,6 +9,10 @@ jest.mock('./factories/createTokenStreamNextFn', () => ({
 
 jest.mock('./factories/createTokenStreamPeekFn', () => ({
   createTokenStreamPeekFn: jest.fn().mockReturnValue('{{PEEK_FN}}')
+}));
+
+jest.mock('./factories/createTokenStreamContext', () => ({
+  createTokenStreamContext: jest.fn().mockReturnValue('{{CONTEXT}}')
 }));
 
 function run() {
@@ -27,21 +30,19 @@ describe('createTokenStream', () => {
 
   test('calls createTokenStreamNextFn', () => {
     const { segmentStream } = run();
-    const context = fakeTokenStreamContext();
     expect(createTokenStreamNextFn).toHaveBeenCalledWith(
       segmentStream,
       {},
-      context
+      '{{CONTEXT}}'
     );
   });
 
   test('calls createTokenStreamPeekFn', () => {
     const { segmentStream } = run();
-    const context = fakeTokenStreamContext();
     expect(createTokenStreamPeekFn).toHaveBeenCalledWith(
       segmentStream,
       {},
-      context
+      '{{CONTEXT}}'
     );
   });
 

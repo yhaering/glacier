@@ -1,7 +1,7 @@
 import type { TokenStreamPeekFn } from '../interfaces/TokenStreamPeekFn';
 import type { SegmentStream } from '../../segmentStream/interfaces/SegmentStream';
 import type { TokenStreamCache } from '../interfaces/TokenStreamCache';
-import { transformSegment } from '../functions/transformSegment';
+import { transformSegment } from '../transformer/transformSegment';
 import type { TokenStreamContext } from '../interfaces/TokenStreamContext';
 
 export function createTokenStreamPeekFn(

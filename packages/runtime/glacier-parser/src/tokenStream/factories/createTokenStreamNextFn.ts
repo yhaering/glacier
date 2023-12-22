@@ -1,7 +1,7 @@
 import type { TokenStreamNextFn } from '../interfaces/TokenStreamNextFn';
 import type { SegmentStream } from '../../segmentStream/interfaces/SegmentStream';
 import type { TokenStreamCache } from '../interfaces/TokenStreamCache';
-import { transformSegment } from '../functions/transformSegment';
+import { transformSegment } from '../transformer/transformSegment';
 import type { TokenStreamContext } from '../interfaces/TokenStreamContext';
 
 export function createTokenStreamNextFn(
