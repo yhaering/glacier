@@ -1,13 +1,11 @@
 import type { TokenStreamNextFn } from '../interfaces/TokenStreamNextFn';
-import type { SegmentStream } from '../../segmentStream/interfaces/SegmentStream';
 import type { TokenStreamCache } from '../interfaces/TokenStreamCache';
-import { transformSegment } from '../transformer/transformSegment';
-import type { TokenStreamContext } from '../interfaces/TokenStreamContext';
+import { transformCharacter } from '../transformer/transformCharacter';
+import type { CharacterStream } from '../../characterStream/interfaces/CharacterStream';
 
 export function createTokenStreamNextFn(
-  segmentStream: SegmentStream,
-  cache: TokenStreamCache,
-  context: TokenStreamContext
+  characterStream: CharacterStream,
+  cache: TokenStreamCache
 ): TokenStreamNextFn {
   return () => {
     if (cache.nextToken) {
@@ -15,6 +13,6 @@ export function createTokenStreamNextFn(
       delete cache.nextToken;
       return nextToken;
     }
-    return transformSegment(segmentStream, context);
+    return transformCharacter(characterStream);
   };
 }

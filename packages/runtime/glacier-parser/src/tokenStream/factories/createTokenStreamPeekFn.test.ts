@@ -1,40 +1,36 @@
 import { createTokenStreamPeekFn } from './createTokenStreamPeekFn';
 import { fakeEmptyTokenStreamCache } from '../../../test/fakes/fakeEmptyTokenStreamCache';
-import { fakeSegmentStream } from '../../../test/fakes/fakeSegmentStream';
-import { transformSegment } from '../transformer/transformSegment';
+import { transformCharacter } from '../transformer/transformCharacter';
 import { fakeTokenStreamCache } from '../../../test/fakes/fakeTokenStreamCache';
-import { fakeTokenStreamContext } from '../../../test/fakes/fakeTokenStreamContext';
+import { fakeCharacterStream } from '../../../test/fakes/fakeCharacterStream';
 
-jest.mock('../transformer/transformSegment', () => ({
-  transformSegment: jest.fn().mockReturnValue('{{TOKEN}}')
+jest.mock('../transformer/transformCharacter', () => ({
+  transformCharacter: jest.fn().mockReturnValue('{{TOKEN}}')
 }));
 
 function run() {
   const cache = fakeEmptyTokenStreamCache();
-  const segmentStream = fakeSegmentStream();
-  const context = fakeTokenStreamContext();
-  const fn = createTokenStreamPeekFn(segmentStream, cache, context);
+  const characterStream = fakeCharacterStream();
+  const fn = createTokenStreamPeekFn(characterStream, cache);
   const returnValue = fn();
-  return { fn, returnValue, segmentStream, cache, context };
+  return { fn, returnValue, characterStream, cache };
 }
 
 function runWithCache() {
   const cache = fakeTokenStreamCache();
-  const segmentStream = fakeSegmentStream();
-  const context = fakeTokenStreamContext();
-  const fn = createTokenStreamPeekFn(segmentStream, cache, context);
+  const characterStream = fakeCharacterStream();
+  const fn = createTokenStreamPeekFn(characterStream, cache);
   const returnValue = fn();
-  return { fn, returnValue, segmentStream, cache };
+  return { fn, returnValue, characterStream, cache };
 }
 
 function runWithNoFurtherSegments() {
   const cache = fakeEmptyTokenStreamCache();
-  const segmentStream = fakeSegmentStream();
-  const context = fakeTokenStreamContext();
-  jest.spyOn(segmentStream, 'peek').mockReturnValue(void 0);
-  const fn = createTokenStreamPeekFn(segmentStream, cache, context);
+  const characterStream = fakeCharacterStream();
+  jest.spyOn(characterStream, 'peek').mockReturnValue(void 0);
+  const fn = createTokenStreamPeekFn(characterStream, cache);
   const returnValue = fn();
-  return { fn, returnValue, segmentStream, cache };
+  return { fn, returnValue, characterStream, cache };
 }
 
 describe('createTokenStreamPeekFn', () => {
@@ -50,8 +46,8 @@ describe('createTokenStreamPeekFn', () => {
   });
 
   test('calls transformSegment', () => {
-    const { segmentStream, context } = run();
-    expect(transformSegment).toHaveBeenCalledWith(segmentStream, context);
+    const { characterStream } = run();
+    expect(transformCharacter).toHaveBeenCalledWith(characterStream);
   });
 
   test('assign token to cache', () => {

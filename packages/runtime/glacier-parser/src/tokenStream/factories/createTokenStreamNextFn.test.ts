@@ -1,30 +1,27 @@
 import { createTokenStreamNextFn } from './createTokenStreamNextFn';
 import { fakeEmptyTokenStreamCache } from '../../../test/fakes/fakeEmptyTokenStreamCache';
-import { fakeSegmentStream } from '../../../test/fakes/fakeSegmentStream';
-import { transformSegment } from '../transformer/transformSegment';
+import { transformCharacter } from '../transformer/transformCharacter';
 import { fakeTokenStreamCache } from '../../../test/fakes/fakeTokenStreamCache';
-import { fakeTokenStreamContext } from '../../../test/fakes/fakeTokenStreamContext';
+import { fakeCharacterStream } from '../../../test/fakes/fakeCharacterStream';
 
-jest.mock('../transformer/transformSegment', () => ({
-  transformSegment: jest.fn().mockReturnValue('{{TOKEN}}')
+jest.mock('../transformer/transformCharacter', () => ({
+  transformCharacter: jest.fn().mockReturnValue('{{TOKEN}}')
 }));
 
 function run() {
-  const segmentStream = fakeSegmentStream();
+  const characterStream = fakeCharacterStream();
   const cache = fakeEmptyTokenStreamCache();
-  const context = fakeTokenStreamContext();
-  const fn = createTokenStreamNextFn(segmentStream, cache, context);
+  const fn = createTokenStreamNextFn(characterStream, cache);
   const returnValue = fn();
-  return { fn, returnValue, segmentStream, cache, context };
+  return { fn, returnValue, characterStream, cache };
 }
 
 function runWithCache() {
-  const segmentStream = fakeSegmentStream();
+  const characterStream = fakeCharacterStream();
   const cache = fakeTokenStreamCache();
-  const context = fakeTokenStreamContext();
-  const fn = createTokenStreamNextFn(segmentStream, cache, context);
+  const fn = createTokenStreamNextFn(characterStream, cache);
   const returnValue = fn();
-  return { fn, returnValue, segmentStream, cache, context };
+  return { fn, returnValue, characterStream, cache };
 }
 
 describe('createTokenStreamNextFn', () => {
@@ -40,8 +37,8 @@ describe('createTokenStreamNextFn', () => {
   });
 
   test('calls transformSegment', () => {
-    const { segmentStream, context } = run();
-    expect(transformSegment).toHaveBeenCalledWith(segmentStream, context);
+    const { characterStream } = run();
+    expect(transformCharacter).toHaveBeenCalledWith(characterStream);
   });
 
   test('return token', () => {
