@@ -1,4 +1,4 @@
-export function isNewLine(char: string): boolean {
+export function isLineTerminator(char: string): boolean {
   return (
     char === '\u000A' ||
     char === '\u000D' ||

@@ -1,15 +1,15 @@
-import { isNewLine } from './isNewLine';
+import { isLineTerminator } from './isLineTerminator';
 
 function run(char = '\n') {
-  const returnValue = isNewLine(char);
+  const returnValue = isLineTerminator(char);
   return { returnValue };
 }
 
-describe('isNewLine', () => {
+describe('isLineTerminator', () => {
   beforeEach(run);
 
-  test('exports a function called isNewLine', () => {
-    expect(isNewLine).toBeInstanceOf(Function);
+  test('exports a function called isLineTerminator', () => {
+    expect(isLineTerminator).toBeInstanceOf(Function);
   });
 
   test.each(['\u000A', '\u000D', '\u2028', '\u2029'])(

@@ -6,6 +6,6 @@ export function createCharacterStreamPeekFn(
   stream: string
 ): CharacterStreamPeekFn {
   return () => {
-    return stream[pointer.value + 1];
+    return stream[pointer.value];
   };
 }

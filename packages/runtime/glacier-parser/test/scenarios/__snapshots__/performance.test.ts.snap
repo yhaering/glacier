@@ -1,0 +1,4617 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Performance should transform es2015 to segments 1`] = `
+[
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "D",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "v",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "4",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "Hello, World!",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "v",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "A",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "v",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "C",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "[",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "apple",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "banana",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "orange",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "]",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "D",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "M",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "{",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "}",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "U",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "<",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "{",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "M",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "[",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "]",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "}",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "C",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "A",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "v",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "{",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "Active status is true",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "}",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "{",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "Active status is false",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "}",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "O",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "j",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "w",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "{",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ":",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "John",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ":",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "3",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "S",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ":",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "}",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "C",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "H",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "{",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "stringType": "SINGLE",
+    "type": "STRING",
+    "value": "Hello from ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "}",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "H",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "T",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "stringType": "TEMPLATE",
+    "type": "STRING",
+    "value": "\${greeting} My age is \${person.age}",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "A",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "w",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "N",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ">",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "C",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "N",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "5",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "7",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "O",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "R",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "x",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "p",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "R",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "x",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "^",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "[",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "\\",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "w",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "-",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "]",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "\\",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "[",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "\\",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "w",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "-",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "]",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "*",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "@",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "[",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "\\",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "w",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "-",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "]",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "\\",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "[",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "-",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "z",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "A",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "-",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "Z",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "]",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "{",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "7",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "}",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "$",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "N",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "L",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "1",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "1",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "1",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "B",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "L",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "7",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "4",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "5",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "O",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "x",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "L",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "x",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "1",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "f",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "H",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "x",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "d",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "*",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "*",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "*",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "M",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "u",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "*",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "/",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "m",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "R",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "x",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "stringType": "DOUBLE",
+    "type": "STRING",
+    "value": "'",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ".",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "g",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "(",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "b",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "y",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "L",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "o",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "L",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "h",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "x",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "L",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "t",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "e",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "r",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "a",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ")",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+]
+`;
+
+exports[`Performance should transform es2015 to segments 2`] = `1134`;

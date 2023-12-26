@@ -23,6 +23,7 @@ export function buildJavascript(): Linter.ConfigOverride<Linter.RulesRecord> {
       'unicorn/prevent-abbreviations': 'off',
       'unicorn/filename-case': 'off',
       'unicorn/prefer-switch': 'off',
+      'sonarjs/prefer-single-boolean-return': 'off',
       'sonarjs/cognitive-complexity': ['error', 5]
     }
   };

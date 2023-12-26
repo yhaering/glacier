@@ -9,6 +9,7 @@ import type { LineTerminatorToken } from './tokens/LineTerminatorToken';
 import type { BooleanToken } from './tokens/BooleanToken';
 import type { NumericToken } from './tokens/NumericToken';
 import type { NullToken } from './tokens/NullToken';
+import type { UnknownToken } from './tokens/UnknownToken';
 
 export type Token =
   | CommentToken
@@ -18,6 +19,7 @@ export type Token =
   | RegexToken
   | StringToken
   | WhitespaceToken
+  | UnknownToken
   | LineTerminatorToken
   | BooleanToken
   | NumericToken
