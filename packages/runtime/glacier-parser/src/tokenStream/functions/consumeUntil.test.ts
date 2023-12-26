@@ -32,7 +32,7 @@ describe('consumeUntil', () => {
 
   test('calls consumeFn with next character', () => {
     const { consumeFn } = run();
-    expect(consumeFn).toHaveBeenCalledWith('{{CHAR}}');
+    expect(consumeFn).toHaveBeenCalledWith('{{CHAR}}', '');
   });
 
   test('returns consumed string', () => {

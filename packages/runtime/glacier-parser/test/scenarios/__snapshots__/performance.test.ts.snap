@@ -140,12 +140,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "4",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "2",
+    "type": "NUMERIC",
+    "value": "42",
   },
   {
     "type": "UNKNOWN",
@@ -965,7 +961,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "NUMERIC",
     "value": "0",
   },
   {
@@ -1826,12 +1822,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "3",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "0",
+    "type": "NUMERIC",
+    "value": "30",
   },
   {
     "type": "UNKNOWN",
@@ -2917,7 +2909,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
+    "type": "NUMERIC",
     "value": "5",
   },
   {
@@ -2929,7 +2921,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "NUMERIC",
     "value": "7",
   },
   {
@@ -3439,7 +3431,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "{",
   },
   {
-    "type": "UNKNOWN",
+    "type": "NUMERIC",
     "value": "2",
   },
   {
@@ -3447,7 +3439,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": ",",
   },
   {
-    "type": "UNKNOWN",
+    "type": "NUMERIC",
     "value": "7",
   },
   {
@@ -3583,505 +3575,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
   },
   {
     "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
     "value": "n",
   },
   {
     "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "L",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "=",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "0",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "1",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "0",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "1",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "0",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "1",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "0",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ";",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "/",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "B",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "LINE_TERMINATOR",
-    "value": "
-",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "L",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "=",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "0",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "7",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "4",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "5",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ";",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "/",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "O",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "LINE_TERMINATOR",
-    "value": "
-",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "x",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "L",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "=",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "0",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "x",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "1",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ";",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "/",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "H",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "x",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
+    "value": "u",
   },
   {
     "type": "UNKNOWN",
@@ -4089,19 +3587,23 @@ exports[`Performance should transform es2015 to segments 1`] = `
   },
   {
     "type": "UNKNOWN",
-    "value": "a",
+    "value": "e",
   },
   {
     "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
+    "value": "r",
   },
   {
     "type": "UNKNOWN",
-    "value": "l",
+    "value": "i",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "c",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "L",
   },
   {
     "type": "UNKNOWN",
@@ -4126,6 +3628,707 @@ exports[`Performance should transform es2015 to segments 1`] = `
   {
     "type": "UNKNOWN",
     "value": "l",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "s",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "[",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1234",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1234.5",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1234.678",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1234",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "2134n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "12313e1",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "12341e2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "123123.2e2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1235132.5e2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1235132.5e1",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1235132.5e-2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1235132.5e-2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0b01",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0b01",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0b01n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0o01234567",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0o01234567",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0o01234567n",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0x012345678abcdefabcdef",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0x012345678abcdefabcdef",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0x012345678abcdefabcdefn",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.0",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.1e2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.1e2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "1234",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "12345",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.1234",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.1234",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.123e2",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.1234e2",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": "]",
+  },
+  {
+    "type": "UNKNOWN",
+    "value": ";",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -4394,224 +4597,5 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "
 ",
   },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ".",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "(",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "L",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ",",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "L",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ",",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "x",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "L",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ")",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ";",
-  },
-  {
-    "type": "LINE_TERMINATOR",
-    "value": "
-",
-  },
 ]
 `;
-
-exports[`Performance should transform es2015 to segments 2`] = `1134`;

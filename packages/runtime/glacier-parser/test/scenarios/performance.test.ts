@@ -14,6 +14,5 @@ describe('Performance', () => {
     }
 
     expect(tokens).toMatchSnapshot();
-    expect(tokens.length).toMatchSnapshot();
   });
 });

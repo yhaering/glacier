@@ -7,6 +7,8 @@ import { isWhitespace } from '../checks/isWhitespace';
 import { transformWhitespace } from './tokens/whitespace/transformWhitespace';
 import { isString } from '../checks/isString';
 import { transformString } from './tokens/string/transformString';
+import { isNumber } from '../checks/isNumber';
+import { transformNumeric } from './tokens/numeric/transformNumeric';
 
 jest.mock('./tokens/unknown/transformUnknown', () => ({
   transformUnknown: jest.fn().mockReturnValue('{{UNKNOWN}}')
@@ -24,6 +26,10 @@ jest.mock('../checks/isString', () => ({
   isString: jest.fn().mockReturnValue(false)
 }));
 
+jest.mock('../checks/isNumber', () => ({
+  isNumber: jest.fn().mockReturnValue(false)
+}));
+
 jest.mock('./tokens/lineTerminator/transformLineTerminator', () => ({
   transformLineTerminator: jest.fn().mockReturnValue('{{LINE_TERMINATOR}}')
 }));
@@ -34,6 +40,10 @@ jest.mock('./tokens/whitespace/transformWhitespace', () => ({
 
 jest.mock('./tokens/string/transformString', () => ({
   transformString: jest.fn().mockReturnValue('{{STRING}}')
+}));
+
+jest.mock('./tokens/numeric/transformNumeric', () => ({
+  transformNumeric: jest.fn().mockReturnValue('{{NUMERIC}}')
 }));
 
 function run() {
@@ -70,6 +80,13 @@ function runWithString() {
   return { returnValue, characterStream };
 }
 
+function runWithNumeric() {
+  (isNumber as jest.Mock).mockReturnValueOnce(true);
+  const characterStream = fakeCharacterStream();
+  const returnValue = transformCharacter(characterStream);
+  return { returnValue, characterStream };
+}
+
 describe('transformCharacter', () => {
   beforeEach(run);
 
@@ -92,6 +109,10 @@ describe('transformCharacter', () => {
 
   test('calls isString', () => {
     expect(isString).toHaveBeenCalledWith('{{CHAR}}');
+  });
+
+  test('calls isNumber', () => {
+    expect(isNumber).toHaveBeenCalledWith('{{CHAR}}');
   });
 
   test('calls transformUnknown', () => {
@@ -144,6 +165,18 @@ describe('transformCharacter', () => {
     test('returns return value of transformString', () => {
       const { returnValue } = runWithString();
       expect(returnValue).toBe('{{STRING}}');
+    });
+  });
+
+  describe('if isNumeric returns true', () => {
+    test('calls transformNumeric', () => {
+      const { characterStream } = runWithNumeric();
+      expect(transformNumeric).toHaveBeenCalledWith(characterStream);
+    });
+
+    test('returns return value of transformNumeric', () => {
+      const { returnValue } = runWithNumeric();
+      expect(returnValue).toBe('{{NUMERIC}}');
     });
   });
 });

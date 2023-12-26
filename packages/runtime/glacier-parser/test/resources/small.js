@@ -52,12 +52,42 @@ console.log(sum);
 const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
 
 // Numeric literals
-const binaryLiteral = 0b101010; // Binary literal
-const octalLiteral = 0o745; // Octal literal
-const hexLiteral = 0x1f; // Hexadecimal literal
+const numericLiterals = [
+  0,
+  1,
+  1234,
+  1234.5,
+  1234.678,
+  1234,
+  2134n,
+  12313e1,
+  12341e2,
+  123123.2e2,
+  1235132.5e2,
+  1235132.5e1,
+  1235132.5e-2,
+  1235132.5e-2,
+  0b01,
+  0b01,
+  0b01n,
+  0o01234567,
+  0o01234567,
+  0o01234567n,
+  0x012345678abcdefabcdef,
+  0x012345678abcdefabcdef,
+  0x012345678abcdefabcdefn,
+  0.0,
+  0.1e2,
+  0.1e2,
+  1234,
+  12345,
+  0.1234,
+  0.1234,
+  0.123e2,
+  0.1234e2
+];
 
 /**
  * Multi line comment
  */
 console.log(emailRegex.test("'"));
-console.log(binaryLiteral, octalLiteral, hexLiteral);

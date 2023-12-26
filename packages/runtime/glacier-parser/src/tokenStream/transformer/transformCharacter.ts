@@ -7,6 +7,8 @@ import { isWhitespace } from '../checks/isWhitespace';
 import { transformWhitespace } from './tokens/whitespace/transformWhitespace';
 import { isString } from '../checks/isString';
 import { transformString } from './tokens/string/transformString';
+import { isNumber } from '../checks/isNumber';
+import { transformNumeric } from './tokens/numeric/transformNumeric';
 
 export function transformCharacter(
   characterStream: CharacterStream
@@ -26,6 +28,10 @@ export function transformCharacter(
 
   if (isString(nextChar)) {
     return transformString(characterStream);
+  }
+
+  if (isNumber(nextChar)) {
+    return transformNumeric(characterStream);
   }
 
   return transformUnknown(characterStream);
