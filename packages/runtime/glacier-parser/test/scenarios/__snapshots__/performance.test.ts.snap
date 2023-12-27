@@ -3,28 +3,9 @@
 exports[`Performance should transform es2015 to segments 1`] = `
 [
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Declare",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "variables",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Declare variables",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -186,36 +167,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Create",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "an",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "array",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Create an array",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -300,36 +254,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Define",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "a",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "KEYWORD",
-    "value": "function",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Define a function",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -429,36 +356,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Use",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "a",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "loop",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Use a loop",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -634,28 +534,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Conditional",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "statement",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Conditional statement",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -819,36 +700,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Object",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "KEYWORD",
-    "value": "with",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "properties",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Object with properties",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1003,36 +857,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Call",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "a",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "method",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Call a method",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1206,28 +1033,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Template",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "literal",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Template literal",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1278,28 +1086,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Arrow",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "KEYWORD",
-    "value": "function",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Arrow function",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1401,36 +1190,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Call",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "the",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "KEYWORD",
-    "value": "function",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Call the function",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1504,36 +1266,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Output",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "the",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "result",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Output the result",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1579,28 +1314,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Regular",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "expression",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Regular expression",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1826,28 +1542,9 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Numeric",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "literals",
+    "commentType": "SINGLE_LINE",
+    "type": "COMMENT",
+    "value": " Numeric literals",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -2443,7 +2140,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
   },
   {
     "type": "NUMERIC",
-    "value": "1234",
+    "value": "12_34",
   },
   {
     "type": "PUNCTUATION",
@@ -2551,6 +2248,27 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0.1234e2",
   },
   {
+    "type": "PUNCTUATION",
+    "value": ",",
+  },
+  {
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NUMERIC",
+    "value": "0.1_2_3",
+  },
+  {
     "type": "LINE_TERMINATOR",
     "value": "
 ",
@@ -2574,66 +2292,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "PUNCTUATION",
-    "value": "/",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "**",
-  },
-  {
-    "type": "LINE_TERMINATOR",
-    "value": "
-",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "*",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "Multi",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "line",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "IDENTIFIER",
-    "value": "comment",
-  },
-  {
-    "type": "LINE_TERMINATOR",
-    "value": "
-",
-  },
-  {
-    "type": "WHITESPACE",
-    "value": " ",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "*",
-  },
-  {
-    "type": "PUNCTUATION",
-    "value": "/",
+    "commentType": "MULTI_LINE",
+    "type": "COMMENT",
+    "value": "*
+ * Multi line comment
+ ",
   },
   {
     "type": "LINE_TERMINATOR",
