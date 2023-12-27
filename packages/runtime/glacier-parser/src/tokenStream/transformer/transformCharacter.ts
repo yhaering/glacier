@@ -13,8 +13,6 @@ import { isSymbol } from '../checks/isSymbol';
 import { transformPunctuation } from './tokens/punctuation/transformPunctuation';
 import { isIdentifier } from '../checks/isIdentifier';
 import { transformIdentifier } from './tokens/identifier/transformIdentifier';
-import { transformSingleLineComment } from './tokens/comment/transformSingleLineComment';
-import { transformMultiLineComment } from './tokens/comment/transformMultiLineComment';
 
 /* eslint-disable max-lines */
 // eslint-disable-next-line sonarjs/cognitive-complexity
@@ -46,17 +44,6 @@ export function transformCharacter(
     const secondChar = characterStream.peek(1);
     if (isNumber(secondChar)) {
       return transformNumeric(characterStream);
-    }
-  }
-
-  if (nextChar === '/') {
-    const secondChar = characterStream.peek(1);
-    if (secondChar === '/') {
-      return transformSingleLineComment(characterStream);
-    }
-
-    if (secondChar === '*') {
-      return transformMultiLineComment(characterStream);
     }
   }
 

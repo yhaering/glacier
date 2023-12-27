@@ -50,7 +50,9 @@ const sum = addNumbers(5, 7);
 console.log(sum);
 
 // Regular expression
-const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+const emailRegex = /^[\w-/]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/gu;
+const anotherRegex = /[a-z]/;
+const fakeRegex = /[/*]/g;
 
 // Numeric literals
 const numericLiterals = [

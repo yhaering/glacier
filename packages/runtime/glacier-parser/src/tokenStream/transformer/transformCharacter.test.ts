@@ -13,8 +13,6 @@ import { isSymbol } from '../checks/isSymbol';
 import { transformPunctuation } from './tokens/punctuation/transformPunctuation';
 import { isIdentifier } from '../checks/isIdentifier';
 import { transformIdentifier } from './tokens/identifier/transformIdentifier';
-import { transformSingleLineComment } from './tokens/comment/transformSingleLineComment';
-import { transformMultiLineComment } from './tokens/comment/transformMultiLineComment';
 
 jest.mock('./tokens/unknown/transformUnknown', () => ({
   transformUnknown: jest.fn().mockReturnValue('{{UNKNOWN}}')
@@ -66,16 +64,6 @@ jest.mock('./tokens/punctuation/transformPunctuation', () => ({
 
 jest.mock('./tokens/identifier/transformIdentifier', () => ({
   transformIdentifier: jest.fn().mockReturnValue('{{IDENTIFIER}}')
-}));
-
-jest.mock('./tokens/comment/transformSingleLineComment', () => ({
-  transformSingleLineComment: jest
-    .fn()
-    .mockReturnValue('{{SINGLE_LINE_COMMENT}}')
-}));
-
-jest.mock('./tokens/comment/transformMultiLineComment', () => ({
-  transformMultiLineComment: jest.fn().mockReturnValue('{{MULTI_LINE_COMMENT}}')
 }));
 
 function run() {
@@ -144,31 +132,6 @@ function runWithDotAndNumber() {
   (isNumber as jest.Mock).mockReturnValueOnce(false).mockReturnValueOnce(true);
   const characterStream = fakeCharacterStream();
   (characterStream.peek as jest.Mock).mockReturnValueOnce('.');
-  const returnValue = transformCharacter(characterStream);
-  return { returnValue, characterStream };
-}
-
-function runWithSlash() {
-  const characterStream = fakeCharacterStream();
-  (characterStream.peek as jest.Mock).mockReturnValueOnce('/');
-  const returnValue = transformCharacter(characterStream);
-  return { returnValue, characterStream };
-}
-
-function runWithSlashAndSlash() {
-  const characterStream = fakeCharacterStream();
-  (characterStream.peek as jest.Mock)
-    .mockReturnValueOnce('/')
-    .mockReturnValueOnce('/');
-  const returnValue = transformCharacter(characterStream);
-  return { returnValue, characterStream };
-}
-
-function runWithSlashAndAsterisk() {
-  const characterStream = fakeCharacterStream();
-  (characterStream.peek as jest.Mock)
-    .mockReturnValueOnce('/')
-    .mockReturnValueOnce('*');
   const returnValue = transformCharacter(characterStream);
   return { returnValue, characterStream };
 }
@@ -319,45 +282,6 @@ describe('transformCharacter', () => {
       test('returns return value of transformNumeric', () => {
         const { returnValue } = runWithDotAndNumber();
         expect(returnValue).toBe('{{NUMERIC}}');
-      });
-    });
-  });
-
-  describe('if next character is a slash', () => {
-    beforeEach(runWithSlash);
-
-    test('calls characterStream.peek', () => {
-      const { characterStream } = runWithSlash();
-      expect(characterStream.peek).toHaveBeenCalledWith(1);
-    });
-
-    describe('if second character is a slash', () => {
-      beforeEach(runWithSlashAndSlash);
-
-      test('calls transformSingleLineComment', () => {
-        const { characterStream } = runWithSlashAndSlash();
-        expect(transformSingleLineComment).toHaveBeenCalledWith(
-          characterStream
-        );
-      });
-
-      test('returns return value of transformSingleLineComment', () => {
-        const { returnValue } = runWithSlashAndSlash();
-        expect(returnValue).toBe('{{SINGLE_LINE_COMMENT}}');
-      });
-    });
-
-    describe('if second character is a asterisk', () => {
-      beforeEach(runWithSlashAndAsterisk);
-
-      test('calls transformMultiLineComment', () => {
-        const { characterStream } = runWithSlashAndAsterisk();
-        expect(transformMultiLineComment).toHaveBeenCalledWith(characterStream);
-      });
-
-      test('returns return value of transformMultiLineComment', () => {
-        const { returnValue } = runWithSlashAndAsterisk();
-        expect(returnValue).toBe('{{MULTI_LINE_COMMENT}}');
       });
     });
   });
