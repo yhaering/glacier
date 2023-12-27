@@ -5,7 +5,7 @@ export function createCharacterStreamPeekFn(
   pointer: CharacterStreamPointer,
   stream: string
 ): CharacterStreamPeekFn {
-  return () => {
-    return stream[pointer.value];
+  return (offset = 0) => {
+    return stream[pointer.value + offset];
   };
 }

@@ -1,1 +1,1 @@
-export type CharacterStreamPeekFn = () => string | undefined;
+export type CharacterStreamPeekFn = (offset?: number) => string | undefined;

@@ -13,6 +13,7 @@ import { isSymbol } from '../checks/isSymbol';
 import { transformPunctuation } from './tokens/punctuation/transformPunctuation';
 import { isIdentifier } from '../checks/isIdentifier';
 import { transformIdentifier } from './tokens/identifier/transformIdentifier';
+
 /* eslint-disable max-lines */
 // eslint-disable-next-line sonarjs/cognitive-complexity
 export function transformCharacter(
@@ -37,6 +38,13 @@ export function transformCharacter(
 
   if (isNumber(nextChar)) {
     return transformNumeric(characterStream);
+  }
+
+  if (nextChar === '.') {
+    const secondChar = characterStream.peek(1);
+    if (isNumber(secondChar)) {
+      return transformNumeric(characterStream);
+    }
   }
 
   if (isSymbol(nextChar)) {

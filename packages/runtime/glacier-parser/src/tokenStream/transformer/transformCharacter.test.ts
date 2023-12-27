@@ -121,6 +121,21 @@ function runWithIdentifier() {
   return { returnValue, characterStream };
 }
 
+function runWithDot() {
+  const characterStream = fakeCharacterStream();
+  (characterStream.peek as jest.Mock).mockReturnValueOnce('.');
+  const returnValue = transformCharacter(characterStream);
+  return { returnValue, characterStream };
+}
+
+function runWithDotAndNumber() {
+  (isNumber as jest.Mock).mockReturnValueOnce(false).mockReturnValueOnce(true);
+  const characterStream = fakeCharacterStream();
+  (characterStream.peek as jest.Mock).mockReturnValueOnce('.');
+  const returnValue = transformCharacter(characterStream);
+  return { returnValue, characterStream };
+}
+
 describe('transformCharacter', () => {
   beforeEach(run);
 
@@ -243,6 +258,31 @@ describe('transformCharacter', () => {
     test('returns return value of transformIdentifier', () => {
       const { returnValue } = runWithIdentifier();
       expect(returnValue).toBe('{{IDENTIFIER}}');
+    });
+  });
+
+  describe('if nextChar is a dot', () => {
+    beforeEach(runWithDot);
+
+    test('calls characterStream.peek', () => {
+      const { characterStream } = runWithDot();
+      expect(characterStream.peek).toHaveBeenCalledWith(1);
+    });
+
+    test('calls isNumber', () => {
+      expect(isNumber).toHaveBeenCalledWith('{{CHAR}}');
+    });
+
+    describe('if second character is a number', () => {
+      test('calls transformNumeric', () => {
+        const { characterStream } = runWithDotAndNumber();
+        expect(transformNumeric).toHaveBeenCalledWith(characterStream);
+      });
+
+      test('returns return value of transformNumeric', () => {
+        const { returnValue } = runWithDotAndNumber();
+        expect(returnValue).toBe('{{NUMERIC}}');
+      });
     });
   });
 });

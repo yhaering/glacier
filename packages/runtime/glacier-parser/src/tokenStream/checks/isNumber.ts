@@ -1,4 +1,4 @@
-export function isNumber(char: string): boolean {
+export function isNumber(char?: string): boolean {
   return (
     char == '0' ||
     char == '1' ||

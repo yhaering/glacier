@@ -7,7 +7,7 @@ export function whileDecimal(char: string, characters: string) {
     return false;
   }
 
-  if (char === 'n') {
+  if (char === 'n' || char === '_') {
     return true;
   }
 
