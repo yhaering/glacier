@@ -15,72 +15,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "D",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "Declare",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "v",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "variables",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -88,44 +32,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "let",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
+    "type": "IDENTIFIER",
+    "value": "number",
   },
   {
     "type": "WHITESPACE",
@@ -153,60 +69,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
+    "type": "IDENTIFIER",
+    "value": "greeting",
   },
   {
     "type": "WHITESPACE",
@@ -235,52 +107,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "v",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
+    "type": "KEYWORD",
+    "value": "var",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "A",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "v",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "isActive",
   },
   {
     "type": "WHITESPACE",
@@ -295,20 +131,45 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "BOOLEAN",
+    "value": "true",
   },
   {
-    "type": "UNKNOWN",
-    "value": "r",
+    "type": "PUNCTUATION",
+    "value": ";",
   },
   {
-    "type": "UNKNOWN",
-    "value": "u",
+    "type": "LINE_TERMINATOR",
+    "value": "
+",
   },
   {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "KEYWORD",
+    "value": "var",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "IDENTIFIER",
+    "value": "isNull",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "PUNCTUATION",
+    "value": "=",
+  },
+  {
+    "type": "WHITESPACE",
+    "value": " ",
+  },
+  {
+    "type": "NULL",
+    "value": "null",
   },
   {
     "type": "PUNCTUATION",
@@ -337,64 +198,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "C",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "Create",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "IDENTIFIER",
+    "value": "an",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
+    "type": "IDENTIFIER",
+    "value": "array",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -402,52 +223,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "fruits",
   },
   {
     "type": "WHITESPACE",
@@ -527,35 +312,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "D",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "Define",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "a",
   },
   {
@@ -563,36 +328,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "KEYWORD",
+    "value": "function",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -600,128 +337,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "KEYWORD",
+    "value": "function",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "M",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "displayMessage",
   },
   {
     "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "message",
   },
   {
     "type": "PUNCTUATION",
@@ -749,80 +382,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "console",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
+    "type": "IDENTIFIER",
+    "value": "log",
   },
   {
     "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "message",
   },
   {
     "type": "PUNCTUATION",
@@ -864,23 +441,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "U",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "Use",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "a",
   },
   {
@@ -888,20 +457,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "p",
+    "type": "IDENTIFIER",
+    "value": "loop",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -909,16 +466,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
+    "type": "KEYWORD",
+    "value": "for",
   },
   {
     "type": "WHITESPACE",
@@ -929,23 +478,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "let",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "i",
   },
   {
@@ -973,7 +514,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "i",
   },
   {
@@ -989,56 +530,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "fruits",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
+    "type": "IDENTIFIER",
+    "value": "length",
   },
   {
     "type": "PUNCTUATION",
@@ -1049,7 +550,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "i",
   },
   {
@@ -1082,95 +583,23 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "M",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "displayMessage",
   },
   {
     "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "fruits",
   },
   {
     "type": "PUNCTUATION",
     "value": "[",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "i",
   },
   {
@@ -1217,88 +646,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "C",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
+    "type": "IDENTIFIER",
+    "value": "Conditional",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "statement",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1306,12 +663,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "f",
+    "type": "KEYWORD",
+    "value": "if",
   },
   {
     "type": "WHITESPACE",
@@ -1322,36 +675,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "A",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "v",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "isActive",
   },
   {
     "type": "PUNCTUATION",
@@ -1379,48 +704,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "console",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
+    "type": "IDENTIFIER",
+    "value": "log",
   },
   {
     "type": "PUNCTUATION",
@@ -1453,20 +746,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "KEYWORD",
+    "value": "else",
   },
   {
     "type": "WHITESPACE",
@@ -1490,48 +771,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "console",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
+    "type": "IDENTIFIER",
+    "value": "log",
   },
   {
     "type": "PUNCTUATION",
@@ -1582,92 +831,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "O",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "j",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "Object",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "w",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
+    "type": "KEYWORD",
+    "value": "with",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "properties",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1675,52 +856,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "IDENTIFIER",
+    "value": "person",
   },
   {
     "type": "WHITESPACE",
@@ -1752,20 +897,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "name",
   },
   {
     "type": "PUNCTUATION",
@@ -1798,16 +931,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "age",
   },
   {
     "type": "PUNCTUATION",
@@ -1839,40 +964,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "S",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "isStudent",
   },
   {
     "type": "PUNCTUATION",
@@ -1883,24 +976,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "BOOLEAN",
+    "value": "false",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1938,27 +1015,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "C",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
+    "type": "IDENTIFIER",
+    "value": "Call",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "a",
   },
   {
@@ -1966,28 +1031,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
+    "type": "IDENTIFIER",
+    "value": "method",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -1995,64 +1040,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "IDENTIFIER",
+    "value": "person",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "H",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
+    "type": "IDENTIFIER",
+    "value": "sayHello",
   },
   {
     "type": "WHITESPACE",
@@ -2067,36 +1064,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "KEYWORD",
+    "value": "function",
   },
   {
     "type": "WHITESPACE",
@@ -2132,48 +1101,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "console",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
+    "type": "IDENTIFIER",
+    "value": "log",
   },
   {
     "type": "PUNCTUATION",
@@ -2197,40 +1134,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "KEYWORD",
+    "value": "this",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "name",
   },
   {
     "type": "PUNCTUATION",
@@ -2259,64 +1172,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "IDENTIFIER",
+    "value": "person",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "y",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "H",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
+    "type": "IDENTIFIER",
+    "value": "sayHello",
   },
   {
     "type": "PUNCTUATION",
@@ -2353,68 +1218,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "T",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "Template",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
+    "type": "IDENTIFIER",
+    "value": "literal",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -2422,56 +1235,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "message",
   },
   {
     "type": "WHITESPACE",
@@ -2517,60 +1290,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "A",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "w",
+    "type": "IDENTIFIER",
+    "value": "Arrow",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "KEYWORD",
+    "value": "function",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -2578,68 +1307,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "N",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "addNumbers",
   },
   {
     "type": "WHITESPACE",
@@ -2658,7 +1335,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "a",
   },
   {
@@ -2670,7 +1347,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "b",
   },
   {
@@ -2690,7 +1367,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "a",
   },
   {
@@ -2706,7 +1383,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "b",
   },
   {
@@ -2736,72 +1413,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "C",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
+    "type": "IDENTIFIER",
+    "value": "Call",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "the",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "f",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "KEYWORD",
+    "value": "function",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -2809,40 +1438,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
+    "type": "IDENTIFIER",
+    "value": "sum",
   },
   {
     "type": "WHITESPACE",
@@ -2857,44 +1462,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "d",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "N",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "b",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "addNumbers",
   },
   {
     "type": "PUNCTUATION",
@@ -2947,72 +1516,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "O",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "Output",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "h",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "the",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "result",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -3020,64 +1541,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "console",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
+    "type": "IDENTIFIER",
+    "value": "log",
   },
   {
     "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
+    "type": "IDENTIFIER",
+    "value": "sum",
   },
   {
     "type": "PUNCTUATION",
@@ -3110,76 +1591,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "R",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
+    "type": "IDENTIFIER",
+    "value": "Regular",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "x",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "p",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
+    "type": "IDENTIFIER",
+    "value": "expression",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -3187,68 +1608,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "R",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "x",
+    "type": "IDENTIFIER",
+    "value": "emailRegex",
   },
   {
     "type": "WHITESPACE",
@@ -3279,7 +1648,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "\\",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "w",
   },
   {
@@ -3315,7 +1684,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "\\",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "w",
   },
   {
@@ -3355,7 +1724,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "\\",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "w",
   },
   {
@@ -3391,7 +1760,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "[",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "a",
   },
   {
@@ -3399,19 +1768,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "-",
   },
   {
-    "type": "UNKNOWN",
-    "value": "z",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "A",
+    "type": "IDENTIFIER",
+    "value": "zA",
   },
   {
     "type": "PUNCTUATION",
     "value": "-",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "Z",
   },
   {
@@ -3439,7 +1804,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "}",
   },
   {
-    "type": "UNKNOWN",
+    "type": "IDENTIFIER",
     "value": "$",
   },
   {
@@ -3473,68 +1838,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "N",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
+    "type": "IDENTIFIER",
+    "value": "Numeric",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "literals",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -3542,88 +1855,16 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "KEYWORD",
+    "value": "const",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "L",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "r",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
+    "type": "IDENTIFIER",
+    "value": "numericLiterals",
   },
   {
     "type": "WHITESPACE",
@@ -4358,76 +2599,24 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "M",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "u",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
+    "type": "IDENTIFIER",
+    "value": "Multi",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "line",
   },
   {
     "type": "WHITESPACE",
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "comment",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -4452,112 +2641,32 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "c",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "n",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
+    "type": "IDENTIFIER",
+    "value": "console",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "o",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
+    "type": "IDENTIFIER",
+    "value": "log",
   },
   {
     "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "m",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "a",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "i",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "l",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "R",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "g",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "x",
+    "type": "IDENTIFIER",
+    "value": "emailRegex",
   },
   {
     "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
-    "value": "t",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "e",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "s",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "t",
+    "type": "IDENTIFIER",
+    "value": "test",
   },
   {
     "type": "PUNCTUATION",

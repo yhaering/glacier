@@ -11,6 +11,8 @@ import { isNumber } from '../checks/isNumber';
 import { transformNumeric } from './tokens/numeric/transformNumeric';
 import { isSymbol } from '../checks/isSymbol';
 import { transformPunctuation } from './tokens/punctuation/transformPunctuation';
+import { isIdentifier } from '../checks/isIdentifier';
+import { transformIdentifier } from './tokens/identifier/transformIdentifier';
 
 jest.mock('./tokens/unknown/transformUnknown', () => ({
   transformUnknown: jest.fn().mockReturnValue('{{UNKNOWN}}')
@@ -36,6 +38,10 @@ jest.mock('../checks/isSymbol', () => ({
   isSymbol: jest.fn().mockReturnValue(false)
 }));
 
+jest.mock('../checks/isIdentifier', () => ({
+  isIdentifier: jest.fn().mockReturnValue(false)
+}));
+
 jest.mock('./tokens/lineTerminator/transformLineTerminator', () => ({
   transformLineTerminator: jest.fn().mockReturnValue('{{LINE_TERMINATOR}}')
 }));
@@ -54,6 +60,10 @@ jest.mock('./tokens/numeric/transformNumeric', () => ({
 
 jest.mock('./tokens/punctuation/transformPunctuation', () => ({
   transformPunctuation: jest.fn().mockReturnValue('{{PUNCTUATION}}')
+}));
+
+jest.mock('./tokens/identifier/transformIdentifier', () => ({
+  transformIdentifier: jest.fn().mockReturnValue('{{IDENTIFIER}}')
 }));
 
 function run() {
@@ -104,6 +114,13 @@ function runWithPunctuation() {
   return { returnValue, characterStream };
 }
 
+function runWithIdentifier() {
+  (isIdentifier as jest.Mock).mockReturnValueOnce(true);
+  const characterStream = fakeCharacterStream();
+  const returnValue = transformCharacter(characterStream);
+  return { returnValue, characterStream };
+}
+
 describe('transformCharacter', () => {
   beforeEach(run);
 
@@ -134,6 +151,10 @@ describe('transformCharacter', () => {
 
   test('calls isSymbol', () => {
     expect(isSymbol).toHaveBeenCalledWith('{{CHAR}}');
+  });
+
+  test('calls isIdentifier', () => {
+    expect(isIdentifier).toHaveBeenCalledWith('{{CHAR}}');
   });
 
   test('calls transformUnknown', () => {
@@ -210,6 +231,18 @@ describe('transformCharacter', () => {
     test('returns return value of transformPunctuation', () => {
       const { returnValue } = runWithPunctuation();
       expect(returnValue).toBe('{{PUNCTUATION}}');
+    });
+  });
+
+  describe('if isIdentifier returns true', () => {
+    test('calls transformIdentifier', () => {
+      const { characterStream } = runWithIdentifier();
+      expect(transformIdentifier).toHaveBeenCalledWith(characterStream);
+    });
+
+    test('returns return value of transformIdentifier', () => {
+      const { returnValue } = runWithIdentifier();
+      expect(returnValue).toBe('{{IDENTIFIER}}');
     });
   });
 });

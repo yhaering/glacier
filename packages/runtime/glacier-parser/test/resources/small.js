@@ -2,6 +2,7 @@
 let number = 42;
 const greeting = 'Hello, World!';
 var isActive = true;
+var isNull = null;
 
 // Create an array
 const fruits = ['apple', 'banana', 'orange'];

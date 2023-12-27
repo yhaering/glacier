@@ -11,7 +11,9 @@ import { isNumber } from '../checks/isNumber';
 import { transformNumeric } from './tokens/numeric/transformNumeric';
 import { isSymbol } from '../checks/isSymbol';
 import { transformPunctuation } from './tokens/punctuation/transformPunctuation';
-
+import { isIdentifier } from '../checks/isIdentifier';
+import { transformIdentifier } from './tokens/identifier/transformIdentifier';
+/* eslint-disable max-lines */
 // eslint-disable-next-line sonarjs/cognitive-complexity
 export function transformCharacter(
   characterStream: CharacterStream
@@ -39,6 +41,10 @@ export function transformCharacter(
 
   if (isSymbol(nextChar)) {
     return transformPunctuation(characterStream);
+  }
+
+  if (isIdentifier(nextChar)) {
+    return transformIdentifier(characterStream);
   }
 
   return transformUnknown(characterStream);
