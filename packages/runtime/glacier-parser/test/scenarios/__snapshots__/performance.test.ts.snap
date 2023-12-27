@@ -3,11 +3,11 @@
 exports[`Performance should transform es2015 to segments 1`] = `
 [
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -132,7 +132,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -144,7 +144,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "42",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -213,7 +213,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -226,7 +226,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "Hello, World!",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -287,7 +287,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -311,7 +311,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -325,11 +325,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -454,7 +454,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -462,7 +462,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "[",
   },
   {
@@ -471,7 +471,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "apple",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -484,7 +484,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "banana",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -497,11 +497,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "orange",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "]",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -515,11 +515,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -692,7 +692,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -724,7 +724,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
@@ -732,7 +732,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "{",
   },
   {
@@ -777,7 +777,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -793,7 +793,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "g",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -825,11 +825,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -838,7 +838,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "}",
   },
   {
@@ -852,11 +852,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -925,7 +925,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -953,7 +953,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -965,7 +965,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -981,7 +981,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "<",
   },
   {
@@ -1013,7 +1013,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "s",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -1041,7 +1041,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "h",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -1053,15 +1053,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "i",
   },
   {
-    "type": "UNKNOWN",
-    "value": "+",
+    "type": "PUNCTUATION",
+    "value": "++",
   },
   {
-    "type": "UNKNOWN",
-    "value": "+",
-  },
-  {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
@@ -1069,7 +1065,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "{",
   },
   {
@@ -1142,7 +1138,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -1170,7 +1166,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "s",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "[",
   },
   {
@@ -1178,15 +1174,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "i",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "]",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -1195,7 +1191,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "}",
   },
   {
@@ -1209,11 +1205,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -1322,7 +1318,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -1358,7 +1354,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
@@ -1366,7 +1362,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "{",
   },
   {
@@ -1411,7 +1407,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -1427,7 +1423,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "g",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -1436,11 +1432,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "Active status is true",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -1449,7 +1445,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "}",
   },
   {
@@ -1477,7 +1473,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "{",
   },
   {
@@ -1522,7 +1518,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -1538,7 +1534,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "g",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -1547,11 +1543,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "Active status is false",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -1560,7 +1556,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "}",
   },
   {
@@ -1574,11 +1570,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -1731,7 +1727,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -1739,7 +1735,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "{",
   },
   {
@@ -1772,7 +1768,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ":",
   },
   {
@@ -1785,7 +1781,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "John",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -1814,7 +1810,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ":",
   },
   {
@@ -1826,7 +1822,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "30",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -1879,7 +1875,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "t",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ":",
   },
   {
@@ -1912,11 +1908,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "}",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -1930,11 +1926,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -2023,7 +2019,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "n",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -2063,7 +2059,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -2107,11 +2103,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
@@ -2119,7 +2115,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "{",
   },
   {
@@ -2164,7 +2160,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -2180,7 +2176,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "g",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -2193,7 +2189,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "+",
   },
   {
@@ -2217,7 +2213,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "s",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -2237,11 +2233,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -2250,11 +2246,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "}",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -2287,7 +2283,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "n",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -2323,15 +2319,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "o",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -2345,11 +2341,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -2482,7 +2478,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -2495,7 +2491,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "\${greeting} My age is \${person.age}",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -2509,11 +2505,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -2650,7 +2646,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -2658,7 +2654,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -2666,7 +2662,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "a",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -2678,7 +2674,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "b",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
@@ -2686,12 +2682,8 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
-    "value": "=",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": ">",
+    "type": "PUNCTUATION",
+    "value": "=>",
   },
   {
     "type": "WHITESPACE",
@@ -2706,7 +2698,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "+",
   },
   {
@@ -2718,7 +2710,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "b",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -2732,11 +2724,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -2857,7 +2849,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -2905,7 +2897,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "s",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -2913,7 +2905,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "5",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -2925,11 +2917,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "7",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -2943,11 +2935,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -3056,7 +3048,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -3072,7 +3064,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "g",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -3088,11 +3080,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "m",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -3106,11 +3098,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -3263,7 +3255,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -3271,7 +3263,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -3279,7 +3271,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "^",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "[",
   },
   {
@@ -3291,19 +3283,19 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "w",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "-",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "]",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "+",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -3311,11 +3303,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "\\",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "[",
   },
   {
@@ -3327,23 +3319,23 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "w",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "-",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "]",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "+",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "*",
   },
   {
@@ -3351,11 +3343,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "@",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "[",
   },
   {
@@ -3367,15 +3359,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "w",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "-",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "]",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "+",
   },
   {
@@ -3383,19 +3375,19 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "\\",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "+",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "[",
   },
   {
@@ -3403,7 +3395,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "a",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "-",
   },
   {
@@ -3415,7 +3407,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "A",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "-",
   },
   {
@@ -3423,11 +3415,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "Z",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "]",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "{",
   },
   {
@@ -3435,7 +3427,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3443,7 +3435,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "7",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "}",
   },
   {
@@ -3451,11 +3443,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "$",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -3469,11 +3461,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -3638,7 +3630,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "=",
   },
   {
@@ -3646,7 +3638,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "[",
   },
   {
@@ -3667,7 +3659,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3688,7 +3680,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3709,7 +3701,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1234",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3730,7 +3722,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1234.5",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3751,7 +3743,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1234.678",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3772,7 +3764,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1234",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3793,7 +3785,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "2134n",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3814,7 +3806,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "12313e1",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3835,7 +3827,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "12341e2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3856,7 +3848,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "123123.2e2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3877,7 +3869,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1235132.5e2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3898,7 +3890,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1235132.5e1",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3919,7 +3911,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1235132.5e-2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3940,7 +3932,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1235132.5e-2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3961,7 +3953,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0b01",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -3982,7 +3974,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0b01",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4003,7 +3995,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0b01n",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4024,7 +4016,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0o01234567",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4045,7 +4037,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0o01234567",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4066,7 +4058,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0o01234567n",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4087,7 +4079,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0x012345678abcdefabcdef",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4108,7 +4100,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0x012345678abcdefabcdef",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4129,7 +4121,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0x012345678abcdefabcdefn",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4150,7 +4142,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0.0",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4171,7 +4163,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0.1e2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4192,7 +4184,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0.1e2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4213,7 +4205,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "1234",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4234,7 +4226,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "12345",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4255,7 +4247,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0.1234",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4276,7 +4268,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0.1234",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4297,7 +4289,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "0.123e2",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ",",
   },
   {
@@ -4323,11 +4315,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "]",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {
@@ -4341,16 +4333,12 @@ exports[`Performance should transform es2015 to segments 1`] = `
 ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
-    "type": "UNKNOWN",
-    "value": "*",
-  },
-  {
-    "type": "UNKNOWN",
-    "value": "*",
+    "type": "PUNCTUATION",
+    "value": "**",
   },
   {
     "type": "LINE_TERMINATOR",
@@ -4362,7 +4350,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "*",
   },
   {
@@ -4451,11 +4439,11 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": " ",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "*",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "/",
   },
   {
@@ -4492,7 +4480,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "e",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -4508,7 +4496,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "g",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -4552,7 +4540,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "x",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ".",
   },
   {
@@ -4572,7 +4560,7 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "t",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": "(",
   },
   {
@@ -4581,15 +4569,15 @@ exports[`Performance should transform es2015 to segments 1`] = `
     "value": "'",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ")",
   },
   {
-    "type": "UNKNOWN",
+    "type": "PUNCTUATION",
     "value": ";",
   },
   {

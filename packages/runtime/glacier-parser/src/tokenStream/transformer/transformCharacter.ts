@@ -9,7 +9,10 @@ import { isString } from '../checks/isString';
 import { transformString } from './tokens/string/transformString';
 import { isNumber } from '../checks/isNumber';
 import { transformNumeric } from './tokens/numeric/transformNumeric';
+import { isSymbol } from '../checks/isSymbol';
+import { transformPunctuation } from './tokens/punctuation/transformPunctuation';
 
+// eslint-disable-next-line sonarjs/cognitive-complexity
 export function transformCharacter(
   characterStream: CharacterStream
 ): Token | undefined {
@@ -32,6 +35,10 @@ export function transformCharacter(
 
   if (isNumber(nextChar)) {
     return transformNumeric(characterStream);
+  }
+
+  if (isSymbol(nextChar)) {
+    return transformPunctuation(characterStream);
   }
 
   return transformUnknown(characterStream);

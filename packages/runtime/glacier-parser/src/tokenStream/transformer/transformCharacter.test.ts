@@ -9,6 +9,8 @@ import { isString } from '../checks/isString';
 import { transformString } from './tokens/string/transformString';
 import { isNumber } from '../checks/isNumber';
 import { transformNumeric } from './tokens/numeric/transformNumeric';
+import { isSymbol } from '../checks/isSymbol';
+import { transformPunctuation } from './tokens/punctuation/transformPunctuation';
 
 jest.mock('./tokens/unknown/transformUnknown', () => ({
   transformUnknown: jest.fn().mockReturnValue('{{UNKNOWN}}')
@@ -30,6 +32,10 @@ jest.mock('../checks/isNumber', () => ({
   isNumber: jest.fn().mockReturnValue(false)
 }));
 
+jest.mock('../checks/isSymbol', () => ({
+  isSymbol: jest.fn().mockReturnValue(false)
+}));
+
 jest.mock('./tokens/lineTerminator/transformLineTerminator', () => ({
   transformLineTerminator: jest.fn().mockReturnValue('{{LINE_TERMINATOR}}')
 }));
@@ -44,6 +50,10 @@ jest.mock('./tokens/string/transformString', () => ({
 
 jest.mock('./tokens/numeric/transformNumeric', () => ({
   transformNumeric: jest.fn().mockReturnValue('{{NUMERIC}}')
+}));
+
+jest.mock('./tokens/punctuation/transformPunctuation', () => ({
+  transformPunctuation: jest.fn().mockReturnValue('{{PUNCTUATION}}')
 }));
 
 function run() {
@@ -87,6 +97,13 @@ function runWithNumeric() {
   return { returnValue, characterStream };
 }
 
+function runWithPunctuation() {
+  (isSymbol as jest.Mock).mockReturnValueOnce(true);
+  const characterStream = fakeCharacterStream();
+  const returnValue = transformCharacter(characterStream);
+  return { returnValue, characterStream };
+}
+
 describe('transformCharacter', () => {
   beforeEach(run);
 
@@ -113,6 +130,10 @@ describe('transformCharacter', () => {
 
   test('calls isNumber', () => {
     expect(isNumber).toHaveBeenCalledWith('{{CHAR}}');
+  });
+
+  test('calls isSymbol', () => {
+    expect(isSymbol).toHaveBeenCalledWith('{{CHAR}}');
   });
 
   test('calls transformUnknown', () => {
@@ -177,6 +198,18 @@ describe('transformCharacter', () => {
     test('returns return value of transformNumeric', () => {
       const { returnValue } = runWithNumeric();
       expect(returnValue).toBe('{{NUMERIC}}');
+    });
+  });
+
+  describe('if isSymbol returns true', () => {
+    test('calls transformPunctuation', () => {
+      const { characterStream } = runWithPunctuation();
+      expect(transformPunctuation).toHaveBeenCalledWith(characterStream);
+    });
+
+    test('returns return value of transformPunctuation', () => {
+      const { returnValue } = runWithPunctuation();
+      expect(returnValue).toBe('{{PUNCTUATION}}');
     });
   });
 });
