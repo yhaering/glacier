@@ -1,5 +1,65 @@
-import { PUNCTUATIONS } from '../constants/punctuations';
-
+/* eslint-disable max-lines */
 export function whilePunctuation(char: string, characters: string): boolean {
-  return PUNCTUATIONS.some((symbol) => symbol.startsWith(characters + char));
+  const nextPunctuation = characters + char;
+
+  return (
+    nextPunctuation === '{' ||
+    nextPunctuation === '}' ||
+    nextPunctuation === '(' ||
+    nextPunctuation === ')' ||
+    nextPunctuation === '[' ||
+    nextPunctuation === ']' ||
+    nextPunctuation === '.' ||
+    nextPunctuation === '..' ||
+    nextPunctuation === '...' ||
+    nextPunctuation === ';' ||
+    nextPunctuation === ',' ||
+    nextPunctuation === '<' ||
+    nextPunctuation === '<=' ||
+    nextPunctuation === '<<' ||
+    nextPunctuation === '>' ||
+    nextPunctuation === '>=' ||
+    nextPunctuation === '>>' ||
+    nextPunctuation === '>>>' ||
+    nextPunctuation === '=' ||
+    nextPunctuation === '==' ||
+    nextPunctuation === '=>' ||
+    nextPunctuation === '===' ||
+    nextPunctuation === '!' ||
+    nextPunctuation === '!=' ||
+    nextPunctuation === '!==' ||
+    nextPunctuation === '+' ||
+    nextPunctuation === '++' ||
+    nextPunctuation === '+=' ||
+    nextPunctuation === '-' ||
+    nextPunctuation === '-=' ||
+    nextPunctuation === '--' ||
+    nextPunctuation === '*' ||
+    nextPunctuation === '**' ||
+    nextPunctuation === '*=' ||
+    nextPunctuation === '**=' ||
+    nextPunctuation === '%' ||
+    nextPunctuation === '%=' ||
+    nextPunctuation === '&' ||
+    nextPunctuation === '&=' ||
+    nextPunctuation === '&&' ||
+    nextPunctuation === '&&=' ||
+    nextPunctuation === '|' ||
+    nextPunctuation === '||' ||
+    nextPunctuation === '^' ||
+    nextPunctuation === '^=' ||
+    nextPunctuation === '~' ||
+    nextPunctuation === '?' ||
+    nextPunctuation === '??' ||
+    nextPunctuation === ':' ||
+    nextPunctuation === '<<=' ||
+    nextPunctuation === '>>=' ||
+    nextPunctuation === '>>>=' ||
+    nextPunctuation === '|=' ||
+    nextPunctuation === '||=' ||
+    nextPunctuation === '??=' ||
+    nextPunctuation === '/' ||
+    nextPunctuation === '/=' ||
+    nextPunctuation === '?.'
+  );
 }
