@@ -5,6 +5,5 @@ import type { ModuleDeclaration } from './ModuleDeclaration';
 
 export interface Program extends BaseNode {
   type: 'Program';
-  sourceType: 'script' | 'module';
   body: Array<Directive | Statement | ModuleDeclaration>;
 }

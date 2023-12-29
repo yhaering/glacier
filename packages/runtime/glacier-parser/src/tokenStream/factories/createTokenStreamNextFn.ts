@@ -13,6 +13,10 @@ export function createTokenStreamNextFn(
       delete cache.nextToken;
       return nextToken;
     }
-    return transformCharacter(characterStream);
+    const nextToken = transformCharacter(characterStream);
+    if (!nextToken) {
+      throw new Error('End of token stream reached');
+    }
+    return nextToken;
   };
 }

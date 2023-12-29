@@ -24,6 +24,11 @@ function runWithCache() {
   return { fn, returnValue, characterStream, cache };
 }
 
+function runWithEndOfStream() {
+  (transformCharacter as jest.Mock).mockReturnValueOnce(void 0);
+  return run();
+}
+
 describe('createTokenStreamNextFn', () => {
   beforeEach(run);
 
@@ -58,6 +63,14 @@ describe('createTokenStreamNextFn', () => {
       const cache = fakeTokenStreamCache();
       const { returnValue } = runWithCache();
       expect(returnValue).toEqual(cache.nextToken);
+    });
+  });
+
+  describe('if next token is undefined', () => {
+    test('throws an error', () => {
+      expect(() => {
+        runWithEndOfStream();
+      }).toThrow('End of token stream reached');
     });
   });
 });
