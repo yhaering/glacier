@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "workspace:ci": "turbo run ci",
+    "workspace:clean": "git clean -Xdf",
     "prepare": "husky install"
   },
   "devDependencies": {

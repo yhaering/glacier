@@ -1,4 +1,0 @@
-{
-  "extends": "@glacier/typescript",
-  "include": ["**/*.ts"]
-}

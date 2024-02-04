@@ -1,0 +1,23 @@
+{
+  "name": "@glacier/lexer",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "test": "jest --roots src/ --coverage",
+    "lint": "eslint index.ts src/",
+    "lint:fix": "eslint index.ts src/ --fix",
+    "lint:types": "tsc -p ./tsconfig.build.json --noEmit"
+  },
+  "devDependencies": {
+    "@glacier/eslint-config": "*",
+    "@glacier/jest": "*",
+    "@glacier/typescript": "*"
+  },
+  "files": [
+    "dist",
+    "types"
+  ]
+}
