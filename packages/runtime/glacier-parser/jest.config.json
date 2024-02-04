@@ -1,3 +1,4 @@
 {
-  "preset": "@glacier/jest"
+  "preset": "@glacier/jest",
+  "coveragePathIgnorePatterns": ["./src/streams/token/constants"]
 }

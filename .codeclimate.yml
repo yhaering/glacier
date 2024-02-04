@@ -1,5 +1,6 @@
 exclude_patterns:
   - "**/__mocks__/"
+  - "**/constants/"
   - "**/node_modules/"
   - "**/*.test.ts"
   - "packages/*/*/test/"

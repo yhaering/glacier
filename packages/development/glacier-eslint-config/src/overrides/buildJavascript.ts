@@ -25,6 +25,7 @@ export function buildJavascript(): Linter.ConfigOverride<Linter.RulesRecord> {
       'unicorn/prefer-switch': 'off',
       'unicorn/no-object-as-default-parameter': 'off',
       'unicorn/prefer-module': 'off',
+      'unicorn/numeric-separators-style': 'off',
       'sonarjs/prefer-single-boolean-return': 'off',
       'sonarjs/cognitive-complexity': ['error', 5]
     }

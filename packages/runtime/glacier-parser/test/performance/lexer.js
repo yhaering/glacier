@@ -1,18 +1,11 @@
-const fs = require('node:fs');
-const {
-  createCharacterStream
-} = require('../../dist/src/characterStream/createCharacterStream');
-const {
-  createTokenStream
-} = require('../../dist/src/tokenStream/createTokenStream');
 const { readFileSync } = require('node:fs');
-const { createParser } = require('../../dist/src/parser/createParser');
+const { TokenStream } = require('../../dist');
+const source = readFileSync(__dirname + '/../resources/code.js', 'utf8');
 
-const source = readFileSync(__dirname + '/../resources/sandbox.js', 'utf8');
-const characterStream = createCharacterStream(source);
-const tokenStream = createTokenStream(characterStream);
-const parser = createParser({});
+const tokenStream = new TokenStream(source);
+
 const startTime = performance.now();
-const ast = parser(tokenStream);
+let t;
+while ((t = tokenStream.next())) {}
 const endTime = performance.now();
 console.log(`${endTime - startTime}ms`);

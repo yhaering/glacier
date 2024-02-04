@@ -1,2 +1,1 @@
-export * from './src/characterStream/createCharacterStream';
-export * from './src/tokenStream/createTokenStream';
+export * from './src/streams/token/TokenStream';
