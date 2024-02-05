@@ -11,11 +11,34 @@ export class Lexer {
   };
 
   private readonly unicodeMap = buildLookupTable(0, 0x10ffff);
+  private readonly stash: Token[] = [];
   private cursor: number = 0;
   public constructor(private readonly source: string) {}
 
   public next(): Token | undefined {
     const nextChar = this.source[this.cursor++];
+    if (nextChar === undefined) return;
+    const token = this.buildToken(nextChar);
+    this.location.line = token.loc.line;
+    this.location.col = token.loc.col;
+    this.location.index = token.loc.index;
+    this.stash.push(token);
+    return token;
+  }
+
+  public commit(): Token[] {
+    const currentStash = [...this.stash];
+    this.stash.length = 0;
+    return currentStash;
+  }
+
+  public reset() {
+    this.cursor -= this.stash.length;
+    this.stash.length = 0;
+  }
+
+  public peek(): Token | undefined {
+    const nextChar = this.source[this.cursor];
     if (nextChar === undefined) return;
     const token = this.buildToken(nextChar);
     this.location.line = token.loc.line;
