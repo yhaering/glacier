@@ -8,15 +8,15 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@types/eslint": "8.56.2",
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.20.0",
-    "eslint": "^8.56.0",
+    "@types/eslint": "8.56.6",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jest": "^27.6.3",
+    "eslint-plugin-jest": "^27.9.0",
     "eslint-plugin-jest-formatting": "^3.1.0",
     "eslint-plugin-only-error": "^1.0.2",
-    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-sonarjs": "^0.25.0",
     "eslint-plugin-unicorn": "^48.0.1",
     "prettier": "^3.2.5"
   },
